@@ -1,4 +1,6 @@
 source "https://rubygems.org"
 
 gem "jekyll"
-gem 'jekyll-language-plugin'
+group :jekyll_plugins do
+   gem "jekyll-polyglot"
+end
