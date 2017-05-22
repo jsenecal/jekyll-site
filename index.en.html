@@ -5,6 +5,8 @@ lang: en
 permalink: /
 ---
 
+{% assign sections = site.sections | where:"show","true" %}
+
 <section class="content-scroller">
     <div id="home" class="intro-bg gradient-02" style="background: url('images/bg.jpg');">
         <div id="scroll-down" class="intro">
@@ -12,7 +14,7 @@ permalink: /
                 <div class="container-fluid">
                     <div class="row">
                         <div class="col-md-12 text-left content-left">
-                            <h1> <span> Hello I’m </span> Jonathan Senecal </h1>
+                            <h1><span> Hello I’m </span> Jonathan Senecal </h1>
                             <div id="typer">Text1; text2; text3</div>
                             <div class="button-large">
                                 <a href="#">Download my CV</a>
@@ -21,222 +23,34 @@ permalink: /
                     </div>
                 </div>
             </div>
-            <a class="scroll-down page-scroll" title="Scroll Down" href="#about"><i></i></a>
+            <a class="scroll-down page-scroll" title="Scroll Down"
+               href="#{{ sections[0].id | slugify }}"><i></i></a>
         </div>
     </div>
-
-    {% for section in site.sections %}
-    <section id="{{section.id}}" class="{{section.class | join ' '}}">
-        {{section.content}}
+    {% for section in sections %}
+    <!--{{section.name}}-->
+    <section id="{{ section.id | slugify }}" class="{{section.class | join:' '}}">
+        <div class="container-fluid">
+            {% unless section.includes_heading %}
+            <div class="row">
+                <div class="col-lg-12 col-md-12">
+                    <div class="section-title">
+                        <div class="section-title-name">
+                            <span>{{section.heading}}</span>
+                            <h2>{{section.title}}</h2>
+                        </div>
+                        <div class="title-name-gray">
+                            <strong>{{section.title}}</strong>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            {%endunless%}
+            {{section.content}}
+        </div>
     </section>
+    <!--/{{section.name}}-->
     {% endfor %}
-    <!--=================================
-      intro -->
-
-
-    <!--=================================
-      about -->
-
-
-    <!--=================================
-      about -->
-
-
-    <!--=================================
-      services -->
-
-    <section id="service" class="services white-bg page-section">
-        <div class="container-fluid">
-            <div class="row">
-                <div class="col-lg-12 col-md-12">
-                    <div class="section-title">
-                        <div class="section-title-name">
-                            <span>What i can do better</span>
-                            <h2>Services</h2>
-                        </div>
-                        <div class="title-name-gray">
-                            <strong>Services</strong>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-lg-3 col-md-6 col-sm-6">
-                    <div class="service-block">
-                        <span class="ti-desktop"></span>
-                        <h2>Personal Training</h2>
-                        <p>You will begin to realise why this exercise is called the Dickens Pattern (with reference to the ghost showing Scrooge some different futures) as you notice that the idea of this exercise is to hypnotize yourself to be aware of two....</p>
-                        <div class="contact-button">
-                            <a class="clearfix" href="#"> <span class="pull-left">Read More...</span> <span class="ti-arrow-circle-right pull-right"></span></a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6 col-sm-6">
-                    <div class="service-block">
-                        <span class="ti-slice"></span>
-                        <h2>Group Training</h2>
-                        <p>Two distinct pathways that you could take for your life this very day. Have a think about something that you do that you are maybe not motivated to change about yourself. Prior to running through this technique, just have a think about... </p>
-                        <div class="contact-button">
-                            <a class="clearfix" href="#"> <span class="pull-left">Read More...</span> <span class="ti-arrow-circle-right pull-right"></span></a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6 col-sm-6">
-                    <div class="service-block">
-                        <span class="ti-brush-alt"></span>
-                        <h2>Weight Loss</h2>
-                        <p>Then with that thing in mind, follow these simple steps. Step One: Get yourself nice and relaxed and settled. Concentrate on your breathing, engage in the moment and spend some time being still, quiet and drift inside of your own mind... </p>
-                        <div class="contact-button">
-                            <a class="clearfix" href="#"> <span class="pull-left">Read More...</span> <span class="ti-arrow-circle-right pull-right"></span></a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6 col-sm-6">
-                    <div class="service-block">
-                        <span class="ti-layout-media-center"></span>
-                        <h2>Trx Workout</h2>
-                        <p>Become aware of the temperature, the sights, the sounds and enjoy walking along the path of your life. Make it sensory rich and get comfortable with the idea. Imagine the feeling of your feet walking along the path and the sound.... </p>
-                        <div class="contact-button">
-                            <a class="clearfix" href="#"> <span class="pull-left">Read More...</span> <span class="ti-arrow-circle-right pull-right"></span></a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!--=================================
-      services -->
-
-
-    <!--=================================
-      Resume -->
-
-    <section id="resume" class="resume white-bg page-section">
-        <div class="container-fluid">
-            <div class="row">
-                <div class="col-lg-12 col-md-12">
-                    <div class="section-title">
-                        <div class="section-title-name">
-                            <span>My Work Experience</span>
-                            <h2>Resume</h2>
-                        </div>
-                        <div class="title-name-gray">
-                            <strong>Resume</strong>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-lg-12 col-md-12">
-                    <h2>Experience : </h2>
-                </div>
-            </div>
-            <div class="resume-block">
-                <div class="row">
-                    <div class="col-lg-4 col-md-4 col-sm-4">
-                        <div class="resume-icon">
-                            <span class="ti-ruler-pencil"></span>
-                        </div>
-                        <div class="resume-name">
-                            <h3>The Health Club</h3>
-                            <span>2013 to present</span>
-                        </div>
-                    </div>
-                    <div class="col-lg-8 col-md-8 col-sm-8">
-                        <div class="resume-info">
-                            <h3>Personal trainer</h3>
-                            <p>Quis nostrud exercitation ullamco laboris nisi ut aliquip exea. commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.  </p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="resume-block">
-                <div class="row">
-                    <div class="col-lg-4 col-md-4 col-sm-4">
-                        <div class="resume-icon">
-                            <span class="ti-bookmark-alt"></span>
-                        </div>
-                        <div class="resume-name">
-                            <h3>Real Fitness Club</h3>
-                            <span>2010 to 2013</span>
-                        </div>
-                    </div>
-                    <div class="col-lg-8 col-md-8 col-sm-8">
-                        <div class="resume-info">
-                            <h3>Fitness Instructor</h3>
-                            <p>Ut enim ad minim niam, quis nostrud exercitation ullamco laboris nisi ut aliquip exea. commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. </p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="resume-block">
-                <div class="row">
-                    <div class="col-lg-4 col-md-4 col-sm-4">
-                        <div class="resume-icon">
-                            <span class="ti-calendar"></span>
-                        </div>
-                        <div class="resume-name">
-                            <h3>CrossFit GYM </h3>
-                            <span>2009 to 2010</span>
-                        </div>
-                    </div>
-                    <div class="col-lg-8 col-md-8 col-sm-8">
-                        <div class="resume-info">
-                            <h3>Health fitness specialist</h3>
-                            <p>Commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Ut enim ad minim niam, quis nostrud exercitation ullamco laboris nisi ut aliquip exea. </p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-lg-12 col-md-12">
-                    <h2>Education : </h2>
-                </div>
-            </div>
-            <div class="resume-block">
-                <div class="row">
-                    <div class="col-lg-4 col-md-4 col-sm-4">
-                        <div class="resume-icon">
-                            <span class="ti-crown"></span>
-                        </div>
-                        <div class="resume-name">
-                            <h3>Academy of fitness training</h3>
-                            <span>2008 to 2009</span>
-                        </div>
-                    </div>
-                    <div class="col-lg-8 col-md-8 col-sm-8">
-                        <div class="resume-info">
-                            <h3>Certificate in Fitness Instructing</h3>
-                            <p>Sunt in culpa qui officia deserunt mollit anim id est laborum. Ut enim ad minim niam, quis nostrud exercitation ullamco laboris nisi ut aliquip exea. commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, </p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="resume-block clearfix">
-                <div class="row">
-                    <div class="col-lg-4 col-md-4 col-sm-4">
-                        <div class="resume-icon">
-                            <span class="ti-thumb-up"></span>
-                        </div>
-                        <div class="resume-name">
-                            <h3>Class of fitness group</h3>
-                            <span>2007 to 2009</span>
-                        </div>
-                    </div>
-                    <div class="col-lg-8 col-md-8 col-sm-8">
-                        <div class="resume-info">
-                            <h3>The Diploma in Fitness</h3>
-                            <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Ut enim ad minim niam, quis nostrud exercitation ullamco laboris nisi ut aliquip exea. commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. </p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!--=================================
-      Resume -->
 
 
     <!--=================================
@@ -262,8 +76,17 @@ permalink: /
                     <div class="skill-content">
                         <h2>My Professional Strengths</h2>
                         <span>“To achieve something you’ve never had before, you must do something you’ve never done before.”</span>
-                        <p>My Professional Strengths Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis velit error culpa unde, esse quam quasi, necessitatibus voluptatem possimus, repellendus. <br /><br />
-                            The other virtues practice in succession by Franklin were silence, order, resolution, frugality, industry, sincerity, Justice, moderation, cleanliness, tranquility, chastity and humility. For the summary order he followed a little scheme of employing his time each day. From five to seven each morning he spent in bodily personal attention, saying a short prayer, thinking over the day’s business and resolutions, studying and eating breakfast. From eight till twelve he worked at his trade. From twelve to one he read or overlooked his accounts and dined. From two to five he worked at his trade. The rest of the evening until 10 he spent in music, or diversion of some sort. </p>
+                        <p>My Professional Strengths Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis
+                            velit error culpa unde, esse quam quasi, necessitatibus voluptatem possimus, repellendus.
+                            <br/><br/>
+                            The other virtues practice in succession by Franklin were silence, order, resolution,
+                            frugality, industry, sincerity, Justice, moderation, cleanliness, tranquility, chastity and
+                            humility. For the summary order he followed a little scheme of employing his time each day.
+                            From five to seven each morning he spent in bodily personal attention, saying a short
+                            prayer, thinking over the day’s business and resolutions, studying and eating breakfast.
+                            From eight till twelve he worked at his trade. From twelve to one he read or overlooked his
+                            accounts and dined. From two to five he worked at his trade. The rest of the evening until
+                            10 he spent in music, or diversion of some sort. </p>
                     </div>
                 </div>
                 <div class="col-lg-6 col-md-6 col-sm-6">
@@ -321,7 +144,10 @@ permalink: /
                 <div class="row">
                     <div class="col-lg-12 col-md-12">
                         <h2>Language skills</h2>
-                        <p>You will begin to realise why this exercise is called the Dickens Pattern with reference to the ghost showing Scrooge some different futures as you notice that the idea of this exercise is to hypnotize yourself to be aware of two very real possibilities for your future. Two distinct pathways. </p>
+                        <p>You will begin to realise why this exercise is called the Dickens Pattern with reference to
+                            the ghost showing Scrooge some different futures as you notice that the idea of this
+                            exercise is to hypnotize yourself to be aware of two very real possibilities for your
+                            future. Two distinct pathways. </p>
                     </div>
                 </div>
                 <div class="row">
@@ -338,7 +164,7 @@ permalink: /
                             <div class="chart" data-percent="55">
                                 <span class="percent"></span>
                             </div>
-                            <h3>French <br />Advanced</h3>
+                            <h3>French <br/>Advanced</h3>
                         </div>
                     </div>
                     <div class="col-lg-3 col-md-3 col-sm-3">
@@ -346,7 +172,7 @@ permalink: /
                             <div class="chart" data-percent="89">
                                 <span class="percent"></span>
                             </div>
-                            <h3>Spanish <br />Basic</h3>
+                            <h3>Spanish <br/>Basic</h3>
                         </div>
                     </div>
                     <div class="col-lg-3 col-md-3 col-sm-3">
@@ -354,7 +180,7 @@ permalink: /
                             <div class="chart" data-percent="95">
                                 <span class="percent"></span>
                             </div>
-                            <h3>German <br />Basic</h3>
+                            <h3>German <br/>Basic</h3>
                         </div>
                     </div>
                 </div>
@@ -362,7 +188,10 @@ permalink: /
                     <div class="row">
                         <div class="col-lg-12 col-md-12">
                             <h2>Knowledge</h2>
-                            <p>Auis nostrud exercitation ullamco laboris nisi ut aliquip exea. commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. </p>
+                            <p>Auis nostrud exercitation ullamco laboris nisi ut aliquip exea. commodo consequat. Duis
+                                aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+                                pariatur. Commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit
+                                esse cillum dolore eu fugiat nulla pariatur. </p>
                         </div>
                     </div>
                     <div class="row">
@@ -376,7 +205,7 @@ permalink: /
                         </div>
                         <div class="col-lg-4 col-md-4 col-sm-4">
                             <ul>
-                                <li><span class="ti-hand-point-right"></span> Personnel and Human Resources </li>
+                                <li><span class="ti-hand-point-right"></span> Personnel and Human Resources</li>
                                 <li><span class="ti-hand-point-right"></span> Attention to Detail</li>
                                 <li><span class="ti-hand-point-right"></span> Personal Service</li>
                                 <li><span class="ti-hand-point-right"></span> Reading Comprehension</li>
@@ -384,8 +213,8 @@ permalink: /
                         </div>
                         <div class="col-lg-4 col-md-4 col-sm-4">
                             <ul>
-                                <li><span class="ti-hand-point-right"></span> Time Management </li>
-                                <li><span class="ti-hand-point-right"></span> Learning Strategies </li>
+                                <li><span class="ti-hand-point-right"></span> Time Management</li>
+                                <li><span class="ti-hand-point-right"></span> Learning Strategies</li>
                                 <li><span class="ti-hand-point-right"></span> Service Orientation</li>
                                 <li><span class="ti-hand-point-right"></span> Active Learning</li>
                             </ul>
@@ -424,7 +253,7 @@ permalink: /
                         <button data-filter="" class="active"> View All <span>/</span></button>
                         <button data-filter=".events">Events <span>/</span></button>
                         <button data-filter=".fitness"> Fitness <span>/</span></button>
-                        <button data-filter=".motivation">Motivation </button>
+                        <button data-filter=".motivation">Motivation</button>
                     </div>
                 </div>
             </div>
@@ -436,10 +265,11 @@ permalink: /
                                 <div class="item-inner">
                                     <img class="img-responsive" src="images/portfolio/01.jpg" alt=""></div>
                                 <div class="item-info">
-                                    <a href="#">  work item one</a>
+                                    <a href="#"> work item one</a>
                                     <span>by Jonathan Senecal</span>
                                     <div class="item-link">
-                                        <a class="portfolio-img" href="images/portfolio/01.jpg"><span class="ti-plus"></span></a>
+                                        <a class="portfolio-img" href="images/portfolio/01.jpg"><span
+                                                class="ti-plus"></span></a>
                                         <a href="portfolio-single.html"><span class="ti-link"></span></a>
                                     </div>
                                 </div>
@@ -454,10 +284,11 @@ permalink: /
                                 <div class="item-inner">
                                     <img class="img-responsive" src="images/portfolio/02.jpg" alt=""></div>
                                 <div class="item-info">
-                                    <a href="#">  work item one</a>
+                                    <a href="#"> work item one</a>
                                     <span>by Jonathan Senecal</span>
                                     <div class="item-link">
-                                        <a class="portfolio-img" href="images/portfolio/02.jpg"><span class="ti-plus"></span></a>
+                                        <a class="portfolio-img" href="images/portfolio/02.jpg"><span
+                                                class="ti-plus"></span></a>
                                         <a href="portfolio-single.html"><span class="ti-link"></span></a>
                                     </div>
                                 </div>
@@ -472,10 +303,11 @@ permalink: /
                                 <div class="item-inner">
                                     <img class="img-responsive" src="images/portfolio/03.jpg" alt=""></div>
                                 <div class="item-info">
-                                    <a href="#">  work item one</a>
+                                    <a href="#"> work item one</a>
                                     <span>by Jonathan Senecal</span>
                                     <div class="item-link">
-                                        <a class="portfolio-img" href="images/portfolio/03.jpg"><span class="ti-plus"></span></a>
+                                        <a class="portfolio-img" href="images/portfolio/03.jpg"><span
+                                                class="ti-plus"></span></a>
                                         <a href="portfolio-single.html"><span class="ti-link"></span></a>
                                     </div>
                                 </div>
@@ -490,10 +322,11 @@ permalink: /
                                 <div class="item-inner">
                                     <img class="img-responsive" src="images/portfolio/04.jpg" alt=""></div>
                                 <div class="item-info">
-                                    <a href="#">  work item one</a>
+                                    <a href="#"> work item one</a>
                                     <span>by Jonathan Senecal</span>
                                     <div class="item-link">
-                                        <a class="portfolio-img" href="images/portfolio/04.jpg"><span class="ti-plus"></span></a>
+                                        <a class="portfolio-img" href="images/portfolio/04.jpg"><span
+                                                class="ti-plus"></span></a>
                                         <a href="portfolio-single.html"><span class="ti-link"></span></a>
                                     </div>
                                 </div>
@@ -508,10 +341,11 @@ permalink: /
                                 <div class="item-inner">
                                     <img class="img-responsive" src="images/portfolio/05.jpg" alt=""></div>
                                 <div class="item-info">
-                                    <a href="#">  work item one</a>
+                                    <a href="#"> work item one</a>
                                     <span>by Jonathan Senecal</span>
                                     <div class="item-link">
-                                        <a class="portfolio-img" href="images/portfolio/05.jpg"><span class="ti-plus"></span></a>
+                                        <a class="portfolio-img" href="images/portfolio/05.jpg"><span
+                                                class="ti-plus"></span></a>
                                         <a href="portfolio-single.html"><span class="ti-link"></span></a>
                                     </div>
                                 </div>
@@ -526,10 +360,11 @@ permalink: /
                                 <div class="item-inner">
                                     <img class="img-responsive" src="images/portfolio/06.jpg" alt=""></div>
                                 <div class="item-info">
-                                    <a href="#">  work item one</a>
+                                    <a href="#"> work item one</a>
                                     <span>by Jonathan Senecal</span>
                                     <div class="item-link">
-                                        <a class="portfolio-img" href="images/portfolio/06.jpg"><span class="ti-plus"></span></a>
+                                        <a class="portfolio-img" href="images/portfolio/06.jpg"><span
+                                                class="ti-plus"></span></a>
                                         <a href="portfolio-single.html"><span class="ti-link"></span></a>
                                     </div>
                                 </div>
@@ -544,10 +379,11 @@ permalink: /
                                 <div class="item-inner">
                                     <img class="img-responsive" src="images/portfolio/07.jpg" alt=""></div>
                                 <div class="item-info">
-                                    <a href="#">  work item one</a>
+                                    <a href="#"> work item one</a>
                                     <span>by Jonathan Senecal</span>
                                     <div class="item-link">
-                                        <a class="portfolio-img" href="images/portfolio/07.jpg"><span class="ti-plus"></span></a>
+                                        <a class="portfolio-img" href="images/portfolio/07.jpg"><span
+                                                class="ti-plus"></span></a>
                                         <a href="portfolio-single.html"><span class="ti-link"></span></a>
                                     </div>
                                 </div>
@@ -562,10 +398,11 @@ permalink: /
                                 <div class="item-inner">
                                     <img class="img-responsive" src="images/portfolio/08.jpg" alt=""></div>
                                 <div class="item-info">
-                                    <a href="#">  work item one</a>
+                                    <a href="#"> work item one</a>
                                     <span>by Jonathan Senecal</span>
                                     <div class="item-link">
-                                        <a class="portfolio-img" href="images/portfolio/08.jpg"><span class="ti-plus"></span></a>
+                                        <a class="portfolio-img" href="images/portfolio/08.jpg"><span
+                                                class="ti-plus"></span></a>
                                         <a href="#"><span class="ti-link"></span></a>
                                     </div>
                                 </div>
@@ -605,19 +442,26 @@ permalink: /
                         <div class="row">
                             <div class="col-lg-7 col-md-7">
                                 <div class="calendar-section">
-                                    <div class="calendar-block"> <div id="datepicker"> </div>
+                                    <div class="calendar-block">
+                                        <div id="datepicker"></div>
                                     </div>
                                 </div>
                             </div>
                             <div class="col-lg-5 col-md-5">
                                 <div class="date-block">
                                     <div class="date-area">
-                                        <span class="day" id="day">Sonday</span><span class="date" id="date">27</span><span class="month" id="mnt">March</span><div class="clr"></div>
+                                        <span class="day" id="day">Sonday</span><span class="date"
+                                                                                      id="date">27</span><span
+                                            class="month" id="mnt">March</span>
+                                        <div class="clr"></div>
                                     </div>
                                     <div class="dateinfo">
                                         <div class="block"><span class="today"></span>Today</div>
-                                        <div class="block"><span class="not-ava"></span> Sorry. I am not available on those days </div>
-                                        <div class="block"><span class="available"></span>All other days i am available </div>
+                                        <div class="block"><span class="not-ava"></span> Sorry. I am not available on
+                                            those days
+                                        </div>
+                                        <div class="block"><span class="available"></span>All other days i am available
+                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -657,7 +501,7 @@ permalink: /
                         <div class="blog-image">
                             <img class="img-responsive" src="images/blog/01.jpg" alt="">
                             <div class="blog-date">
-                                <span>June <br />05</span>
+                                <span>June <br/>05</span>
                             </div>
                         </div>
                         <div class="blog-info">
@@ -668,7 +512,8 @@ permalink: /
                             </div>
                             <div class="blog-content">
                                 <a href="blog-single.html">Are You Famous Or Focused</a>
-                                <p>Commodo consequat ut enim ad minim niam, quis nostrud ullamco  nisi ut aliquip exea non veritatis illum laudantium</p>
+                                <p>Commodo consequat ut enim ad minim niam, quis nostrud ullamco nisi ut aliquip exea
+                                    non veritatis illum laudantium</p>
                                 <div class="blog-bottom clearfix">
                                     <div class="button-small">
                                         <a href="#">Read More..</a>
@@ -690,7 +535,7 @@ permalink: /
                         <div class="blog-image">
                             <img class="img-responsive" src="images/blog/02.jpg" alt="">
                             <div class="blog-date">
-                                <span>Aug <br />15</span>
+                                <span>Aug <br/>15</span>
                             </div>
                         </div>
                         <div class="blog-info">
@@ -701,7 +546,8 @@ permalink: /
                             </div>
                             <div class="blog-content">
                                 <a href="blog-single.html">Does Your Life Lack Meaning</a>
-                                <p>Exercitation ullamco laboris nisi ut aliquip exea commodo consequat ut enim ad minim niam quis minim nostrud. </p>
+                                <p>Exercitation ullamco laboris nisi ut aliquip exea commodo consequat ut enim ad minim
+                                    niam quis minim nostrud. </p>
                                 <div class="blog-bottom clearfix">
                                     <div class="button-small">
                                         <a href="#">Read More..</a>
@@ -723,7 +569,7 @@ permalink: /
                         <div class="blog-image">
                             <img class="img-responsive" src="images/blog/03.jpg" alt="">
                             <div class="blog-date">
-                                <span>Sep <br />11</span>
+                                <span>Sep <br/>11</span>
                             </div>
                         </div>
                         <div class="blog-info">
@@ -734,7 +580,8 @@ permalink: /
                             </div>
                             <div class="blog-content">
                                 <a href="blog-single.html">Harness The Power Of Your Dreams</a>
-                                <p>Auis nostrud exercitation ullamco laboris nisi ut aliquip exea commodo consequat at enim ad minim niam.  </p>
+                                <p>Auis nostrud exercitation ullamco laboris nisi ut aliquip exea commodo consequat at
+                                    enim ad minim niam. </p>
                                 <div class="blog-bottom clearfix">
                                     <div class="button-small">
                                         <a href="#">Read More..</a>
@@ -756,7 +603,7 @@ permalink: /
                         <div class="blog-image">
                             <img class="img-responsive" src="images/blog/04.jpg" alt="">
                             <div class="blog-date">
-                                <span>Dec <br />22</span>
+                                <span>Dec <br/>22</span>
                             </div>
                         </div>
                         <div class="blog-info">
@@ -767,7 +614,8 @@ permalink: /
                             </div>
                             <div class="blog-content">
                                 <a href="blog-single.html">Does Your Life Lack Meaning</a>
-                                <p>Mostrud exercitation ullamco laboris nisi ut aliquip exea ut enim ad minim niam quis and commodo consequat. </p>
+                                <p>Mostrud exercitation ullamco laboris nisi ut aliquip exea ut enim ad minim niam quis
+                                    and commodo consequat. </p>
                                 <div class="blog-bottom clearfix">
                                     <div class="button-small">
                                         <a href="#">Read More..</a>
@@ -818,7 +666,8 @@ permalink: /
                                 <img class="imgresponsive" src="images/testimonials/01.jpg" alt="">
                             </div>
                             <div class="testimonials-comment">
-                                <p>Are you considering buying a compatible inkjet cartridge for your printer? There are many reputed companies like Canon, Epson, Dell, and Lexmark </p>
+                                <p>Are you considering buying a compatible inkjet cartridge for your printer? There are
+                                    many reputed companies like Canon, Epson, Dell, and Lexmark </p>
                             </div>
                         </div>
                         <div class="testimonials-name">
@@ -832,7 +681,9 @@ permalink: /
                                 <img class="imgresponsive" src="images/testimonials/02.jpg" alt="">
                             </div>
                             <div class="testimonials-comment">
-                                <p> Sports betting While most people enjoy casino gambling, lottery and bingo playing for the fun and excitement it provides, others may experience gambling as an addictive and distractive habit. </p>
+                                <p> Sports betting While most people enjoy casino gambling, lottery and bingo playing
+                                    for the fun and excitement it provides, others may experience gambling as an
+                                    addictive and distractive habit. </p>
                             </div>
                         </div>
                         <div class="testimonials-name">
@@ -848,7 +699,9 @@ permalink: /
                                 <img class="imgresponsive" src="images/testimonials/03.jpg" alt="">
                             </div>
                             <div class="testimonials-comment">
-                                <p>While most people enjoy casino gambling, sports betting, lottery and bingo playing for the fun and excitement it provides, others may experience gambling as an addictive and distractive habit. </p>
+                                <p>While most people enjoy casino gambling, sports betting, lottery and bingo playing
+                                    for the fun and excitement it provides, others may experience gambling as an
+                                    addictive and distractive habit. </p>
                             </div>
                         </div>
                         <div class="testimonials-name">
@@ -892,7 +745,8 @@ permalink: /
                                 <img class="imgresponsive" src="images/testimonials/06.jpg" alt="">
                             </div>
                             <div class="testimonials-comment">
-                                <p>Today, many people rely on computers to do homework, work, and create or store useful information.</p>
+                                <p>Today, many people rely on computers to do homework, work, and create or store useful
+                                    information.</p>
                             </div>
                         </div>
                         <div class="testimonials-name">
@@ -921,10 +775,14 @@ permalink: /
                 <h2>Say Hi It’s Free! </h2>
                 <div class="address">
                     <ul>
-                        <li><span class="ti-location-pin"></span> <p>24 SL Road, London. UK</p> </li>
-                        <li><span class="ti-marker-alt"></span> <p>sam@website.com </p></li>
-                        <li><span class="ti-mobile"></span> <p>(123)-456-7890 </p></li>
-                        <li><span class="ti-printer"></span> <p>(098)-765-4321 </p></li>
+                        <li><span class="ti-location-pin"></span>
+                            <p>24 SL Road, London. UK</p></li>
+                        <li><span class="ti-marker-alt"></span>
+                            <p>sam@website.com </p></li>
+                        <li><span class="ti-mobile"></span>
+                            <p>(123)-456-7890 </p></li>
+                        <li><span class="ti-printer"></span>
+                            <p>(098)-765-4321 </p></li>
                     </ul>
                 </div>
                 <div class="social">
@@ -946,19 +804,25 @@ permalink: /
                 <div id="contact-wrapper">
                     <div class="contact-content">
                         <div id="formmessage">Success/Error Message Goes Here</div>
-                        <form class="form-horizontal" id="contactform" method="post" action="http://themes.potenzaglobalsolutions.com/html/sam-martin/trainer/layout-1/php/contact-form.php">
+                        <form class="form-horizontal" id="contactform" method="post"
+                              action="http://themes.potenzaglobalsolutions.com/html/sam-martin/trainer/layout-1/php/contact-form.php">
                             <div class="contact-form">
                                 <h4>Drop me a line</h4>
-                                <p>Use this form to tell me about your project goals and needs. I will be in touch within 24 hours.</p>
-                                <input id="name" type="text" placeholder="Name*"  name="name">
+                                <p>Use this form to tell me about your project goals and needs. I will be in touch
+                                    within 24 hours.</p>
+                                <input id="name" type="text" placeholder="Name*" name="name">
                                 <input type="email" placeholder="Email*" name="email">
                                 <input type="text" placeholder="Phone*" name="phone">
-                                <textarea class="input-message" placeholder="Comment*" rows="7" name="message"></textarea>
+                                <textarea class="input-message" placeholder="Comment*" rows="7"
+                                          name="message"></textarea>
                                 <input type="hidden" name="action" value="sendEmail"/>
-                                <button id="submit" name="submit" type="submit" value="Send" class="button-small"> Say Hello! </button>
+                                <button id="submit" name="submit" type="submit" value="Send" class="button-small"> Say
+                                    Hello!
+                                </button>
                             </div>
                         </form>
-                        <div id="ajaxloader" style="display:none"><img class="center-block" src="images/ajax-loader-white.gif" alt=""></div>
+                        <div id="ajaxloader" style="display:none"><img class="center-block"
+                                                                       src="images/ajax-loader-white.gif" alt=""></div>
                     </div>
                     <a href="#" class="contact-toggle"><span class="ti-comments"></span></a>
                 </div>
@@ -968,38 +832,5 @@ permalink: /
 
     <!--=================================
      contact -->
-
-
-    <!--=================================
-    color customizer -->
-
-    <div class="style-customizer closed">
-        <div class="buy-button"> <a class="opener" href="#"><i class="fa fa-cog fa-spin"></i></a>  </div>
-        <div class="clearfix content-chooser">
-            <a target="_blank" class="button" href="https://themeforest.net/item/sam-martin-personal-vcard-resume-html-template/16795240">purchase now</a>
-            <h3>Color Schemes</h3>
-            <p>Which theme color you want to use? Here are some predefined colors.</p>
-            <ul class="styleChange clearfix">
-                <li class="skin-default selected" title="Default" data-style="skin-default" ></li>
-                <li class="skin-blue" title="Blue" data-style="skin-blue" ></li>
-                <li class="skin-green" title="green" data-style="skin-green"></li>
-                <li class="skin-gold" title="Gold" data-style="skin-gold"></li>
-                <li class="skin-salmon" title="Salmon" data-style="skin-salmon"></li>
-                <li class="skin-olive" title="Olive" data-style="skin-olive"></li>
-                <li class="skin-pink" title="Pink" data-style="skin-pink" ></li>
-                <li class="skin-yellow" title="Yellow" data-style="skin-yellow"></li>
-            </ul>
-            <h3>Layout Options</h3>
-            <p>Which Layout options you want to use? Choose from below options.</p>
-            <ul class="layout">
-                <li><a href="http://themes.potenzaglobal.net/sam-martin/trainer/layout-1/index.html"><img class="img-responsive" src="images/color-customizer/layout-01.png" alt=""></a></li>
-                <li><a href="http://themes.potenzaglobal.net/sam-martin/trainer/layout-2/index.html"><img class="img-responsive" src="images/color-customizer/layout-02.png" alt=""></a></li>
-                <li><a href="http://themes.potenzaglobal.net/sam-martin/trainer/layout-3/index.html"><img class="img-responsive" src="images/color-customizer/layout-03.png" alt=""></a></li>
-            </ul>
-        </div>
-    </div>
-
-    <!--=================================
-    color customizer -->
 
 </section>

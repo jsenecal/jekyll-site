@@ -1,13 +1,26 @@
 # Site settings
 title: Jonathan Senecal
-author: Jonathan Senecal
-email: contact@jonathansenecal.com
+author:
+  name: Jonathan Senecal
+  email: contact@jonathansenecal.com
+  phone: 514.710.0100
+  dob:
+    en: September 6, 1985
+    fr: 6 Septembre 1985
+  address:
+    en: 7787 de Bordeaux street, Montreal (Quebec), Canada
+    fr: 7787 rue de Bordeaux, Montréal (Quebec), Canada
+  nationality:
+    en: Canadian
+    fr: Canadienne
 description:
   en: Jonathan Senecal - Personal Page
   fr: Jonathan Senecal - Page Personnelle
 keywords: ["cv", "resume", "networking", "réseau", "project manager", "gestion de projets", "curriculum vitae", "work", "travail",
           "experience", "guru"]
-index: index.html
+index:
+  en: index.en.html
+  fr: index.fr.html
 feed: /feed.xml
 baseurl: "/" # the subpath of your site, e.g. /blog
 collections:

@@ -2,44 +2,40 @@
 <html lang="en">
 {% include head.html %}
 <body>
-
 <!--loading-->
 {% include loading.html %}
 <!--/loading-->
 
 <!--header-->
-
-<div class="menu-responsive"><a href="#"> <b>Jonathan Senecal</b></a> <a id="menu-icon" class="but" href="#"><span class="ti-menu"></span> </a></div>
+<div class="menu-responsive"><a href="#"> <b>{{site.author.name}}</b></a> <a id="menu-icon" class="but" href="#"><span class="ti-menu"></span> </a></div>
 <header id="left-header" class="header">
     {% include nav.html %}
     <div class="menu-footer">
-    <div class="social">
-      <ul>
-        <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-        <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-        <li><a href="#"><i class="fa fa-linkedin"></i> </a></li>
-      </ul>
-    </div>
-    <div class="copyright">
-      <p>© Jonathan Senecal <br/> all rights reserved</p>
-    </div>
+        <div class="social">
+            {% include social_buttons.html %}
+        </div>
+        <div class="copyright">
+          <p>© {{site.author.name}} <br/> all rights reserved</p>
+        </div>
   </div>
 </header>
-
-<!--=================================
-  header -->
-
-
-<!--=================================
-  intro -->
+<!--/header-->
 
 {{ content }}
 
-<!--=================================
- javascript -->
+<!--javascript-->
 
-<!-- jquery -->
-<script type="text/javascript" src="js/jquery.min.js"></script>
+<!--jQuery-->
+<script type="text/javascript" src="https://cdn.jsdelivr.net/jquery/1.12.4/jquery.min.js"></script>
+<!--Bootstrap-->
+<script type="text/javascript" src="https://cdn.jsdelivr.net/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<!--jQuery Nice Scroll-->
+<script type="text/javascript" src="https://cdn.jsdelivr.net/jquery.nicescroll/3.6.8/jquery.nicescroll.min.js"></script>
+<!--&lt;!&ndash;jQuery UI&ndash;&gt;-->
+<!--<script type="text/javascript" src="https://cdn.jsdelivr.net/jquery.ui/1.11.4/jquery-ui.min.js"></script>-->
+<!--&lt;!&ndash;jQuery Magnific Popup&ndash;&gt;-->
+<!--<script type="text/javascript" src="https://cdn.jsdelivr.net/jquery.magnific-popup/1.0.0/jquery.magnific-popup.js"></script>-->
+
 
 <!-- modernizr -->
 <script type="text/javascript" src="js/modernizr.min.js"></script>
@@ -48,17 +44,15 @@
 <script type="text/javascript" src='js/plugins.js'></script>
 
 <!-- map script -->
-<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDjVoaCW3PAn52C7WPpJ7NBBqU1_TUfnSI" type="text/javascript"></script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAEDPnmrPaqwXxmOFC7k6LzJH4xvuv8My8" type="text/javascript"></script>
 <script type="text/javascript" src="js/map-scripts.js"></script>
 
 <!-- datepicker -->
 <script type="text/javascript" src="js/datepicker-script.js"></script>
 
-<!-- style customizer  -->
-<script type="text/javascript" src="js/style-customizer.js"></script>
-
 <!-- custom -->
 <script type="text/javascript" src="js/custom.js"></script>
+<!--/javascript-->
 
 </body>
 </html>
