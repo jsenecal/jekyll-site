@@ -1,5 +1,5 @@
 ---
-id: services
+id: resume
 class: ["resume", "white-bg", "page-section"]
 title: Resume
 heading: What I did
@@ -36,96 +36,31 @@ show: true
 </div>
 {% endfor %}
 
-<div class="resume-block">
-    <div class="row">
-        <div class="col-lg-4 col-md-4 col-sm-4">
-            <div class="resume-icon">
-                <span class="ti-bookmark-alt"></span>
-            </div>
-            <div class="resume-name">
-                <h3>Real Fitness Club</h3>
-                <span>2010 to 2013</span>
-            </div>
-        </div>
-        <div class="col-lg-8 col-md-8 col-sm-8">
-            <div class="resume-info">
-                <h3>Fitness Instructor</h3>
-                <p>Ut enim ad minim niam, quis nostrud exercitation ullamco laboris nisi ut aliquip exea.
-                    commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
-                    dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-                    culpa qui officia deserunt mollit anim id est laborum. </p>
-            </div>
-        </div>
-    </div>
-</div>
-<div class="resume-block">
-    <div class="row">
-        <div class="col-lg-4 col-md-4 col-sm-4">
-            <div class="resume-icon">
-                <span class="ti-calendar"></span>
-            </div>
-            <div class="resume-name">
-                <h3>CrossFit GYM </h3>
-                <span>2009 to 2010</span>
-            </div>
-        </div>
-        <div class="col-lg-8 col-md-8 col-sm-8">
-            <div class="resume-info">
-                <h3>Health fitness specialist</h3>
-                <p>Commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
-                    dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-                    culpa qui officia deserunt mollit anim id est laborum. Ut enim ad minim niam, quis
-                    nostrud exercitation ullamco laboris nisi ut aliquip exea. </p>
-            </div>
-        </div>
-    </div>
-</div>
 <div class="row">
     <div class="col-lg-12 col-md-12">
         <h2>Education : </h2>
     </div>
 </div>
+{% for data in site.data.resume.education %}
 <div class="resume-block">
     <div class="row">
         <div class="col-lg-4 col-md-4 col-sm-4">
             <div class="resume-icon">
-                <span class="ti-crown"></span>
+                <span class="{{data.icon_class}}"></span>
             </div>
             <div class="resume-name">
-                <h3>Academy of fitness training</h3>
-                <span>2008 to 2009</span>
+                <h3>{{data.location}}</h3>
+                <span>{{data.date_from}} to {{data.date_to}}</span>
             </div>
         </div>
         <div class="col-lg-8 col-md-8 col-sm-8">
             <div class="resume-info">
-                <h3>Certificate in Fitness Instructing</h3>
-                <p>Sunt in culpa qui officia deserunt mollit anim id est laborum. Ut enim ad minim niam,
-                    quis nostrud exercitation ullamco laboris nisi ut aliquip exea. commodo consequat. Duis
-                    aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-                    pariatur. Excepteur sint occaecat cupidatat non proident, </p>
+                <h3>{{data.title}}</h3>
+                {%for text in data.text%}
+                <p>{{text}}</p>
+                {%endfor%}
             </div>
         </div>
     </div>
 </div>
-<div class="resume-block clearfix">
-    <div class="row">
-        <div class="col-lg-4 col-md-4 col-sm-4">
-            <div class="resume-icon">
-                <span class="ti-thumb-up"></span>
-            </div>
-            <div class="resume-name">
-                <h3>Class of fitness group</h3>
-                <span>2007 to 2009</span>
-            </div>
-        </div>
-        <div class="col-lg-8 col-md-8 col-sm-8">
-            <div class="resume-info">
-                <h3>The Diploma in Fitness</h3>
-                <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit
-                    anim id est laborum. Ut enim ad minim niam, quis nostrud exercitation ullamco laboris
-                    nisi ut aliquip exea. commodo consequat. Duis aute irure dolor in reprehenderit in
-                    voluptate velit esse cillum dolore eu fugiat nulla pariatur. </p>
-            </div>
-        </div>
-    </div>
-</div>
+{% endfor %}

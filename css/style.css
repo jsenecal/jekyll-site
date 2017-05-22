@@ -1,15 +1,3 @@
- /*
-
-Template: Jonathan Senecal - Personal Vcard Resume HTML Template
-Author: potenzaglobalsolutions.com
-Version: 1.0 
-Design and Developed by: potenzaglobalsolutions.com
-
-NOTE: This is main stylesheet of template, This file contains the styling for the actual Template. Please do not change anything here! write in a custom.css file if required!
-
-*/
-
-
 /*================================================
 [  Table of contents  ]
 ================================================
@@ -22,7 +10,7 @@ NOTE: This is main stylesheet of template, This file contains the styling for th
 :: About
 :: Service
 :: Resume
-:: My skill
+:: Skill
 :: Language-skills 
 :: Portfolio
 :: Availability Calendar
@@ -285,10 +273,10 @@ margin-left: -17px; line-height: 50px; }
 .resume-block.clearfix .resume-info p { margin-bottom: 0px; }
 
  /*************************
-          my-skill
+          skills
 *************************/
-.my-skill .section-title .title-name-gray { left: 110px; }
-.my-skill h2 { font-weight: 600; margin-top: 0px; }
+.skills .section-title .title-name-gray { left: 110px; }
+.skills h2 { font-weight: 600; margin-top: 0px; }
 .skill-content span { font-weight: 600; font-size: 20px; color: #9ea8b6; line-height: 30px; margin-bottom: 30px; display: block; margin-top: 20px; }
 .skill-content p { border-left: 3px solid #abc502; padding-left: 20px; font-style: italic; }
 /*skill*/
