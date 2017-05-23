@@ -1,3 +1,12 @@
+---
+id: contact
+class: ["google-map", "white-bg", "page-section"]
+title: Contact
+heading: What I did
+lang: en
+show: true
+includes_heading: true
+---
 <section id="contact" class="google-map white-bg page-section-pt">
     <div class="container-fluid">
         <div id="google-map">
@@ -8,29 +17,19 @@
             <div class="address">
                 <ul>
                     <li><span class="ti-location-pin"></span>
-                        <p>24 SL Road, London. UK</p></li>
+                        <p>{{site.author.address[site.active_lang]}}</p></li>
                     <li><span class="ti-marker-alt"></span>
-                        <p>sam@website.com </p></li>
+                        <p>{{site.author.email}}</p></li>
                     <li><span class="ti-mobile"></span>
-                        <p>(123)-456-7890 </p></li>
-                    <li><span class="ti-printer"></span>
-                        <p>(098)-765-4321 </p></li>
+                        <p>{{site.author.phone}}</p></li>
                 </ul>
             </div>
             <div class="social">
                 <h4>I'm also on Social Networks</h4>
                 <p>Follow me on social networks to get the latest news, blog, updates and much more.</p>
-                <ul>
-                    <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-                    <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-                    <li><a href="#"><i class="fa fa-dribbble"></i> </a></li>
-                    <li><a href="#"><i class="fa fa-vimeo"></i> </a></li>
-                    <li><a href="#"><i class="fa fa-pinterest-p"></i> </a></li>
-                    <li><a href="#"><i class="fa fa-behance"></i> </a></li>
-                    <li><a href="#"><i class="fa fa-linkedin"></i> </a></li>
-                </ul>
+                {%include social_buttons.html%}
             </div>
-            <div class="button-large"><a href="#">Download my CV</a></div>
+            <!--<div class="button-large"><a href="#">Download my CV</a></div>-->
         </div>
         <div class="contact-form">
             <div id="contact-wrapper">
@@ -64,5 +63,5 @@
 
 
 <!-- map -->
-<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAEDPnmrPaqwXxmOFC7k6LzJH4xvuv8My8" type="text/javascript"></script>
-<script type="text/javascript" src="js/map-scripts.js"></script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAEDPnmrPaqwXxmOFC7k6LzJH4xvuv8My8" type="text/javascript" defer='defer'></script>
+<script type="text/javascript" src="js/map-script.js" defer='defer'></script>

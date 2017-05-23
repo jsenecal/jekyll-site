@@ -156,7 +156,7 @@
     /*************************
      chart
      *************************/
-    $('.language-skills').appear(function () {
+    $('.pie-skills').appear(function () {
             $('.chart').easyPieChart({
                 easing: 'easeOutBounce',
                 lineWidth: 8,
@@ -190,7 +190,7 @@
         ]
     );
     win.resize(function () {
-        var fontSize = Math.max(Math.min(win.width() / (1 * 10), parseFloat(Number.POSITIVE_INFINITY)), parseFloat(Number.NEGATIVE_INFINITY));
+        var fontSize = Math.max(Math.min(win.width() / (10), parseFloat(Number.POSITIVE_INFINITY)), parseFloat(Number.NEGATIVE_INFINITY));
         foo.css({
             fontSize: fontSize * .3 + 'px'
         });
@@ -227,18 +227,12 @@
      *************************/
     $(window).on("load resize", function (e) {
         var $container = $('.isotope'),
-            colWidth = function () {
-                var w = $container.width(),
-                    columnNum = 1,
-                    columnWidth = 0;
-                return columnWidth;
-            },
-            isotope = function () {
+           isotope = function () {
                 $container.isotope({
                     resizable: true,
                     itemSelector: '.grid-item',
                     masonry: {
-                        columnWidth: colWidth(),
+                        columnWidth: 0,
                         gutterWidth: 10
                     }
                 });

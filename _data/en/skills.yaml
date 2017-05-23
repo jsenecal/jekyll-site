@@ -1,0 +1,73 @@
+- type: detailed
+  title: My Professional Strengths
+  quote: To achieve something you’ve never had before, you must do something you’ve never done before.
+  quote_author: Unknown
+  text:
+   - My Professional Strengths Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis velit error culpa unde, esse quam quasi, necessitatibus voluptatem possimus, repellendus.
+   - The other virtues practice in succession by Franklin were silence, order, resolution, frugality, industry, sincerity, Justice, moderation, cleanliness, tranquility, chastity and humility. For the summary order he followed a little scheme of employing his time each day. From five to seven each morning he spent in bodily personal attention, saying a short prayer, thinking over the day’s business and resolutions, studying and eating breakfast. From eight till twelve he worked at his trade. From twelve to one he read or overlooked his accounts and dined. From two to five he worked at his trade. The rest of the evening until 10 he spent in music, or diversion of some sort.
+  skills:
+    - name: Facilitation
+      pct: 70
+    - name: Expertise
+      pct: 50
+    - name: Presentation Skills
+      pct: 80
+    - name: Communication Skills
+      pct: 65
+
+- type: detailed
+  title: My Professional Strengths two
+  quote: To achieve something you’ve never had before, you must do something you’ve never done before.
+  quote_author: Unknown
+  text:
+   - My Professional Strengths Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis velit error culpa unde, esse quam quasi, necessitatibus voluptatem possimus, repellendus.
+   - The other virtues practice in succession by Franklin were silence, order, resolution, frugality, industry, sincerity, Justice, moderation, cleanliness, tranquility, chastity and humility. For the summary order he followed a little scheme of employing his time each day. From five to seven each morning he spent in bodily personal attention, saying a short prayer, thinking over the day’s business and resolutions, studying and eating breakfast. From eight till twelve he worked at his trade. From twelve to one he read or overlooked his accounts and dined. From two to five he worked at his trade. The rest of the evening until 10 he spent in music, or diversion of some sort.
+  skills:
+    - name: Facilitation
+      pct: 70
+    - name: Expertise
+      pct: 50
+    - name: Presentation Skills
+      pct: 80
+
+- type: piechart
+  title: Language skills
+  text: You will begin to realise why this exercise is called the Dickens Pattern with reference to the ghost showing Scrooge some different futures as you notice that the idea of this exercise is to hypnotize yourself to be aware of two very real possibilities for your future. Two distinct pathways.
+  skills:
+  - name: Written English
+    pct: 84
+  - name: Spoken English
+    pct: 80
+  - name: Written French
+    pct: 90
+  - name: Spoken French
+    pct: 96
+
+- type: points
+  title: Knowledge
+  text: Auis nostrud exercitation ullamco laboris nisi ut aliquip exea. commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+  skills:
+   - name: Skills in training techniques.
+     icon_class: ti-hand-point-right
+   - name: Social Perceptiveness
+     icon_class: ti-hand-point-right
+   - name: Judgment and Decision Making
+     icon_class: ti-hand-point-right
+   - name: Active Listening
+     icon_class: ti-hand-point-right
+   - name: Personnel and Human Resources
+     icon_class: ti-hand-point-right
+   - name: Attention to Detail
+     icon_class: ti-hand-point-right
+   - name: Personal Service
+     icon_class: ti-hand-point-right
+   - name: Reading Comprehension
+     icon_class: ti-hand-point-right
+   - name: Time Management
+     icon_class: ti-hand-point-right
+   - name: Learning Strategies
+     icon_class: ti-hand-point-right
+   - name: Service Orientation
+     icon_class: ti-hand-point-right
+   - name: Active Learning
+     icon_class: ti-hand-point-right

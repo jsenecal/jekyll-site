@@ -282,9 +282,9 @@ margin-left: -17px; line-height: 50px; }
 /*skill*/
 .skill li {position: relative; margin-bottom: 55px; font-size:18px; text-transform: capitalize; color: #9ea8b6; font-weight: 600; }
 .skill .bar_container,  .bar { position: absolute; left: 0px; height: 14px; content: ""; top:30px;}
-.skill .bar_container { bottom: 0px; width: 100%; background-color: transparent; text-align: right; background: #f8f9fa; }
+.skill .bar_container { bottom: 0px; width: 100%; text-align: right; background: #f8f9fa; }
 .skill .bar {top: 0px; background: #abc502 !important; }
-.skill .pct { position: absolute; top: -30px; right: 0; opacity: 0; transition: opacity 0.3s linear; color: #9ea8b6 !important; }
+.skill .pct { visibility:hidden; position: absolute; top: -30px; right: 0; opacity: 0; transition: opacity 0.3s linear; color: #9ea8b6 !important; }
  /*skill-chart */
 .skill-chart { margin-top: 80px; margin-left: 3px; }
 .skill-chart .skill-chart-item { margin-bottom: 8px; height: 45px;  background: #9ea8b6; border-radius: 2px; opacity: 0.8; overflow: hidden; white-space: nowrap; }
@@ -297,18 +297,20 @@ margin-left: -17px; line-height: 50px; }
 .skill-chart .skill-chart-expand .expand.expand-left:before { margin-left: 0; }
 .skill-chart .skill-chart-expand .expand.expand-right { text-align: right; }
 .skill-chart .skill-chart-expand .expand.expand-right:before { margin-right: 0; }
+.detailed-skills { margin-bottom: 50px;}
 
  /*************************
-    language-skills 
+    pie-skills
 *************************/
-.language-skills { margin-top: 50px; }
-.language-skills h2 { margin-bottom: 30px; }
+.pie-skills { margin-top: 50px; }
+.pie-skills h2 { margin-bottom: 30px; }
 .chart { position: relative; display: inline-block; width: 150px; height: 150px; margin-top: 50px; margin-bottom: 20px; text-align: center; }
 .chart canvas { position: absolute; top: 0; left: 0; }
 .percent { display: inline-block; line-height: 150px; font-size: 36px; font-weight: 600; z-index: 2; color: #9ea8b6; }
 .percent:after { content: '%';  margin-left: 0.1em; font-size: .8em; }
  .chart-bar { position: relative;  }
  .chart-bar h3 { display: inline-block; font-weight: 600; color: #9ea8b6; line-height: 36px; vertical-align: middle; margin-top: 0px; padding-left: 20px; }
+
  /*knowledge*/
 .knowledge { margin-top: 50px; }
 .knowledge h2 { margin-bottom: 20px; } 
@@ -434,7 +436,7 @@ table.ui-datepicker-calendar tbody td.highlight  a {   background: #c6c6c6;   co
 .google-map .container-fluid { padding-right: 0px; padding-left: 0px; position: relative; }
 #google-map { padding: 0; }
 #map-canvas {width: 100%;height: 900px; }
-.google-map { margin-top: 30px; }
+.google-map { margin-top: 30px; padding: 0px; }
 
 /*************************
         contact
