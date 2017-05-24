@@ -1,5 +1,7 @@
 # Site settings
-title: Jonathan Senecal
+title:
+  en: Jonathan Senecal - Resume
+  fr: Jonathan Senecal - Page perso
 author:
   name: Jonathan Senecal
   email: contact@jonathansenecal.com
@@ -22,12 +24,10 @@ index:
   en: index.en.html
   fr: index.fr.html
 feed: /feed.xml
-baseurl: "/" # the subpath of your site, e.g. /blog
+baseurl: "/"
 collections:
   - sections
-url: "https://www.jonathansenecal.com" # the base hostname & protocol for your site
-twitter_username: infinityzxx
-github_username:  jsenecal
+url: "https://www.jonathansenecal.com"
 
 # Build settings
 markdown: kramdown

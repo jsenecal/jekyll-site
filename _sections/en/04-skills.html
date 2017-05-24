@@ -58,38 +58,16 @@ show: true
     </div>
 </div>
 <div class="row">
+    {%for skill in section.skills%}
     <div class="col-lg-3 col-md-3 col-sm-3">
         <div class="chart-bar">
-            <div class="chart" id="chart1" data-percent="73">
+            <div class="chart" id="chart1" data-percent="{{skill.pct}}">
                 <span class="percent"></span>
             </div>
-            <h3>English <br/> Experienced</h3>
+            <h3>{{skill.name|join:"<br/>"}}</h3>
         </div>
     </div>
-    <div class="col-lg-3 col-md-3 col-sm-3">
-        <div class="chart-bar">
-            <div class="chart" data-percent="55">
-                <span class="percent"></span>
-            </div>
-            <h3>French <br/>Advanced</h3>
-        </div>
-    </div>
-    <div class="col-lg-3 col-md-3 col-sm-3">
-        <div class="chart-bar">
-            <div class="chart" data-percent="89">
-                <span class="percent"></span>
-            </div>
-            <h3>Spanish <br/>Basic</h3>
-        </div>
-    </div>
-    <div class="col-lg-3 col-md-3 col-sm-3">
-        <div class="chart-bar">
-            <div class="chart" data-percent="95">
-                <span class="percent"></span>
-            </div>
-            <h3>German <br/>Basic</h3>
-        </div>
-    </div>
+    {%endfor%}
 </div>
 {%endcase%}
 {%endfor%}

@@ -1759,12 +1759,12 @@ table.ui-datepicker-calendar tbody td.highlight a {
     border-radius: 3px;
 }
 
-.testimonials-avtar {
+.testimonials-avatar {
     display: table-cell;
-    vertical-align: middle;
+    vertical-align: top;
 }
 
-.testimonials-avtar img {
+.testimonials-avatar img {
     width: 65px;
     border-radius: 50%;
 }
