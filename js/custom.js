@@ -1,22 +1,9 @@
-/*
-
- Template: Jonathan Senecal - Personal Vcard Resume HTML Template
- Author: potenzaglobalsolutions.com
- Version: 1.0
- Design and Developed by: potenzaglobalsolutions.com
-
- NOTE:
-
- */
-
-
 /*================================================
  [  Table of contents  ]
  ================================================
 
  :: Preloader
  :: Owl carousel
- :: Menu left-header
  :: Menu scroll
  :: NiceScroll
  :: PHP contact form
@@ -38,7 +25,7 @@
     $(window).load(function () {
 
         /*************************
-         preloader
+         Preloader
          *************************/
         $("#load").fadeOut();
         $('#loading').delay(0).fadeOut('slow');
@@ -59,30 +46,6 @@
     });
 
     /*************************
-     menu left-header
-     *************************/
-    $('#menu-icon').on("click", function (e) {
-        e.preventDefault();
-        e.stopPropagation();
-        if (!$(this).hasClass('active')) {
-            $(this).addClass('active');
-            $('#left-header').animate({'margin-left': 230}, 300);
-        } else {
-            $(this).removeClass('active');
-            $('#left-header').animate({'margin-left': 0}, 300);
-        }
-        return false;
-    });
-
-    $(window).resize(function () {
-        if ($(window).width() > 992) {
-
-            $("#menu-icon").removeClass('active');
-            $('#left-header').animate({'margin-left': 0}, 300);
-        }
-    });
-
-    /*************************
      Menu scroll
      *************************/
     $('#navbar,#scroll-down').on("click", function (e) {
@@ -91,14 +54,29 @@
                 var target = $(e.target.hash);
                 target = target.length ? target : $('[name=' + e.target.hash.slice(1) + ']');
                 if (target.length) {
-                    var gap = 0;
+                    var gap = 75;
+                    if ($('.navbar-default').hasClass('no-sticky')) {
+                        gap = 0;
+                    }
                     $('html,body').animate({
                         scrollTop: target.offset().top - gap
                     }, 900);
-
+                }
+                if ($('.navbar-toggle').css('display') != 'none') {
+                    $(".navbar-toggle").trigger("click");
                 }
             }
             return false;
+        }
+    });
+    $(window).scroll(function () {
+        if (!$('.navbar-default').hasClass('no-sticky')) {
+            if ($(this).scrollTop() > 10) {
+                $('.navbar-default').addClass('sticky');
+            }
+            else {
+                $('.navbar-default').removeClass('sticky');
+            }
         }
     });
     $('body').scrollspy({
@@ -121,20 +99,9 @@
         cursorborderradius: 0
     });
 
-    $(".navbar").niceScroll({
-        scrollspeed: 150,
-        mousescrollstep: 38,
-        cursorwidth: 5,
-        cursorborder: 0,
-        cursorcolor: '#2f3742',
-        autohidemode: true,
-        zindex: 999999999,
-        horizrailenabled: false,
-        cursorborderradius: 0,
-    });
 
     /*************************
-     php contact form
+     PHP contact form
      *************************/
     $("#contactform").submit(function (e) {
         $("#ajaxloader").show();
@@ -154,7 +121,7 @@
     });
 
     /*************************
-     chart
+     Chart
      *************************/
     $('.pie-skills').appear(function () {
             $('.chart').easyPieChart({
@@ -169,24 +136,23 @@
                     $(this.el).find('.percent').text(Math.round(percent));
                 }
             });
-
         },
         {
             offset: 400
         });
 
     /*************************
-     intro typer
+     Intro typer
      *************************/
     var win = $(window),
         foo = $('#typer');
     foo.typer(
         [
-            '<h2>I\'m a <bold>Network Architect</bold></h2>',
-            '<h2>I\'m a <bold>Software Architect</bold></h2>',
-            '<h2>I\'m a <bold>Project Manager</bold></h2>',
-            '<h2>I\'m a <bold>Team leader</bold></h2>',
-            '<h2>I\'m a <bold>Programmer</bold></h2>',
+            '<h2>I\'m a <b>Network Architect</b></h2>',
+            '<h2>I\'m a <b>Software Architect</b></h2>',
+            '<h2>I\'m a <b>Project Manager</b></h2>',
+            '<h2>I\'m a <b>Team leader</b></h2>',
+            '<h2>I\'m a <b>Programmer</b></h2>'
         ]
     );
     win.resize(function () {
@@ -197,7 +163,7 @@
     }).resize();
 
     /*************************
-     skill
+     Skill
      *************************/
     $('.skill').appear(function () {
         $(".bar").each(function () {
@@ -222,8 +188,9 @@
         offset: 400
     });
 
+
     /*************************
-     isotope
+     Isotope
      *************************/
     $(window).on("load resize", function (e) {
         var $container = $('.isotope'),
@@ -276,7 +243,7 @@
     });
 
     /*************************
-     contect open
+     Contact open
      *************************/
     var menu = $(".contact-content"),
         toggle = $(".contact-toggle"),
@@ -297,7 +264,6 @@
                 menu.removeClass("show-contact");
                 toggle.removeClass("show-contact");
             }
-
         } else {
             if (!Modernizr.csstransforms) {
                 menu.addClass("show-contact");
@@ -341,7 +307,7 @@
     });
 
     /*********************************
-     placeholder
+     Placeholder
      **********************************/
     $('[placeholder]').focus(function () {
         var input = $(this);
@@ -364,5 +330,4 @@
         })
     });
 
-
-})(jQuery); 
+})(jQuery);
