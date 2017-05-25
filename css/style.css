@@ -386,13 +386,9 @@ button.button-small:hover {
 /*************************
     header
 *************************/
-.menu-responsive {
-    display: none;
-}
 
 .header {
-    position: absolute;
-    top: 0;
+    position: fixed;
     width: 100%;
     overflow: visible;
     display: block;
@@ -452,6 +448,10 @@ button.button-small:hover {
 .navbar-header {
     float: none;
     text-align: center;
+}
+
+.navbar-header {
+    display: none;
 }
 
 .nav > li {

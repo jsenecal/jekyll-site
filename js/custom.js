@@ -101,19 +101,20 @@
 
 
     /*************************
-     PHP contact form
+     Contact form
      *************************/
-    $("#contactform").submit(function (e) {
+    var contactForm = $("#contactform");
+    contactForm.submit(function (e) {
         $("#ajaxloader").show();
-        $("#contactform").hide();
+        contactForm.hide();
         $.ajax({
             url: 'php/contact-form.php',
             data: $(this).serialize(),
             type: 'post',
             success: function (response) {
                 $("#ajaxloader").hide();
-                $("#contactform").show();
-                $("#contactform").find("input, textarea").val("");
+                contactForm.show();
+                contactForm.find("input, textarea").val("");
                 $("#formmessage").html(response).show().delay(2000).fadeOut('slow');
             }
         });
