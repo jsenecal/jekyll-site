@@ -143,27 +143,6 @@
         });
 
     /*************************
-     Intro typer
-     *************************/
-    var win = $(window),
-        foo = $('#typer');
-    foo.typer(
-        [
-            '<h2>I\'m a <b>Network Architect</b></h2>',
-            '<h2>I\'m a <b>Software Architect</b></h2>',
-            '<h2>I\'m a <b>Project Manager</b></h2>',
-            '<h2>I\'m a <b>Team leader</b></h2>',
-            '<h2>I\'m a <b>Programmer</b></h2>'
-        ]
-    );
-    win.resize(function () {
-        var fontSize = Math.max(Math.min(win.width() / (10), parseFloat(Number.POSITIVE_INFINITY)), parseFloat(Number.NEGATIVE_INFINITY));
-        foo.css({
-            fontSize: fontSize * .3 + 'px'
-        });
-    }).resize();
-
-    /*************************
      Skill
      *************************/
     $('.skill').appear(function () {
