@@ -1,9 +1,20 @@
+/*
+
+Template: Sam Martin - Personal Vcard Resume HTML Templat
+Author: potenzaglobalsolutions.com
+Version: 1.0
+Design and Developed by: potenzaglobalsolutions.com
+
+NOTE: This is main stylesheet of template, This file contains the styling for the actual Template. Please do not change anything here! write in a custom.css file if required!
+
+*/
+
 /*================================================
 [  Table of contents  ]
 ================================================
- 
+
 :: General
-:: Button 
+:: Button
 :: loading
 :: Intro bg
 :: Header
@@ -11,7 +22,7 @@
 :: Service
 :: Resume
 :: Skill
-:: Language-skills 
+:: Language-skills
 :: Portfolio
 :: Availability Calendar
 :: Blog
@@ -19,10 +30,10 @@
 :: Google-map
 :: Contact
 :: Contact popup
-:: : Inner page 
+:: : Inner page
 :: : Blog page
 :: : Blog signgle page
-:: : Portfolio single page
+:: : Portfolio signgle page
 :: : Error page
 
 ======================================
@@ -30,7 +41,7 @@
 ======================================*/
 
 /*************************
-        General
+    General
 *************************/
 html {
     -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
@@ -212,7 +223,6 @@ button.button-small:hover {
     width: 50px;
     margin-top: -25px;
     margin-left: -25px;
-    -ms-transform: rotate(45deg);
     -webkit-transform: rotate(45deg);
     -o-transform: rotate(45deg);
     transform: rotate(45deg);
@@ -370,11 +380,7 @@ button.button-small:hover {
 }
 
 .container-fluid {
-    padding: 0 60px;
-}
-
-.content-scroller {
-    margin-left: 230px;
+    padding: 0 150px;
 }
 
 /*************************
@@ -384,26 +390,35 @@ button.button-small:hover {
     display: none;
 }
 
-.navbar {
-    overflow-y: scroll;
-    overflow-x: hidden;
-    height: 100%;
-}
-
 .header {
-    position: fixed;
+    position: absolute;
+    top: 0;
+    width: 100%;
     overflow: visible;
     display: block;
-    left: 0;
-    width: 230px;
-    height: 100%;
-    top: 0;
     z-index: 999;
-    background: #282828;
-    padding-bottom: 110px;
+    background: transparent;
+    padding: 0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    transition: all 0.4s ease-in-out;
+    -webkit-transition: all 0.4s ease-in-out;
+    -o-transition: all 0.4s ease-in-out;
+    -moz-transition: all 0.4s ease-in-out;
 }
 
 /*menu*/
+.navbar-brand > img {
+    display: inline-block;
+}
+
+.navbar {
+    border-radius: 0;
+    transition: all 0.4s ease-in-out;
+    -webkit-transition: all 0.4s ease-in-out;
+    -o-transition: all 0.4s ease-in-out;
+    -moz-transition: all 0.4s ease-in-out;
+}
+
 .navbar-collapse {
     height: auto;
     border-top: 0;
@@ -425,7 +440,7 @@ button.button-small:hover {
 }
 
 .navbar {
-    max-width: 230px;
+    max-width: 100%;
     margin-right: 0;
     margin-left: 0;
 }
@@ -435,7 +450,12 @@ button.button-small:hover {
 .navbar-left,
 .navbar-right,
 .navbar-header {
-    float: none !important;
+    float: none;
+    text-align: center;
+}
+
+.nav > li {
+    display: inline-block;
 }
 
 .navbar-right .dropdown-menu {
@@ -447,21 +467,10 @@ button.button-small:hover {
     margin-right: 0;
 }
 
-.navbar-header {
-    margin: 10px 10px 35px 10px;
-}
-
-.navbar-brand {
-    height: inherit;
-}
-
-.navbar-brand > img {
-    height: 180px;
-}
-
 .navbar-default {
     background: transparent;
     border: 0;
+    margin-bottom: 0;
 }
 
 .navbar-default .navbar-nav > li > a {
@@ -470,8 +479,13 @@ button.button-small:hover {
     color: #ffffff;
     font-family: 'Raleway', sans-serif;
     font-weight: 600;
-    padding: 10px 15px 10px 30px;
-    border-right: 0 solid transparent;
+    padding: 20px 8px;
+    margin: 0 11px;
+    border-bottom: 3px solid transparent;
+}
+
+.navbar-default .navbar-nav > li:last-child > a {
+    padding-right: 0;
 }
 
 .navbar-default .navbar-nav > li > a:focus, .navbar-default .navbar-nav > li > a:hover {
@@ -481,15 +495,13 @@ button.button-small:hover {
 .navbar-default .navbar-nav > li > a.active, .navbar-default .navbar-nav > li > a:hover {
     background: transparent;
     color: #abc502;
-    box-shadow: 15px 0 0 0 #abc502 inset;
-    border-right: 5px solid #abc502;
+    border-bottom: 3px solid #abc502;
 }
 
 .navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:focus, .navbar-default .navbar-nav > .active > a:hover {
     background: transparent;
     color: #abc502;
-    box-shadow: 15px 0 0 0 #abc502 inset;
-    border-right: 5px solid #abc502;
+    border-bottom: 3px solid #abc502;
 }
 
 .navbar-default .navbar-nav > .open > a, .navbar-default .navbar-nav > .open > a:focus, .navbar-default .navbar-nav > .open > a:hover {
@@ -498,26 +510,14 @@ button.button-small:hover {
 }
 
 .navbar-default .dropdown-menu {
-    left: 24px;
+    left: 11px;
     background: #f4f5f6;
     box-shadow: none;
     border: 0;
 }
 
-.navbar-default .dropdown-menu:before {
-    width: 0;
-    height: 0;
-    border-style: solid;
-    border-width: 0 7px 7px 7px;
-    border-color: transparent transparent #ffffff transparent;
-    position: absolute;
-    top: -7px;
-    left: 16px;
-    content: "";
-}
-
 .navbar-nav > li > .dropdown-menu {
-    border-radius: 3px;
+    border-radius: 0 0 3px 3px;
 }
 
 .navbar-nav > li > .dropdown-menu li a {
@@ -535,46 +535,42 @@ button.button-small:hover {
     background: transparent;
 }
 
-/*menu-footer*/
-.menu-footer {
-    position: absolute;
-    bottom: 0;
+.navbar-nav > li > .dropdown-menu li a {
+    padding-left: 15px;
+}
+
+.nav .open > a, .nav .open > a:focus, .nav .open > a:hover {
+    border-color: #abc502;
+}
+
+#menu.sticky {
+    position: fixed;
+    top: 0;
     left: 0;
     right: 0;
+    padding: 0 150px;
+    z-index: 9999;
     width: 100%;
-    text-align: left;
-    margin: 20px 20px 20px 30px;
+    background: #282828;
+    transition: all 0.4s ease-in-out;
+    -webkit-transition: all 0.4s ease-in-out;
+    -o-transition: all 0.4s ease-in-out;
+    -moz-transition: all 0.4s ease-in-out;
 }
 
-.menu-footer .social {
-    margin-bottom: 14px;
+#menu.sticky .navbar-nav {
+    border-top: solid #abc502 10px;
+    transition: all 0.4s ease-in-out;
+    -webkit-transition: all 0.4s ease-in-out;
+    -o-transition: all 0.4s ease-in-out;
+    -moz-transition: all 0.4s ease-in-out;
 }
 
-.menu-footer .social ul li {
-    display: inline-block;
+#menu.sticky .navbar-nav > li:last-child > a {
+    padding-right: 0;
 }
 
-.menu-footer .social ul li a {
-    display: block;
-    font-size: 14px;
-    padding-right: 15px;
-    color: #ffffff;
-}
-
-.menu-footer .social ul li a:hover {
-    color: #abc502;
-}
-
-.menu-footer .copyright p {
-    color: #fff;
-    font-size: 12px;
-    text-transform: uppercase;
-    margin-bottom: 0;
-}
-
-/*************************
-          intro-bg
-*************************/
+/*intro*/
 .intro-bg {
     background-size: cover !important;
     background: no-repeat center;
@@ -594,10 +590,6 @@ button.button-small:hover {
     display: table-cell;
     height: 100%;
     vertical-align: middle;
-}
-
-.content-left {
-    padding-left: 7%;
 }
 
 .intro-content h1 {
@@ -795,7 +787,10 @@ button.button-small:hover {
 }
 
 /*block-contact*/
-/*.about{ margin-top: 60px; }*/
+.about {
+    margin-top: 50px;
+}
+
 .about .section-title {
     margin-bottom: 20px;
 }
@@ -1064,7 +1059,6 @@ button.button-small:hover {
 }
 
 .skill .pct {
-    visibility: hidden;
     position: absolute;
     top: -30px;
     right: 0;
@@ -1143,18 +1137,14 @@ button.button-small:hover {
     margin-right: 0;
 }
 
-.detailed-skills {
-    margin-bottom: 50px;
-}
-
 /*************************
-   pie-skills
+   language-skills
 *************************/
-.pie-skills {
+.language-skills {
     margin-top: 50px;
 }
 
-.pie-skills h2 {
+.language-skills h2 {
     margin-bottom: 30px;
 }
 
@@ -1257,8 +1247,8 @@ button.button-small:hover {
     background: transparent;
     text-transform: capitalize;
     transition: all 0.3s ease-in-out;
-    -webkit-transition: all 0.3s ease-in-out;
     -o-transition: all 0.3s ease-in-out;
+    -webkit-transition: all 0.3s ease-in-out;
     padding: 8px 0;
     box-shadow: 0 3px 0 0 transparent;
 }
@@ -1532,7 +1522,7 @@ table.ui-datepicker-calendar tbody td.highlight a {
 
 /*ui-datepicker*/
 .ui-widget-content {
-    background-color: transparent;
+    background: transparent;
     border: none;
     border-radius: 0;
 }
@@ -1761,7 +1751,7 @@ table.ui-datepicker-calendar tbody td.highlight a {
 
 .testimonials-avatar {
     display: table-cell;
-    vertical-align: top;
+    vertical-align: middle;
 }
 
 .testimonials-avatar img {
@@ -1825,7 +1815,6 @@ table.ui-datepicker-calendar tbody td.highlight a {
 
 .google-map {
     margin-top: 30px;
-    padding: 0;
 }
 
 /*************************
@@ -1839,7 +1828,7 @@ table.ui-datepicker-calendar tbody td.highlight a {
     background: rgba(40, 40, 40, 0.8);
     width: 32%;
     height: 100%;
-    z-index: 999;
+    z-index: 99;
     padding: 50px;
 }
 
@@ -1941,7 +1930,6 @@ table.ui-datepicker-calendar tbody td.highlight a {
 }
 
 .contact-content.show-contact {
-    -ms-transform: translateX(-300px);
     -webkit-transform: translate3d(-300px, 0, 0);
     transform: translate3d(-300px, 0, 0);
 }
@@ -1971,6 +1959,10 @@ table.ui-datepicker-calendar tbody td.highlight a {
     display: block;
     border-radius: 50%;
     text-align: center;
+    transition: all 0.5s ease-in-out;
+    -webkit-transition: all 0.5s ease-in-out;
+    -o-transition: all 0.5s ease-in-out;
+    -moz-transition: all 0.5s ease-in-out;
 }
 
 .no-touch .contact-toggle span:hover {
@@ -1979,10 +1971,6 @@ table.ui-datepicker-calendar tbody td.highlight a {
 
 .contact-toggle span.ti-comments {
     color: #ffffff;
-    transition: all 0.5s ease-in-out;
-    -webkit-transition: all 0.5s ease-in-out;
-    -o-transition: all 0.5s ease-in-out;
-    -moz-transition: all 0.5s ease-in-out;
 }
 
 .contact-toggle span.ti-comments:hover {
@@ -2132,6 +2120,10 @@ textarea:focus {
 /*************************
        blog page
 *************************/
+.inner-header {
+    position: relative;
+}
+
 .bg {
     background-clip: initial;
     background-origin: initial;
@@ -2142,10 +2134,10 @@ textarea:focus {
 }
 
 .page-header {
-    padding: 50px 10px;
+    padding: 220px 10px 50px;
     margin: 0;
     width: 100%;
-    height: 400px;
+    height: 570px;
     position: relative;
 }
 
@@ -2176,7 +2168,6 @@ textarea:focus {
 }
 
 .page-header .top-bar {
-    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
     padding-bottom: 30px;
 }
 
