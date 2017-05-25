@@ -368,7 +368,7 @@ button.button-small:hover {
 }
 
 .page-section {
-    padding: 60px 0;
+    padding: 30px 0;
 }
 
 .page-section-pt {
@@ -607,16 +607,64 @@ button.button-small:hover {
     font-weight: 600;
 }
 
-#typer {
+#typedjs {
     height: 40px;
 }
 
-#typer h2 {
+#typedjs h2 {
     font-size: 28px;
     color: #ffffff;
     font-weight: 600;
     text-transform: uppercase;
     font-family: 'Raleway', sans-serif;
+}
+
+.typed-cursor {
+    opacity: 1;
+    -webkit-animation: blink 0.7s infinite;
+    -moz-animation: blink 0.7s infinite;
+    animation: blink 0.7s infinite;
+}
+
+@keyframes blink {
+    0% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@-webkit-keyframes blink {
+    0% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@-moz-keyframes blink {
+    0% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+#typed-strings {
+    position: inherit;
+    display: none;
 }
 
 /*scroll-down*/
@@ -787,9 +835,7 @@ button.button-small:hover {
 }
 
 /*block-contact*/
-.about {
-    margin-top: 50px;
-}
+
 
 .about .section-title {
     margin-bottom: 20px;
@@ -1814,7 +1860,7 @@ table.ui-datepicker-calendar tbody td.highlight a {
 }
 
 .google-map {
-    margin-top: 30px;
+    padding: 0;
 }
 
 /*************************
