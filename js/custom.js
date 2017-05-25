@@ -8,7 +8,6 @@
  :: NiceScroll
  :: PHP contact form
  :: Chart
- :: Intro typer
  :: Skill
  :: Isotope
  :: Popup gallery

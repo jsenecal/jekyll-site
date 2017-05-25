@@ -15,10 +15,10 @@ permalink: /
                     <div class="row">
                         <div class="col-md-12 text-left content-left">
                             <h1><span> Hello, my name is </span> Jonathan Senecal </h1>
-                            <div id="typer"></div>
-                            <!--<div class="button-large">-->
-                                <!--<a href="#">Download my CV</a>-->
-                            <!--</div>-->
+                            <div id="typed-strings">
+                                {%for line in site.data.typed-intro%}<p>{{line}}</p>{%endfor%}
+                            </div>
+                            <div id="typedjs"></div>
                         </div>
                     </div>
                 </div>
