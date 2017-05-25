@@ -64,50 +64,49 @@ show: true
             <div class="chart" id="chart1" data-percent="{{skill.pct}}">
                 <span class="percent"></span>
             </div>
-            <h3>{{skill.name|join:"<br/>"}}</h3>
+            <h3>{{skill.name|split:" "|join:"<br/>"}}</h3>
         </div>
     </div>
     {%endfor%}
+</div>
+{%when "points" %}
+<div class="knowledge">
+    <div class="row">
+        <div class="col-lg-12 col-md-12">
+            <h2>{{section.title}}</h2>
+            <p>{{section.text|join:"<br/><br/>"}}</p>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-lg-4 col-md-4 col-sm-4">
+            <ul>
+                <li><span class="ti-hand-point-right"></span> Skills in training techniques.</li>
+                <li><span class="ti-hand-point-right"></span> Social Perceptiveness</li>
+                <li><span class="ti-hand-point-right"></span> Judgment and Decision Making</li>
+                <li><span class="ti-hand-point-right"></span> Active Listening</li>
+            </ul>
+        </div>
+        <div class="col-lg-4 col-md-4 col-sm-4">
+            <ul>
+                <li><span class="ti-hand-point-right"></span> Personnel and Human Resources</li>
+                <li><span class="ti-hand-point-right"></span> Attention to Detail</li>
+                <li><span class="ti-hand-point-right"></span> Personal Service</li>
+                <li><span class="ti-hand-point-right"></span> Reading Comprehension</li>
+            </ul>
+        </div>
+        <div class="col-lg-4 col-md-4 col-sm-4">
+            <ul>
+                <li><span class="ti-hand-point-right"></span> Time Management</li>
+                <li><span class="ti-hand-point-right"></span> Learning Strategies</li>
+                <li><span class="ti-hand-point-right"></span> Service Orientation</li>
+                <li><span class="ti-hand-point-right"></span> Active Learning</li>
+            </ul>
+        </div>
+    </div>
 </div>
 {%endcase%}
 {%endfor%}
 
 
-    <div class="knowledge">
-        <div class="row">
-            <div class="col-lg-12 col-md-12">
-                <h2>Knowledge</h2>
-                <p>Auis nostrud exercitation ullamco laboris nisi ut aliquip exea. commodo consequat. Duis
-                    aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-                    pariatur. Commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit
-                    esse cillum dolore eu fugiat nulla pariatur. </p>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-lg-4 col-md-4 col-sm-4">
-                <ul>
-                    <li><span class="ti-hand-point-right"></span> Skills in training techniques.</li>
-                    <li><span class="ti-hand-point-right"></span> Social Perceptiveness</li>
-                    <li><span class="ti-hand-point-right"></span> Judgment and Decision Making</li>
-                    <li><span class="ti-hand-point-right"></span> Active Listening</li>
-                </ul>
-            </div>
-            <div class="col-lg-4 col-md-4 col-sm-4">
-                <ul>
-                    <li><span class="ti-hand-point-right"></span> Personnel and Human Resources</li>
-                    <li><span class="ti-hand-point-right"></span> Attention to Detail</li>
-                    <li><span class="ti-hand-point-right"></span> Personal Service</li>
-                    <li><span class="ti-hand-point-right"></span> Reading Comprehension</li>
-                </ul>
-            </div>
-            <div class="col-lg-4 col-md-4 col-sm-4">
-                <ul>
-                    <li><span class="ti-hand-point-right"></span> Time Management</li>
-                    <li><span class="ti-hand-point-right"></span> Learning Strategies</li>
-                    <li><span class="ti-hand-point-right"></span> Service Orientation</li>
-                    <li><span class="ti-hand-point-right"></span> Active Learning</li>
-                </ul>
-            </div>
-        </div>
-    </div>
+
 
