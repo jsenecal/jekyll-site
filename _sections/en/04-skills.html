@@ -78,30 +78,23 @@ show: true
         </div>
     </div>
     <div class="row">
-        <div class="col-lg-4 col-md-4 col-sm-4">
+        {%assign col_qty = 3%}
+        
+        {%assign qty_per_col = section.skills | size | divided_by:col_qty%}
+        {%assign col_class_size = 12|divided_by:col_qty%}
+        {%assign position = 0%}
+
+        {% for i in (1..col_qty) %}
+        <div class="col-lg-{{col_class_size}} col-md-{{col_class_size}} col-sm-{{col_class_size}}">
             <ul>
-                <li><span class="ti-hand-point-right"></span> Skills in training techniques.</li>
-                <li><span class="ti-hand-point-right"></span> Social Perceptiveness</li>
-                <li><span class="ti-hand-point-right"></span> Judgment and Decision Making</li>
-                <li><span class="ti-hand-point-right"></span> Active Listening</li>
+                {%for skill in section.skills limit:qty_per_col offset:position%}
+                <li><span class="{{skill.icon_class}}"></span> {{skill.name}}</li>
+                {%endfor%}
+                {%assign position = position|plus:qty_per_col%}
+
             </ul>
         </div>
-        <div class="col-lg-4 col-md-4 col-sm-4">
-            <ul>
-                <li><span class="ti-hand-point-right"></span> Personnel and Human Resources</li>
-                <li><span class="ti-hand-point-right"></span> Attention to Detail</li>
-                <li><span class="ti-hand-point-right"></span> Personal Service</li>
-                <li><span class="ti-hand-point-right"></span> Reading Comprehension</li>
-            </ul>
-        </div>
-        <div class="col-lg-4 col-md-4 col-sm-4">
-            <ul>
-                <li><span class="ti-hand-point-right"></span> Time Management</li>
-                <li><span class="ti-hand-point-right"></span> Learning Strategies</li>
-                <li><span class="ti-hand-point-right"></span> Service Orientation</li>
-                <li><span class="ti-hand-point-right"></span> Active Learning</li>
-            </ul>
-        </div>
+        {%endfor%}
     </div>
 </div>
 {%endcase%}
