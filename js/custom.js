@@ -91,7 +91,7 @@
         mousescrollstep: 38,
         cursorwidth: 7,
         cursorborder: 0,
-        cursorcolor: '#2f3742',
+        cursorcolor: '#abc502',
         autohidemode: true,
         zindex: 999999999,
         horizrailenabled: false,

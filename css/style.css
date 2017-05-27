@@ -1797,7 +1797,7 @@ table.ui-datepicker-calendar tbody td.highlight a {
 
 .testimonials-avatar {
     display: table-cell;
-    vertical-align: middle;
+    vertical-align: top;
 }
 
 .testimonials-avatar img {

@@ -39,5 +39,7 @@ gems:
 # i18n specific config
 languages: ["en", "fr"]
 default_lang: "en"
-exclude_from_localization: ["javascript", "images", "css"]
+exclude_from_localization: ["images", "css"]
 parallel_localization: true
+
+exclude: [.idea,]
