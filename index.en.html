@@ -15,10 +15,9 @@ permalink: /
                     <div class="row">
                         <div class="col-md-12 text-left content-left">
                             <h1><span> Hello, my name is </span> Jonathan Senecal </h1>
-                            <div id="typed-strings">
-                                {%for line in site.data.typed-intro%}<p>{{line}}</p>{%endfor%}
-                            </div>
-                            <div id="typedjs"></div>
+                            {% assign intro_strings = site.data.intro | map: 'type' %}
+                            <div id="intro-strings">{{intro_strings|join:"<br/>"}}</div>
+                            <div class="type-it"></div>
                         </div>
                     </div>
                 </div>

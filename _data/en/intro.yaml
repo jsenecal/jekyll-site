@@ -1,0 +1,23 @@
+#  I design and build networks
+- type: I design and build networks
+  delete: 18
+#  I design infrastructures too
+- type: infrastructures too
+  delete: 26
+#  I write code
+- type: write code!
+  delete: 1
+#  I write code, all sorts of code
+- type: ", all sorts of code"
+  delete: 29
+#  I manage all kinds of projects
+- type: manage all kinds of projects
+  delete: 21
+#  I manage teams as well
+- type: teams as well
+  delete: 20
+#  I would like to change the world...
+- type: would like to change the world...
+  delete: 3
+- type: " - I\\'m just looking for a way."
+  delete: 0

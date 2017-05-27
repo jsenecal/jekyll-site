@@ -607,62 +607,16 @@ button.button-small:hover {
     font-weight: 600;
 }
 
-#typedjs {
+.type-it {
     height: 40px;
-}
-
-#typedjs h2 {
     font-size: 28px;
-    color: #ffffff;
+    color: #ffffff !important;
     font-weight: 600;
     text-transform: uppercase;
     font-family: 'Raleway', sans-serif;
 }
 
-.typed-cursor {
-    opacity: 1;
-    -webkit-animation: blink 0.7s infinite;
-    -moz-animation: blink 0.7s infinite;
-    animation: blink 0.7s infinite;
-}
-
-@keyframes blink {
-    0% {
-        opacity: 1;
-    }
-    50% {
-        opacity: 0;
-    }
-    100% {
-        opacity: 1;
-    }
-}
-
-@-webkit-keyframes blink {
-    0% {
-        opacity: 1;
-    }
-    50% {
-        opacity: 0;
-    }
-    100% {
-        opacity: 1;
-    }
-}
-
-@-moz-keyframes blink {
-    0% {
-        opacity: 1;
-    }
-    50% {
-        opacity: 0;
-    }
-    100% {
-        opacity: 1;
-    }
-}
-
-#typed-strings {
+#intro-strings {
     position: inherit;
     display: none;
 }
@@ -835,7 +789,6 @@ button.button-small:hover {
 }
 
 /*block-contact*/
-
 
 .about .section-title {
     margin-bottom: 20px;
