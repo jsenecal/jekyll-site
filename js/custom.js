@@ -61,20 +61,22 @@
                         scrollTop: target.offset().top - gap
                     }, 900);
                 }
-                if ($('.navbar-toggle').css('display') != 'none') {
-                    $(".navbar-toggle").trigger("click");
+                var navbarToggleSelector = $('.navbar-toggle');
+                if (navbarToggleSelector.css('display') != 'none') {
+                    navbarToggleSelector.trigger("click");
                 }
             }
             return false;
         }
     });
     $(window).scroll(function () {
-        if (!$('.navbar-default').hasClass('no-sticky')) {
+        var navbarDefaultSelector = $('.navbar-default');
+        if (!navbarDefaultSelector.hasClass('no-sticky')) {
             if ($(this).scrollTop() > 10) {
-                $('.navbar-default').addClass('sticky');
+                navbarDefaultSelector.addClass('sticky');
             }
             else {
-                $('.navbar-default').removeClass('sticky');
+                navbarDefaultSelector.removeClass('sticky');
             }
         }
     });

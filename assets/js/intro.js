@@ -5,7 +5,7 @@ lang: en
 /**
  * Created by Jonathan Senecal on 2017-05-24.
  */
-$('.type-it').typeIt({lifeLike:true,autoStart:false,loop: true})
+$('.type-it').typeIt({lifeLike:true,autoStart:false,startDelay: 2000})
 {%for line in site.data.intro%}
-    .tiType('{{line.type}}').tiPause(1200){%if forloop.last%};{%else%}.tiDelete({{line.delete}}){%endif%}
+    .tiType('{{line.type}}').tiPause(3000){%if forloop.last%};{%else%}.tiDelete({{line.delete}}){%endif%}
     {%endfor%}

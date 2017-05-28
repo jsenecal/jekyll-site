@@ -1,20 +1,7 @@
 # Site settings
 title:
-  en: Jonathan Senecal - Resume
-  fr: Jonathan Senecal - Page perso
-author:
-  name: Jonathan Senecal
-  email: contact@jonathansenecal.com
-  phone: 514.710.0100
-  dob:
-    en: September 6, 1985
-    fr: 6 Septembre 1985
-  address:
-    en: 7787 de Bordeaux street, Montreal (Quebec), Canada
-    fr: 7787 rue de Bordeaux, Montréal (Quebec), Canada
-  nationality:
-    en: Canadian
-    fr: Canadienne
+  en: "Jonathan Senecal :: Resume"
+  fr: "Jonathan Senecal :: Page perso"
 description:
   en: Jonathan Senecal - Personal Page
   fr: Jonathan Senecal - Page Personnelle

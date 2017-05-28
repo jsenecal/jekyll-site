@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+<!--head-->
+{% include cv/head.html %}
+<!--/head-->
+<body>
+
+<div id="wrap">
+    <!--header-->
+    <div id="header">
+        <div class="row cv-section">
+            <div class="span9">
+                <div class="cv-section-title">
+                    <img src="/assets/images/me.jpg " alt="">
+                    <h1>
+                        John Smith
+                        <small>Front End Developer</small>
+                    </h1>
+                </div><!-- end .cv-section-title -->
+            </div><!-- end .span9 -->
+            <div class="span3">
+
+                <div class="cv-item">
+
+                    <div class="social-media fixed">
+
+                        <a href="#" class="facebook-icon social-icon">
+                            <i class="fa fa-facebook"></i>
+                        </a>
+
+                        <a href="#" class="twitter-icon social-icon">
+                            <i class="fa fa-twitter"></i>
+                        </a>
+
+                        <a href="#" class="googleplus-icon social-icon">
+                            <i class="fa fa-google-plus"></i>
+                        </a>
+
+                        <a href="#" class="linkedin-icon social-icon">
+                            <i class="fa fa-linkedin"></i>
+                        </a>
+
+                    </div>
+
+                    <p class="last">
+                        <span class="hidden-tablet">Email: </span><a
+                            href="mailto:john@sitename.com">john@sitename.com</a>
+                        <br><span class="hidden-tablet">Phone: </span>(123) 456-7890
+                        <br><span class="hidden-tablet">Web: </span><a href="#">www.johnsmithsite.com</a>
+                    </p>
+
+                </div><!-- end .cv-item -->
+
+            </div><!-- end .span3 -->
+        </div><!-- end .cv-section -->
+
+        <!-- //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// -->
+
+    </div>
+    <!--/header-->
+
+    <div id="content">
+        {{ content }}
+    </div>
+    <!--footer-->
+    {% include cv/footer.html %}
+    <!--/footer-->
+</div>
+
+<!--javascript-->
+{% include cv/bottom-scripts.html %}
+<!--/javascript-->
+</body>
+</html>

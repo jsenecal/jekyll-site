@@ -1,45 +1,3 @@
-/*
-
-Template: Sam Martin - Personal Vcard Resume HTML Templat
-Author: potenzaglobalsolutions.com
-Version: 1.0
-Design and Developed by: potenzaglobalsolutions.com
-
-NOTE: This is main stylesheet of template, This file contains the styling for the actual Template. Please do not change anything here! write in a custom.css file if required!
-
-*/
-
-/*================================================
-[  Table of contents  ]
-================================================
-
-:: General
-:: Button
-:: loading
-:: Intro bg
-:: Header
-:: About
-:: Service
-:: Resume
-:: Skill
-:: Language-skills
-:: Portfolio
-:: Availability Calendar
-:: Blog
-:: Testimonials
-:: Google-map
-:: Contact
-:: Contact popup
-:: : Inner page
-:: : Blog page
-:: : Blog signgle page
-:: : Portfolio signgle page
-:: : Error page
-
-======================================
-[ End table content ]
-======================================*/
-
 /*************************
     General
 *************************/
@@ -1139,11 +1097,11 @@ button.button-small:hover {
 /*************************
    language-skills
 *************************/
-.language-skills {
+.pie-skills {
     margin-top: 50px;
 }
 
-.language-skills h2 {
+.pie-skills h2 {
     margin-bottom: 30px;
 }
 

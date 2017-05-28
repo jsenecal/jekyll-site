@@ -1,24 +1,24 @@
-#  I design and build networks
-- type: I am a problem solver
-  delete: 19
-#  I design and build networks
-- type: I design and build networks
-  delete: 8
-#  I design and build infrastructures too
-- type: infrastructures too
-  delete: 36
-#  I write code
-- type: write code!
+#  I am a problem solver...
+- type: I am a problem solver...
+  delete: 22
+#  I design and build networks.
+- type: design and build networks.
+  delete: 9
+#  I design and build infrastructures too!
+- type: infrastructures too!
+  delete: 37
+#  I write code.
+- type: write code.
   delete: 1
-#  I write code, all sorts of code
-- type: ", all sorts of code"
-  delete: 29
-#  I manage all kinds of projects
-- type: manage all kinds of projects
-  delete: 21
+#  I write code, all sorts of code.
+- type: ", all sorts of code."
+  delete: 30
+#  I manage all kinds of projects.
+- type: manage all kinds of projects.
+  delete: 22
 #  I manage teams as well
-- type: teams as well
-  delete: 20
+- type: teams as well.
+  delete: 21
 #  I would like to change the world...
 - type: would like to change the world...
   delete: 3
