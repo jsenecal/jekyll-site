@@ -1,9 +1,12 @@
 #  I design and build networks
+- type: I am a problem solver
+  delete: 19
+#  I design and build networks
 - type: I design and build networks
-  delete: 18
-#  I design infrastructures too
+  delete: 8
+#  I design and build infrastructures too
 - type: infrastructures too
-  delete: 26
+  delete: 36
 #  I write code
 - type: write code!
   delete: 1
@@ -19,5 +22,5 @@
 #  I would like to change the world...
 - type: would like to change the world...
   delete: 3
-- type: " - I\\'m just looking for a way."
+- type: " - I\\'m still looking for a way."
   delete: 0
