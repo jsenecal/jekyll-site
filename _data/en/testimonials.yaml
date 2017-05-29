@@ -1,3 +1,7 @@
+- name: Philippe Blanchard
+  title: Senior Project Manager
+  comment: Jo is one of the most brilliant people I know. For anything related to Linux, network, or project-managing complex ERP projects, I would ask nobody else.
+  picture_path: assets/images/faces/pblanchard.jpg
 - name: Oleg Sapanyuk
   title: NOC Specialist
   comment:
@@ -5,13 +9,15 @@
     - He is not one to shy away from a challenge; on the contrary, he is constantly pushing himself to learn new things, or improve on what he already knows. To top it all off, he is always willing to help, and is always a fun guy to work with.
     - Jonathan was one of the reasons I was looking forward to going to work in the morning, and I hope I get to work with him again.
   picture_path: assets/images/faces/osapanyuk.jpg
-- name: Philippe Blanchard
-  title: Senior Project Manager
-  comment: Jo is one of the most brilliant people I know. For anything related to Linux, network, or project-managing complex ERP projects, I would ask nobody else.
-  picture_path: assets/images/faces/pblanchard.jpg
 - name: Eric Dugas
   title: Senior Network Operations
   comment:
     - I had the pleasure to know Jonathan for a little more than 7 years and worked directly with him for the past 4 years.
     - I can say that Jonathan is a very helping and easy-going guy, full of experience and has deep knowledge in many domains including fibre optic network engineering, electrical engineering, NetOps, DevOps and SysOps. He's a great teacher, a team player and definitely a huge asset to have in your company!
   picture_path: assets/images/faces/edugas.jpg
+- name: Leifur Halldor Asgeirsson
+  title: DevOps / Software Developer
+  comment:
+      - I've worked under Jonathan's management on software and devops projects. He strives to produce quality results and to exceed expectations, and to that end he skillfully finds ways to play to his team's strengths. He has a talent for passing along his expertise, and makes good use of the expertise of others by listening and keeping an open mind to proposed solutions.
+      - A real team player, Jonathan is usually the first to lend a hand when the need arises.
+    picture_path: assets/images/faces/lasgeirsson.jpg
