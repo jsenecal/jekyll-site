@@ -22,8 +22,14 @@
 - type: " and teams as well."
   delete: 58
 #  I am a:
-- type: "I am a Problem sol"
-  delete: 12
-  pause: 500
-#  Technical problem solver
+- type: "I am a"
+  pause: 1000
+- type: .
+  pause: 1000
+- type: .
+  pause: 1000
+- type: .
+  pause: 1500
+  delete: 9
+#  Technological problem solver
 - type: Technological problem solver
