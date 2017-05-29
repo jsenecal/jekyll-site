@@ -1,7 +1,3 @@
-- name: Philippe Blanchard
-  title: Senior Project Manager
-  comment: Jo is one of the most brilliant people I know. For anything related to Linux, network, or project-managing complex ERP projects, I would ask nobody else.
-  picture_path: assets/images/faces/pblanchard.jpg
 - name: Oleg Sapanyuk
   title: NOC Specialist
   comment:
@@ -15,6 +11,10 @@
     - I had the pleasure to know Jonathan for a little more than 7 years and worked directly with him for the past 4 years.
     - I can say that Jonathan is a very helping and easy-going guy, full of experience and has deep knowledge in many domains including fibre optic network engineering, electrical engineering, NetOps, DevOps and SysOps. He's a great teacher, a team player and definitely a huge asset to have in your company!
   picture_path: assets/images/faces/edugas.jpg
+- name: Philippe Blanchard
+  title: Senior Project Manager
+  comment: Jo is one of the most brilliant people I know. For anything related to Linux, network, or project-managing complex ERP projects, I would ask nobody else.
+  picture_path: assets/images/faces/pblanchard.jpg
 - name: Leifur Halldor Asgeirsson
   title: DevOps / Software Developer
   comment:
