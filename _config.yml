@@ -8,6 +8,7 @@ description:
 keywords: ["cv", "resume", "networking", "réseau", "project manager", "gestion de projets", "curriculum vitae", "work", "travail",
           "experience", "guru"]
 cv_enabled: false
+google_api_key: ENV_GAPIKEY
 index:
   en: index.en.html
   fr: index.fr.html
