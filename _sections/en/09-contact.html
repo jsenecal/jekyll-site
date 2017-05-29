@@ -15,11 +15,11 @@ includes_heading: true
             <div class="address">
                 <ul>
                     <li><span class="ti-location-pin"></span>
-                        <p>{{site.author.address[site.active_lang]}}</p></li>
+                        <p>{{site.data.profile.address}}</p></li>
                     <li><span class="ti-marker-alt"></span>
-                        <p><a href="mailto:{{site.author.email}}">{{site.author.email}}</a></p></li>
+                        <p><a href="mailto:{{site.data.profile.email}}">{{site.data.profile.email}}</a></p></li>
                     <li><span class="ti-mobile"></span>
-                        <p>{{site.author.phone}}</p></li>
+                        <p>{{site.data.profile.phone}}</p></li>
                 </ul>
             </div>
             <div class="social">
@@ -27,35 +27,35 @@ includes_heading: true
                 <p>You can follow me on social networks or star me on GitHub to get the latest from me and much more.</p>
                 {%include social_buttons.html%}
             </div>
-            <!--<div class="button-large"><a href="#">Download my CV</a></div>-->
+            <div class="button-large"><a href="/cv">Download/Print my CV</a></div>
         </div>
-        <div class="contact-form">
-            <div id="contact-wrapper">
-                <div class="contact-content">
-                    <div id="formmessage">Success/Error Message Goes Here</div>
-                    <form class="form-horizontal" id="contactform" method="post"
-                          action="http://themes.potenzaglobalsolutions.com/html/sam-martin/trainer/layout-1/php/contact-form.php">
-                        <div class="contact-form">
-                            <h4>Drop me a line</h4>
-                            <p>Use this form to tell me about your project goals and needs. I will be in touch
-                                within 24 hours.</p>
-                            <input id="name" type="text" placeholder="Name*" name="name">
-                            <input type="email" placeholder="Email*" name="email">
-                            <input type="text" placeholder="Phone*" name="phone">
-                            <textarea class="input-message" placeholder="Comment*" rows="7"
-                                      name="message"></textarea>
-                            <input type="hidden" name="action" value="sendEmail"/>
-                            <button id="submit" name="submit" type="submit" value="Send" class="button-small"> Say
-                                Hello!
-                            </button>
-                        </div>
-                    </form>
-                    <div id="ajaxloader" style="display:none"><img class="center-block"
-                                                                   src="images/ajax-loader-white.gif" alt=""></div>
-                </div>
-                <a href="#" class="contact-toggle"><span class="ti-comments"></span></a>
-            </div>
-        </div>
+        <!--<div class="contact-form">-->
+            <!--<div id="contact-wrapper">-->
+                <!--<div class="contact-content">-->
+                    <!--<div id="formmessage">Success/Error Message Goes Here</div>-->
+                    <!--<form class="form-horizontal" id="contactform" method="post"-->
+                          <!--action="http://themes.potenzaglobalsolutions.com/html/sam-martin/trainer/layout-1/php/contact-form.php">-->
+                        <!--<div class="contact-form">-->
+                            <!--<h4>Drop me a line</h4>-->
+                            <!--<p>Use this form to tell me about your project goals and needs. I will be in touch-->
+                                <!--within 24 hours.</p>-->
+                            <!--<input id="name" type="text" placeholder="Name*" name="name">-->
+                            <!--<input type="email" placeholder="Email*" name="email">-->
+                            <!--<input type="text" placeholder="Phone*" name="phone">-->
+                            <!--<textarea class="input-message" placeholder="Comment*" rows="7"-->
+                                      <!--name="message"></textarea>-->
+                            <!--<input type="hidden" name="action" value="sendEmail"/>-->
+                            <!--<button id="submit" name="submit" type="submit" value="Send" class="button-small"> Say-->
+                                <!--Hello!-->
+                            <!--</button>-->
+                        <!--</div>-->
+                    <!--</form>-->
+                    <!--<div id="ajaxloader" style="display:none"><img class="center-block"-->
+                                                                   <!--src="images/ajax-loader-white.gif" alt=""></div>-->
+                <!--</div>-->
+                <!--<a href="#" class="contact-toggle"><span class="ti-comments"></span></a>-->
+            <!--</div>-->
+        <!--</div>-->
 
 <!-- map -->
 <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAEDPnmrPaqwXxmOFC7k6LzJH4xvuv8My8" type="text/javascript" defer='defer'></script>

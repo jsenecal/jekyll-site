@@ -29,6 +29,7 @@ a:focus, a:hover {
     -moz-transition: all 0.5s ease-out 0s;
     -o-transition: all 0.5s ease-out 0s;
     transition: all 0.5s ease-out 0s;
+    color: #abc502;
 }
 
 ol, ul {
@@ -824,6 +825,11 @@ button.button-small:hover {
     font-size: 16px;
     font-style: italic;
     line-height: 30px;
+}
+
+.about-block p a{
+    color: #9ea8b6;
+    text-decoration: underline;
 }
 
 .about-block p b {
@@ -1793,6 +1799,11 @@ table.ui-datepicker-calendar tbody td.highlight a {
     color: #ffffff;
     font-weight: 100;
     font-size: 40px;
+}
+
+
+.contact a {
+    color: #fff;
 }
 
 .contact .address {

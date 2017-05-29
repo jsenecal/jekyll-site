@@ -47,13 +47,13 @@
     /*************************
      Menu scroll
      *************************/
-    $('#navbar,#scroll-down').on("click", function (e) {
+    $('a.page-scroll').on("click", function (e) {
         if ($(e.target).is('a.page-scroll')) {
             if (location.pathname.replace(/^\//, '') == e.target.pathname.replace(/^\//, '') && location.hostname == e.target.hostname) {
                 var target = $(e.target.hash);
                 target = target.length ? target : $('[name=' + e.target.hash.slice(1) + ']');
                 if (target.length) {
-                    var gap = 75;
+                    var gap = 72;
                     if ($('.navbar-default').hasClass('no-sticky')) {
                         gap = 0;
                     }
