@@ -24,10 +24,13 @@
 #  I am a:
 - type: "I am a"
   pause: 1000
+  delete: 0
 - type: .
   pause: 1000
+  delete: 0
 - type: .
   pause: 1000
+  delete: 0
 - type: .
   pause: 1500
   delete: 9
