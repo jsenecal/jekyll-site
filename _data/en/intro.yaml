@@ -23,7 +23,7 @@
   delete: 58
 #  I am a:
 - type: "I am a Problem sol"
-  delete: 18
-  pause: 200
+  delete: 12
+  pause: 500
 #  Technical problem solver
 - type: Technological problem solver
