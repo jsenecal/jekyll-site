@@ -7,5 +7,5 @@ lang: en
  */
 $('.type-it').typeIt({lifeLike:true,autoStart:false,startDelay: 2000})
 {%for line in site.data.intro%}
-    .tiType('{{line.type}}').tiPause(3000){%if forloop.last%};{%else%}.tiDelete({{line.delete}}){%endif%}
+    .tiType('{{line.type}}').tiPause({%if line.pause%}{{line.pause}}{%else%}3000{%endif%}){%if forloop.last%};{%else%}.tiDelete({{line.delete}}){%endif%}
     {%endfor%}

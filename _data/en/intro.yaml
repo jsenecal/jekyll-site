@@ -5,19 +5,25 @@
 - type: design and build networks.
   delete: 9
 #  I design and build infrastructures too!
-- type: infrastructures too!
-  delete: 37
-#  I write code.
-- type: write code.
+- type: infrastructures too...
+  delete: 39
+#  I can write code.
+- type: can write code.
   delete: 1
-#  I write code, all sorts of code.
+  pause: 400
+#  I can write code, all sorts of code.
 - type: ", all sorts of code."
-  delete: 30
-#  I manage all kinds of projects.
-- type: manage all kinds of projects.
-  delete: 22
-#  I manage teams as well
-- type: teams as well.
-  delete: 23
+  delete: 34
+#  I can also manage all kinds of projects.
+- type: can also manage all kinds of projects.
+  delete: 1
+  pause: 500
+#  I can also manage all kinds of projects and teams as well.
+- type: " and teams as well."
+  delete: 58
+#  I am a:
+- type: "I am a Problem sol"
+  delete: 18
+  pause: 200
 #  Technical problem solver
 - type: Technological problem solver
