@@ -27,7 +27,7 @@ includes_heading: true
                 <p>You can follow me on social networks or star me on GitHub to get the latest from me and much more.</p>
                 {%include social_buttons.html%}
             </div>
-            <div class="button-large"><a href="/cv">Download/Print my CV</a></div>
+            {%if site.cv_enabled%}<div class="button-large"><a href="/cv">Download/Print my CV</a></div>{%endif%}
         </div>
         <!--<div class="contact-form">-->
             <!--<div id="contact-wrapper">-->

@@ -7,6 +7,7 @@ description:
   fr: Jonathan Senecal - Page Personnelle
 keywords: ["cv", "resume", "networking", "réseau", "project manager", "gestion de projets", "curriculum vitae", "work", "travail",
           "experience", "guru"]
+cv_enabled: false
 index:
   en: index.en.html
   fr: index.fr.html
