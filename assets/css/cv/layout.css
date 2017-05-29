@@ -54,13 +54,18 @@
    ========================================================================== */
 
 	/* CV Section */
-	
-	.cv-section {
-		padding: 65px 0;
-		border-top: 1px solid #dadada; 
-	}
-	
-	#header .cv-section:first-child { border-top: 10px solid #abc502; }
+
+.cv-section {
+	padding: 65px 0;
+	border-top: 1px solid #dadada;
+}
+
+.no-border {
+	padding: 65px 0;
+	border: 0 !important;
+}
+
+#header .cv-section:first-child { border-top: 10px solid #abc502; }
 	
 	/* CV Section Title */
 	

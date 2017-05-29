@@ -1,34 +1,68 @@
-- section_header: Experience
+- section_header: Work Experience
   items:
   - icon_class: ti-ruler-pencil
     location: EBOX inc.
     date_from: December 2016
     date_to: May 2017
     title: Director, Networking, Systems and Infrastructure
-    text: While I was at EBOX, I was responsible of the ...
+    text: While I was at EBOX, I was responsible of the Lorem ipsum dolor sit amet,
+          consectetur adipiscing elit. Nunc vehicula, magna et bibendum
+          malesuada, purus augue suscipit dolor, vitae fringilla dui nibh non lectus. Curabitur in
+          pellentesque tortor. Nunc posuere vestibulum augue, quis posuere orci blandit vitae. Suspendisse
+          dignissim elit dui, ac dictum felis interdum nec.
+    points:
+      - Lorem ipsum dolor sit amet, consectetur adipiscing elita
+      - Vivamus vitae libero odio, eu interdum elit
+      - Donec dignissim purus vel leo accumsan interdum
+      - Proin sit amet massa mi, in volutpat ante
 
   - icon_class: ti-ruler-pencil
     location: Pre2Post Inc. / ZEROFAIL
     date_from: March 2015
     date_to: December 2016
     title: Director, Research and Developpement
-    text: Something
+    text: While I was at ZEROFAIL, I was responsible of the Lorem ipsum dolor sit amet,
+          consectetur adipiscing elit. Nunc vehicula, magna et bibendum
+          malesuada, purus augue suscipit dolor, vitae fringilla dui nibh non lectus. Curabitur in
+          pellentesque tortor. Nunc posuere vestibulum augue, quis posuere orci blandit vitae. Suspendisse
+          dignissim elit dui, ac dictum felis interdum nec.
+    points:
+      - Lorem ipsum dolor sit amet, consectetur adipiscing elita
+      - Vivamus vitae libero odio, eu interdum elit
+      - Donec dignissim purus vel leo accumsan interdum
+      - Proin sit amet massa mi, in volutpat ante
 
   - icon_class: ti-ruler-pencil
     location: Pre2Post Inc. / ZEROFAIL
     date_from: July 2010
     date_to: March 2015
     title: Director, Network Management Group
-    text: Some text
+    text: While I was at ZEROFAIL, I was responsible of the Lorem ipsum dolor sit amet,
+          consectetur adipiscing elit. Nunc vehicula, magna et bibendum
+          malesuada, purus augue suscipit dolor, vitae fringilla dui nibh non lectus. Curabitur in
+          pellentesque tortor. Nunc posuere vestibulum augue, quis posuere orci blandit vitae. Suspendisse
+          dignissim elit dui, ac dictum felis interdum nec.
+    points:
+      - Lorem ipsum dolor sit amet, consectetur adipiscing elita
+      - Vivamus vitae libero odio, eu interdum elit
+      - Donec dignissim purus vel leo accumsan interdum
+      - Proin sit amet massa mi, in volutpat ante
 
   - icon_class: ti-briefcase
     location: Pre2Post Inc. / ZEROFAIL
     date_from: May 2008
     date_to: July 2010
     title: Network and systems administrator / Tech. Support
-    text:
-     - Something
-     - Something else
+    text: While I was at ZEROFAIL, I was responsible of the Lorem ipsum dolor sit amet,
+          consectetur adipiscing elit. Nunc vehicula, magna et bibendum
+          malesuada, purus augue suscipit dolor, vitae fringilla dui nibh non lectus. Curabitur in
+          pellentesque tortor. Nunc posuere vestibulum augue, quis posuere orci blandit vitae. Suspendisse
+          dignissim elit dui, ac dictum felis interdum nec.
+    points:
+      - Lorem ipsum dolor sit amet, consectetur adipiscing elita
+      - Vivamus vitae libero odio, eu interdum elit
+      - Donec dignissim purus vel leo accumsan interdum
+      - Proin sit amet massa mi, in volutpat ante
 
 - section_header: Education
   items:
@@ -36,11 +70,29 @@
       location: École de technologie supérieure
       suspended: true
       title: Electrical engineering degree (incomplete)
-      text: But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system, and expound the actual teachings of the great explorer of the truth, the master-builder of human happiness. No one rejects, dislikes, or avoids pleasure itself, because it is pleasure, but because those who do not know how to pursue pleasure rationally encounter consequences that are extremely painful. Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but because occasionally circumstances occur in which toil and pain can procure him some great pleasure. To take a trivial example, which of us ever undertakes laborious physical exercise, except to obtain some advantage from it? But who has any right to find fault with a man who chooses to enjoy a pleasure that has no annoying consequences, or one who avoids a pain that produces no resultant pleasure?
+      text: But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and
+            I will give you a complete account of the system, and expound the actual teachings of the great explorer of
+            the truth, the master-builder of human happiness. No one rejects, dislikes, or avoids pleasure itself,
+            because it is pleasure, but because those who do not know how to pursue pleasure rationally encounter
+            consequences that are extremely painful. Nor again is there anyone who loves or pursues or desires to
+            obtain pain of itself, because it is pain, but because occasionally circumstances occur in which toil and
+            pain can procure him some great pleasure. To take a trivial example, which of us ever undertakes laborious
+            physical exercise, except to obtain some advantage from it? But who has any right to find fault with a man
+            who chooses to enjoy a pleasure that has no annoying consequences, or one who avoids a pain that
+            produces no resultant pleasure?
 
     - icon_class: ti-ruler-pencil
       location: Collège Montmorency
       date_from: May 2008
       date_to: July 2010
       title: Computer Science Degree
-      text: But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system, and expound the actual teachings of the great explorer of the truth, the master-builder of human happiness. No one rejects, dislikes, or avoids pleasure itself, because it is pleasure, but because those who do not know how to pursue pleasure rationally encounter consequences that are extremely painful. Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but because occasionally circumstances occur in which toil and pain can procure him some great pleasure. To take a trivial example, which of us ever undertakes laborious physical exercise, except to obtain some advantage from it? But who has any right to find fault with a man who chooses to enjoy a pleasure that has no annoying consequences, or one who avoids a pain that produces no resultant pleasure?
+      text: But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and
+            I will give you a complete account of the system, and expound the actual teachings of the great explorer of
+            the truth, the master-builder of human happiness. No one rejects, dislikes, or avoids pleasure itself,
+            because it is pleasure, but because those who do not know how to pursue pleasure rationally encounter
+            consequences that are extremely painful. Nor again is there anyone who loves or pursues or desires to
+            obtain pain of itself, because it is pain, but because occasionally circumstances occur in which toil and
+            pain can procure him some great pleasure. To take a trivial example, which of us ever undertakes laborious
+            physical exercise, except to obtain some advantage from it? But who has any right to find fault with a man
+            who chooses to enjoy a pleasure that has no annoying consequences, or one who avoids a pain that
+            produces no resultant pleasure?
