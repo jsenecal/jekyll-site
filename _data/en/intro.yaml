@@ -18,9 +18,6 @@
   delete: 22
 #  I manage teams as well
 - type: teams as well.
-  delete: 21
-#  I would like to change the world...
-- type: would like to change the world...
-  delete: 3
-- type: " - I\\'m still looking for a way."
-  delete: 0
+  delete: 23
+#  Technical problem solver
+- type: Technological problem solver
