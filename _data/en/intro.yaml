@@ -10,17 +10,12 @@
 #  I can write code.
 - type: can write code.
   delete: 1
-  pause: 400
+  pause: 1000
 #  I can write code, all sorts of code.
 - type: ", all sorts of code."
   delete: 34
-#  I can also manage all kinds of projects.
-- type: can also manage all kinds of projects.
-  delete: 1
-  pause: 500
-#  I can also manage all kinds of projects and teams as well.
-- type: " and teams as well."
-  delete: 58
+#  I also manage projects and teams!
+- type: also manage projects and teams!
 #  I am a:
 - type: "I am a..."
   pause: 2000
