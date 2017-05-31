@@ -827,7 +827,7 @@ button.button-small:hover {
     line-height: 30px;
 }
 
-.about-block p a{
+.about-block p a {
     color: #9ea8b6;
     text-decoration: underline;
 }
@@ -914,6 +914,25 @@ button.button-small:hover {
 .resume h2 {
     font-weight: 600;
     margin-bottom: 50px;
+}
+
+.resume ul {
+    font-size: 14px;
+    color: #9ea8b6;
+    line-height: 24px;
+}
+
+.resume ul li:before {
+    position: relative;
+    top: -2px;
+    width: auto;
+    height: auto;
+    margin-right: 8px;
+    color: #abc502;
+    font-family: 'FontAwesome', sans-serif;
+    font-size: 7px;
+    font-style: normal;
+    content: "";
 }
 
 .resume-block {
@@ -1800,7 +1819,6 @@ table.ui-datepicker-calendar tbody td.highlight a {
     font-weight: 100;
     font-size: 40px;
 }
-
 
 .contact a {
     color: #fff;

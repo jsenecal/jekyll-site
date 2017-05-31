@@ -4,10 +4,9 @@ class: ["resume", "white-bg", "page-section"]
 title: Resume
 heading: What I did
 lang: en
-show: false
+show: true
 ---
 {% for data in site.data.resume%}
-
 <div class="row">
     <div class="col-lg-12 col-md-12">
         <h2>{{data.section_header}}:</h2>
@@ -31,6 +30,13 @@ show: false
                 {%for text in item.text%}
                 <p>{{text}}</p>
                 {%endfor%}
+                <div class="col-lg-8 col-md-8 col-sm-8">
+                    <ul>
+                        {%for point in item.points%}
+                        <li>{{point}}</li>
+                        {%endfor%}
+                    </ul>
+                </div>
             </div>
         </div>
     </div>
