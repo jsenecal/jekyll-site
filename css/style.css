@@ -45,6 +45,7 @@ p {
     font-size: 14px;
     color: #9ea8b6;
     line-height: 24px;
+    text-align: justify;
 }
 
 /*selection*/
@@ -914,6 +915,10 @@ button.button-small:hover {
 .resume h2 {
     font-weight: 600;
     margin-bottom: 50px;
+}
+
+.resume h4 {
+    margin-top: 20px;
 }
 
 .resume ul {
