@@ -4,6 +4,28 @@
  (  Media Queries  )
 ================================================
  *******************/
+@media (min-height: 390px) {
+    .scroll-down {
+        display: inline-block;
+        transition: all 1.5s ease-in-out;
+        -webkit-transition: all 1.5s ease-in-out;
+        -o-transition: all 1.5s ease-in-out;
+        -moz-transition: all 1.5s ease-in-out;
+    }
+
+}
+
+@media (max-height: 390px) {
+    .scroll-down {
+        display: none;
+        transition: all 1.5s ease-in-out;
+        -webkit-transition: all 1.5s ease-in-out;
+        -o-transition: all 1.5s ease-in-out;
+        -moz-transition: all 1.5s ease-in-out;
+    }
+
+}
+
 
 @media (max-width: 1650px) {
     .blog-info .blog-meta p {
