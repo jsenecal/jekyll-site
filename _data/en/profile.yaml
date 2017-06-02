@@ -2,18 +2,17 @@ name: Jonathan Senecal
 title: Technological problem solver
 email: jo@jonathansenecal.com
 phone: 514.710.0100
-dob: September 6, 1985
+age: 31
 address: 7787 de Bordeaux street, Montreal (Quebec), Canada
 nationality: Canadian
 web: www.jonathansenecal.com
 text:
   - My personnal mission is to <b>make things, fix stuff and help others</b>.<br/> I just happenned to love working with high tech stuff so it became my area of expertise.
-  - I am a <b>detail oriented</b> and <b>challenge driven</b> person so I never leave a stone unturned or a question unanswered. I care about what I do.<br/>
-    Insatiably curious, I am a <b>quick and self taught learner</b> that thrives on picking up and mastering new topics.
-    I take a <b>multi-disciplined approach</b> to my work, incorporating ideas from the several aspects of my skillset.
+  - I am a <b>detail oriented</b> and <b>challenge driven</b> person so I never leave a stone unturned or a question unanswered.<br>
+    <strike>I care</strike> I am passionate about what I do and I work hard for things that are worth it.<br/>
+    Insatiably curious, I am a <b>quick and self taught learner</b> that thrives on picking up and mastering new topics. I take a <b>multi-disciplined approach</b> to my work, incorporating ideas from the several aspects of my skillset.
     Asking 'what if' is something I do as often as possible, making sure everything has been thought of, and, in the process challenging myself and my teammates. I experiment constantly.
-  - I have <b>10 years of experience</b> in telecommunications, server infrastructures and carrier-grade network design & build.<br>
-    Bleeding edge software technologies have become parts of my toolset to create powerful and unique infrastuctures. I now eat DevOps for breakfast.<br/>
+  - I have <b>10 years of experience</b> in telecommunications, server infrastructures and carrier-grade network design & build. Bleeding edge software technologies have become parts of my toolset to create powerful and unique infrastuctures. I now eat DevOps for breakfast.<br/>
     Feel free to <a href="#sections-04-skills" class="page-scroll">Scroll down</a> for more details on my skillset.
   - The world is full of "things" waiting to be built, and I love being that guy who makes them appear. <br/>
     So, let's talk about that huge [problem/idea/project/goal] you dream of, and let's see how I can help!

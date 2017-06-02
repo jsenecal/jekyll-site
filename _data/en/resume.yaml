@@ -1,6 +1,6 @@
 - section_header: Work Experience
   items:
-  - icon_class: ti-ruler-pencil
+  - icon_class: ti-harddrives
     location: EBOX inc.
     date_from: December 2016
     date_to: May 2017
@@ -9,7 +9,7 @@
       - While I was at EBOX I was responsible of the restructuration and scalability of everything IT -
         EBOX was undergoing tremendous growth and I had to ensure the systems and network would survive it.
       - A new datacenter was under construction and I was part of the small team responsible of it's realization through the different vendors and contractors.
-        Many aspects were under my supervision such as power requirements (Generators, UPSes, etc) HVAC, Acces control, etc. I had to make sure everything was built to wisthand future usage of the datacenter by EBOX and its current and future customers.
+        Many aspects were under my supervision such as power requirements (Generators, UPSes, etc), HVAC, Acces control, etc. I had to make sure everything was built to wisthand future usage of the datacenter by EBOX and its current and future customers.
       - I also managed the developpement and designed an authentication and access control system for a client-facing service.
         The system restricts content depending on a client's subscription and limits the number of devices a client can use to access the service.
     points:
@@ -17,58 +17,61 @@
       - System management
       - Network management
       - DevOps
-  - icon_class: ti-ruler-pencil
+  - icon_class: ti-clipboard
     location: Pre2Post Inc. / ZEROFAIL
     date_from: March 2015
     date_to: December 2016
     title: Director, Research and Developpement
     text:
-      - The most significant project thorough my time as Director of R&D at ZEROFAIL was the design of a complex Network Operations and Business Support System consisting of:<br>
-        A scalable, asynchonous RPC system built on the ZeroMQ messaging library so that workers can be added dynamically to scale to load without necessitating any changes to client configurations. -
+      - The most significant project thorough my time as Director of R&D at ZEROFAIL was the design of a complex Network Operations and Business Support System.
+      - A scalable, asynchonous RPC system was built on the ZeroMQ messaging library so that workers can be added dynamically to scale to load without necessitating any changes to client configurations. <br>
         The python implementation leverages the new asynchronous programming tools available with recent versions of Python, including the new async/await syntax and the asynchronous iterator protocol.<br>
-        An implementation using the above and a Graph Database system to enable very powerful queries to facilitate operations using the DataStax Enterprise database, especially the new DataStax Enterprise Graph.<br>
-        Contribution of design ideas for the <a href="https://github.com/davebshow/goblin">"Goblin"</a> project (the lead developper being part of my team).
-      - This system and many others I designed and built helped ZEROFAIL reach higher levels of efficiency and enabled new sources of revenue.
+      - The system also leveraged a Graph Database system to enable very powerful queries that were used to facilitate operations. DataStax Enterprise database was chosen for that purpose, especially the new DataStax Enterprise Graph (DSE).<br>
+        To interface with DSE the <a href="https://github.com/davebshow/goblin">"Goblin"</a> project was contributed to (the lead developper being part of my team).
+      - This OSS/BOSS project and many others I designed and built helped ZEROFAIL reach higher levels of efficiency and enabled new sources of revenue.
+    points:
+      - Research and development of new services and technologies
+      - Research and development of new methods to deliver services
+      - Development of OSS Systems
+      - DevOps
+      - Documentation
+      - Project management
+
+  - icon_class: ti-vector
+    location: Pre2Post Inc. / ZEROFAIL
+    date_from: July 2010
+    date_to: March 2015
+    title: Director, Network Management Group
+    text:
+      - Due to the rapid growth of the telecommunication market in the Montreal area while I was Director of the Networking Group at ZEROFAIL, I had the opportunity to build a very extensive MPLS network accross Canada and the north of USA using cutting edge Juniper routers. <br>
+        Very quickly, ZEROFAIL became a trusted source for connectivity services.
+      - I designed the network to provide an edge over competition by making sure the whole infrastructure would have contingency plans in place in case of a problem - I wanted to build something that would stand by the name "ZEROFAIL".
+      - To further improve the offering for highly available connectivity services, with the help of ZEROFAIL's CTO, I also designed and built the most extensive private wireless network in the metropolitain area of Montreal.<br>
+      - Later on, ZEROFAIL added a portfolio of fiber connectivity services leveraging the concepts and technologies I had put in place.
     points:
       - Research and development of new services and technologies
       - Infrastructure management
       - Process implementation and management
       - Network Planning
       - Network management
-      - DevOps
+      - Staff management
       - Documentation
 
-  - icon_class: ti-ruler-pencil
-    location: Pre2Post Inc. / ZEROFAIL
-    date_from: July 2010
-    date_to: March 2015
-    title: Director, Network Management Group
-    text: While I was at ZEROFAIL, I was responsible of the Lorem ipsum dolor sit amet,
-          consectetur adipiscing elit. Nunc vehicula, magna et bibendum
-          malesuada, purus augue suscipit dolor, vitae fringilla dui nibh non lectus. Curabitur in
-          pellentesque tortor. Nunc posuere vestibulum augue, quis posuere orci blandit vitae. Suspendisse
-          dignissim elit dui, ac dictum felis interdum nec.
-    points:
-      - Lorem ipsum dolor sit amet, consectetur adipiscing elita
-      - Vivamus vitae libero odio, eu interdum elit
-      - Donec dignissim purus vel leo accumsan interdum
-      - Proin sit amet massa mi, in volutpat ante
-
-  - icon_class: ti-briefcase
+  - icon_class: ti-headphone-alt
     location: Pre2Post Inc. / ZEROFAIL
     date_from: May 2008
     date_to: July 2010
     title: Network and systems administrator / Tech. Support
-    text: While I was at ZEROFAIL, I was responsible of the Lorem ipsum dolor sit amet,
-          consectetur adipiscing elit. Nunc vehicula, magna et bibendum
-          malesuada, purus augue suscipit dolor, vitae fringilla dui nibh non lectus. Curabitur in
-          pellentesque tortor. Nunc posuere vestibulum augue, quis posuere orci blandit vitae. Suspendisse
-          dignissim elit dui, ac dictum felis interdum nec.
+    text:
+      - I started at ZEROFAIL in the Technical support department where I quickly learnt my ways through the different systems of the company.<br>
+        I became someone people would rely uppon to help fix issues, the simple and the complex ones.
+      - Due to the extensive knowledge I promptly acquired, I became an essential asset to the company and started to manage and operate the infrastructure.
     points:
-      - Lorem ipsum dolor sit amet, consectetur adipiscing elita
-      - Vivamus vitae libero odio, eu interdum elit
-      - Donec dignissim purus vel leo accumsan interdum
-      - Proin sit amet massa mi, in volutpat ante
+      - Network management
+      - Administration de multiples parcs informatique
+      - Configuration of servers and network devices
+      - Documentation
+      - Technical support and related tasks
 
 - section_header: Education
   items:
@@ -76,29 +79,13 @@
       location: École de technologie supérieure
       suspended: true
       title: Electrical engineering degree (incomplete)
-      text: But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and
-            I will give you a complete account of the system, and expound the actual teachings of the great explorer of
-            the truth, the master-builder of human happiness. No one rejects, dislikes, or avoids pleasure itself,
-            because it is pleasure, but because those who do not know how to pursue pleasure rationally encounter
-            consequences that are extremely painful. Nor again is there anyone who loves or pursues or desires to
-            obtain pain of itself, because it is pain, but because occasionally circumstances occur in which toil and
-            pain can procure him some great pleasure. To take a trivial example, which of us ever undertakes laborious
-            physical exercise, except to obtain some advantage from it? But who has any right to find fault with a man
-            who chooses to enjoy a pleasure that has no annoying consequences, or one who avoids a pain that
-            produces no resultant pleasure?
+      text: Due to the responsabilities I had at the moment with ZEROFAIL, it became too complex to attend to the courses and achieve results on par with my personal level of satisfaction. <br>
+            I may continue the program in the future, but only time will tell.
 
-    - icon_class: ti-ruler-pencil
+    - icon_class: ti-star
       location: Collège Montmorency
-      date_from: May 2008
-      date_to: July 2010
-      title: Computer Science Degree
-      text: But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and
-            I will give you a complete account of the system, and expound the actual teachings of the great explorer of
-            the truth, the master-builder of human happiness. No one rejects, dislikes, or avoids pleasure itself,
-            because it is pleasure, but because those who do not know how to pursue pleasure rationally encounter
-            consequences that are extremely painful. Nor again is there anyone who loves or pursues or desires to
-            obtain pain of itself, because it is pain, but because occasionally circumstances occur in which toil and
-            pain can procure him some great pleasure. To take a trivial example, which of us ever undertakes laborious
-            physical exercise, except to obtain some advantage from it? But who has any right to find fault with a man
-            who chooses to enjoy a pleasure that has no annoying consequences, or one who avoids a pain that
-            produces no resultant pleasure?
+      date_from: 2003
+      date_to: 2008
+      title: Computer Science Degree - Networking specialization
+      text: I successfuly completed all the classes in the program without any issues or fallouts.<br>
+            Furthermore, the domain specific classes were all completed with grades way above the average. I was the best student of the cohort in that program.
