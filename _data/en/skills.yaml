@@ -3,25 +3,33 @@
   quote: To achieve something you’ve never had before, you must do something you’ve never done before.
   quote_author: Thomas Jefferson
   text:
-   - My Professional Strengths Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis velit error culpa unde, esse quam quasi, necessitatibus voluptatem possimus, repellendus.
-   - The other virtues practice in succession by Franklin were silence, order, resolution, frugality, industry, sincerity, Justice, moderation, cleanliness, tranquility, chastity and humility. For the summary order he followed a little scheme of employing his time each day. From five to seven each morning he spent in bodily personal attention, saying a short prayer, thinking over the day’s business and resolutions, studying and eating breakfast. From eight till twelve he worked at his trade. From twelve to one he read or overlooked his accounts and dined. From two to five he worked at his trade. The rest of the evening until 10 he spent in music, or diversion of some sort.
+      - My <b>interpersonal and relationship building skills</b> helped my co-workers realize that I was available for them and that I could help them achieve much more as a team than they would as an individual. <br/>
+        Always willing to help, my <b>excellent leadership skills</b> have proven themselves useful many times when they would rely on me to help them reach their potential.
+        Torough time, I also developped <b>strong communication skills</b> in order to listen effectively to my managers, co-workers or clients, communicate and facilitate discussions effectively with my team mates, prepare and deliver presentations, write documentation and so forth.
+      - Being the critical thinker I am, my <b>very efficent researching skills</b> and my ability to unterstand things quickly sometimes put me in a position of mentor towards my team as I can easily analyse situations from multiple viewpoints and research matters to define key issues and explain them.
+      - Overall, I am a <b>flexible team player</b> who prospers in a fast-paced, but organized, team work environment.
+
   skills:
-    - name: Facilitation
-      pct: 70
+    - name: Interpersonal skills
+      pct: 72
       period: Too many years
-      text: The other virtues practice in succession by Franklin were silence, order, resolution, frugality, industry, sincerity, Justice, moderation, cleanliness, tranquility, chastity and humility. For the summary order he followed a little scheme of employing his time each day. From five to seven each morning he spent in bodily personal attention, saying a short prayer, thinking over the day’s business and resolutions, studying and eating breakfast. From eight till twelve he worked at his trade. From twelve to one he read or overlooked his accounts and dined. From two to five he worked at his trade. The rest of the evening until 10 he spent in music, or diversion of some sort.
-    - name: Expertise
-      pct: 50
+      text: Some text
+    - name: Leadership
+      pct: 85
       period: Some time
-      text: The other virtues practice in succession by Franklin were silence, order, resolution, frugality, industry, sincerity, Justice, moderation, cleanliness, tranquility, chastity and humility. For the summary order he followed a little scheme of employing his time each day. From five to seven each morning he spent in bodily personal attention, saying a short prayer, thinking over the day’s business and resolutions, studying and eating breakfast. From eight till twelve he worked at his trade. From twelve to one he read or overlooked his accounts and dined. From two to five he worked at his trade. The rest of the evening until 10 he spent in music, or diversion of some sort.
-    - name: Presentation Skills
-      pct: 80
+      text: Some text
+    - name: Communication
+      pct: 78
       period: 25 years
-      text: The other virtues practice in succession by Franklin were silence, order, resolution, frugality, industry, sincerity, Justice, moderation, cleanliness, tranquility, chastity and humility. For the summary order he followed a little scheme of employing his time each day. From five to seven each morning he spent in bodily personal attention, saying a short prayer, thinking over the day’s business and resolutions, studying and eating breakfast. From eight till twelve he worked at his trade. From twelve to one he read or overlooked his accounts and dined. From two to five he worked at his trade. The rest of the evening until 10 he spent in music, or diversion of some sort.
-    - name: Communication Skills
+      text: Some text
+    - name: Research skills
+      pct: 98
+      period: Rookie, 1 year
+      text: Some text
+    - name: Adaptability
       pct: 65
       period: Rookie, 1 year
-      text: The other virtues practice in succession by Franklin were silence, order, resolution, frugality, industry, sincerity, Justice, moderation, cleanliness, tranquility, chastity and humility. For the summary order he followed a little scheme of employing his time each day. From five to seven each morning he spent in bodily personal attention, saying a short prayer, thinking over the day’s business and resolutions, studying and eating breakfast. From eight till twelve he worked at his trade. From twelve to one he read or overlooked his accounts and dined. From two to five he worked at his trade. The rest of the evening until 10 he spent in music, or diversion of some sort.
+      text: Some text
 
 - type: detailed
   title: Technical Skills

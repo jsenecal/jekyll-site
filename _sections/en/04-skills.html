@@ -4,7 +4,7 @@ class: ["skills", "white-bg", "page-section"]
 title: Skills
 heading: What I'm good at
 lang: en
-show: false
+show: true
 ---
 
 {% for section in site.data.skills %}
@@ -79,7 +79,7 @@ show: false
     </div>
     <div class="row">
         {%assign col_qty = 3%}
-        
+
         {%assign qty_per_col = section.skills | size | divided_by:col_qty%}
         {%assign col_class_size = 12|divided_by:col_qty%}
         {%assign position = 0%}
