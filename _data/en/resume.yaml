@@ -13,10 +13,10 @@
       - I also managed the developpement and designed an authentication and access control system for a client-facing service.
         The system restricts content depending on a client's subscription and limits the number of devices a client can use to access the service.
     points:
-      - Infrastructure management
-      - System management
-      - Network management
+      - Management of a business critical infrastructure providing services to 100k+ clients
+      - Design and management of a datacenter build using state of the art equipment and technologies
       - DevOps
+
   - icon_class: ti-clipboard
     location: Pre2Post Inc. / ZEROFAIL
     date_from: March 2015
@@ -30,12 +30,8 @@
         To interface with DSE the <a href="https://github.com/davebshow/goblin">"Goblin"</a> project was contributed to (the lead developper being part of my team).
       - This OSS/BOSS project and many others I designed and built with the development team helped ZEROFAIL reach higher levels of efficiency and enabled new sources of revenue.
     points:
-      - Research and development of new services and technologies
       - Research and development of new methods to deliver services
-      - Development of OSS Systems
-      - DevOps
-      - Documentation
-      - Project management
+      - Design and development of a complex Network Operations and Business Support System
 
   - icon_class: ti-vector
     location: Pre2Post Inc. / ZEROFAIL
@@ -49,13 +45,10 @@
       - To further improve the offering for highly available connectivity services, with the help of ZEROFAIL's CTO, I also designed and built the most extensive private wireless network in the metropolitain area of Montreal.<br>
       - Later on, ZEROFAIL added a portfolio of fiber connectivity services leveraging the concepts and technologies I had put in place.
     points:
-      - Research and development of new services and technologies
-      - Infrastructure management
+      - Research and development of new services and technologies to help grow the business
+      - Management and planning of a very complex MPLS network
       - Process implementation and management
-      - Network Planning
-      - Network management
-      - Staff management
-      - Documentation
+      - Team leadership consisting of many ad-hoc technicians working in many departments
 
   - icon_class: ti-headphone-alt
     location: Pre2Post Inc. / ZEROFAIL
@@ -67,10 +60,9 @@
         I became someone people would rely uppon to help fix issues, the simple and the complex ones.
       - Due to the extensive knowledge I promptly acquired, I became an essential asset to the company and started to manage and operate the infrastructure.
     points:
-      - Network management
-      - Management of multiple companies infrastructures (SLAs)
-      - Configuration of servers and network devices
-      - Documentation
+      - Management of a multi site network
+      - Management of multiple companies infrastructures composed of many workstations and server environments (SLAs)
+      - Configuration of servers and network devices to help grow the infrastructure
       - Technical support and related tasks
 
 - section_header: Education

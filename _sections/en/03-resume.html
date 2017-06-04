@@ -31,26 +31,11 @@ show: true
                 <p>{{text}}</p>
                 {%endfor%}
                 {%if item.points%}<h4>Tasks</h4>{%endif%}
-                {%assign col_qty = 2%}
-                {%assign uneven_points = item.points | size | modulo:col_qty%}
-                {%assign qty_per_col = item.points | size | divided_by:col_qty%}
-                {%assign col_class_size = 12|divided_by:col_qty%}
-                {%assign position = 0%}
-                {% for i in (1..col_qty) %}
-                <div class="col-lg-{{col_class_size}} col-md-{{col_class_size}} col-sm-{{col_class_size}}">
-                    <ul>
-                        {%if forloop.first and uneven_points != 0%}
-                        {%assign limit = qty_per_col|plus:1%}
-                        {%else%}
-                        {%assign limit = qty_per_col%}
-                        {%endif%}
-                        {%for point in item.points limit:limit offset:position%}
-                        <li>{{point}}</li>
-                        {%endfor%}
-                        {%assign position = position|plus:limit%}
-                    </ul>
-                </div>
-                {%endfor%}
+                <ul>
+                    {%for point in item.points%}
+                    <li>{{point}}</li>
+                    {%endfor%}
+                </ul>
             </div>
         </div>
     </div>
