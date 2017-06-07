@@ -11,9 +11,9 @@ show: true
 {%case section.type %}
 {%when "detailed" %}
 <div class="detailed-skills row">
+    <h2>{{section.title}}</h2>
     <div class="col-lg-6 col-md-6 col-sm-6">
         <div class="skill-content">
-            <h2>{{section.title}}</h2>
             <span>“{{section.quote}}"{%if section.quote_author%} <i>- {{section.quote_author}}{%endif%}</i></span>
             <p>{{section.text|join:"<br/><br/>"}}</p>
         </div>
