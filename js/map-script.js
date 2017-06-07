@@ -4,14 +4,14 @@
         var myLatLng = new google.maps.LatLng(45.553198, -73.612906);
 
         var mapOptions = {
-            zoom: 10,
+            zoom: 12,
             center: myLatLng,
             disableDefaultUI: true,
-            scrollwheel: true,
+            scrollwheel: false,
             navigationControl: false,
             mapTypeControl: false,
             scaleControl: false,
-            draggable: true,
+            draggable: false,
 
             // How you would like to style the map.
             // This is where you would paste any style found on Snazzy Maps.
