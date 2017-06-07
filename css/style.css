@@ -709,7 +709,6 @@ button.button-small:hover {
 .section-title {
     position: relative;
     display: block;
-    margin-bottom: 80px;
 }
 
 .section-title-name {
@@ -902,7 +901,7 @@ button.button-small:hover {
           Resume
 *************************/
 .resume .section-title {
-    margin-bottom: 50px;
+    margin-bottom: -5px;
 }
 
 .resume .section-title h2 {
@@ -911,7 +910,6 @@ button.button-small:hover {
 
 .resume h2 {
     font-weight: 600;
-    margin-bottom: 50px;
 }
 
 .resume h4 {
@@ -938,7 +936,7 @@ button.button-small:hover {
 }
 
 .resume-block {
-    margin-bottom: 50px;
+    padding: 25px 0;
 }
 
 .resume-block .resume-icon {
@@ -1054,8 +1052,14 @@ button.button-small:hover {
 }
 
 .detailed-skills {
-    padding-bottom: 50px;
+    padding: 25px 0;
 }
+
+.detailed-skills h2{
+    padding: 0 15px;
+}
+
+
 /*skill-chart */
 .skill-chart {
     margin-top: 80px;
@@ -1727,6 +1731,10 @@ table.ui-datepicker-calendar tbody td.highlight a {
 /*************************
          testimonials
 *************************/
+.testimonials {
+    padding: 25px 0;
+}
+
 .testimonials-block {
     margin-bottom: 30px;
 }
@@ -2230,7 +2238,7 @@ textarea:focus {
 }
 
 .blog.blog-page .blog-block {
-    margin-bottom: 50px;
+    margin-bottom: 25px; margin-top: 25px;
 }
 
 .pagination {
