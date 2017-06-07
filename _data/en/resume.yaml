@@ -12,10 +12,13 @@
         Many aspects were under my supervision such as power requirements (Generators, UPSes, etc), HVAC, Acces control, etc. I had to make sure everything was built to wisthand future usage of the datacenter by EBOX and its current and future customers.
       - I also managed the developpement and designed an authentication and access control system for a client-facing service.
         The system restricts content depending on a client's subscription and limits the number of devices a client can use to access the service.
+        Due to the kind of content it protected, the system, written in Python, was designed to allow for super scalability.
+      - My previous experience in building networks was put to good use to help EBOX upgrade their infrastructure to offer value added services based on MPLS technologies
     points:
-      - Management of a business critical infrastructure providing services to 100k+ clients
-      - Design and management of a datacenter build using state of the art equipment and technologies
-      - DevOps
+      - Managed and improved a business critical infrastructure providing services to 100k+ clients
+      - Designed and managed the construction of a datacenter using state of the art equipment and technologies
+      - Initiated and managed a software development project that provided ways to deliver new services to grow the business
+      - Introduced the key concepts of the DevOps toolchain to the software development team to allow for more reliable development of applications
 
   - icon_class: ti-clipboard
     location: Pre2Post Inc. / ZEROFAIL
@@ -30,8 +33,8 @@
         To interface with DSE the <a href="https://github.com/davebshow/goblin">"Goblin"</a> project was contributed to (the lead developper being part of my team).
       - This OSS/BOSS project and many others I designed and built with the development team helped ZEROFAIL reach higher levels of efficiency and enabled new sources of revenue.
     points:
-      - Research and development of new methods to deliver services
-      - Design and development of a complex Network Operations and Business Support System
+      - Initiated and managed Research and development projects that provided new methods, solutions and improvement on existing services
+      - Designed and led the developement of a complex Network Operations and Business Support System
 
   - icon_class: ti-vector
     location: Pre2Post Inc. / ZEROFAIL
@@ -45,10 +48,10 @@
       - To further improve the offering for highly available connectivity services, with the help of ZEROFAIL's CTO, I also designed and built the most extensive private wireless network in the metropolitain area of Montreal.<br>
       - Later on, ZEROFAIL added a portfolio of fiber connectivity services leveraging the concepts and technologies I had put in place.
     points:
-      - Research and development of new services and technologies to help grow the business
-      - Management and planning of a very complex MPLS network
-      - Process implementation and management
-      - Team leadership consisting of many ad-hoc technicians working in many departments
+      - Initiated and managed Research and development projects that provided new services and technologies that helped grow the business
+      - Did the management and planning of a very complex MPLS network
+      - Implemented and managed business processes to allow for greater efficiency
+      - Lead a team consisting of many ad-hoc technicians working in many departments
 
   - icon_class: ti-headphone-alt
     location: Pre2Post Inc. / ZEROFAIL
@@ -58,12 +61,12 @@
     text:
       - I started at ZEROFAIL in the Technical support department where I quickly learnt my ways through the different systems of the company.<br>
         I became someone people would rely uppon to help fix issues, the simple and the complex ones.
-      - Due to the extensive knowledge I promptly acquired, I became an essential asset to the company and started to manage and operate the infrastructure.
+      - Due to the extensive knowledge I promptly acquired, I became an essential asset to the company and started to operate and eventually, manage, the infrastructure.
     points:
-      - Management of a multi site network
-      - Management of multiple companies infrastructures composed of many workstations and server environments (SLAs)
-      - Configuration of servers and network devices to help grow the infrastructure
-      - Technical support and related tasks
+      - Operated a multisite network
+      - Managed multiple companies infrastructures composed of many workstations and server environments (SLAs)
+      - Configured servers and network devices to grow the infrastructure
+      - Offered an outstanding technical support to the customers
 
 - section_header: Education
   items:
@@ -71,7 +74,7 @@
       location: École de technologie supérieure
       suspended: true
       title: Electrical engineering degree (incomplete)
-      text: Due to the responsabilities I had at the moment with ZEROFAIL, it became too complex to attend to the courses and achieve results on par with my personal level of satisfaction. <br>
+      text: Due to the responsabilities I had at the moment with ZEROFAIL, it became impossible to attend to the courses and achieve results on par with my personal level of satisfaction. <br>
             I may continue the program in the future, but only time will tell.
 
     - icon_class: ti-star
