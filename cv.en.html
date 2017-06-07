@@ -89,7 +89,7 @@ permalink: /cv
             {%for skill in skillset.skills%}
             <div class="cv-item">
 
-                <p class="period">{{skill.period}}</p>
+                <p class="period">{{skill.rating}}</p>
 
                 <h3 class="text-uppercase"><strong>{{skill.name}}</strong></h3>
 
@@ -127,7 +127,7 @@ permalink: /cv
                 <p>{{text}}</p>
                 {%endfor%}
                 <div class="row">
-                    {%if item.points%}<h4>Tasks</h4>{%endif%}
+                    {%if item.points%}<h4>Key Achievements</h4>{%endif%}
                     {%assign col_qty = 2%}
                     {%assign uneven_points = item.points | size | modulo:col_qty%}
                     {%assign qty_per_col = item.points | size | divided_by:col_qty%}
