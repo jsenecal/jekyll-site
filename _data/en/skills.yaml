@@ -12,77 +12,56 @@
   skills:
     - name: Interpersonal skills
       pct: 72
-      period: Too many years
-      text: Some text
+      rating: Advanced
+      text: My <b>interpersonal and relationship building skills</b> helped my co-workers realize that I was available for them and that I could help them achieve much more as a team than they would as an individual. <br/>
     - name: Leadership
       pct: 85
-      period: Some time
-      text: Some text
+      rating: Excellent
+      text: Always willing to help, my <b>excellent leadership skills</b> have proven themselves useful many times when they would rely on me to help them reach their potential.
     - name: Communication
       pct: 78
-      period: 25 years
-      text: Some text
+      rating: Strong
+      text: Torough time, I also developped <b>strong communication skills</b> in order to listen effectively to my managers, co-workers or clients, communicate and facilitate discussions effectively with my team mates, prepare and deliver presentations, write documentation and so forth.
     - name: Research skills
       pct: 98
-      period: Rookie, 1 year
-      text: Some text
+      rating: Very efficient
+      text: Being the critical thinker I am, my <b>very efficent researching skills</b> and my ability to unterstand things quickly sometimes put me in a position of mentor towards my team as I can easily analyse situations from multiple viewpoints and research matters to define key issues and explain them.
     - name: Adaptability
       pct: 65
-      period: Rookie, 1 year
-      text: Some text
+      rating: Good
+      text: I am a <b>flexible team player</b> who prospers in a fast-paced, but organized, team work environment.
 
 - type: detailed
   title: Technical Skills
-  quote: To achieve something you’ve never had before, you must do something you’ve never done before.
-  quote_author: Thomas Jefferson
+  quote: The only source of knowledge is experience.
+  quote_author: Albert Einstein
   text:
-   - My Professional Strengths Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis velit error culpa unde, esse quam quasi, necessitatibus voluptatem possimus, repellendus.
-   - The other virtues practice in succession by Franklin were silence, order, resolution, frugality, industry, sincerity, Justice, moderation, cleanliness, tranquility, chastity and humility. For the summary order he followed a little scheme of employing his time each day. From five to seven each morning he spent in bodily personal attention, saying a short prayer, thinking over the day’s business and resolutions, studying and eating breakfast. From eight till twelve he worked at his trade. From twelve to one he read or overlooked his accounts and dined. From two to five he worked at his trade. The rest of the evening until 10 he spent in music, or diversion of some sort.
+      - My technical expertize is very wide due to the multiple aspects of the work experience I have acquired over time.<br>
+        While I do have a very extensive knowledge of <b>telecommunications, server infrastructures and carrier-grade network design & build</b>, I also gathered many other skills in other domains such as <b>software developpement</b> and <b>electronics</b>.
+      - My prefered networking toolkit consists of <b>Juniper JunOS</b> routers running <b>BGP</b> and <b>OSPF</b> protocols and use technologies such as <b>MPLS</b> based L2 and L3 <b>VPN</b>s. <b>Traffic engineering</b> and <b>QoS</b> have no secrets for me.<br>
+        I have very extensive knowledge of <b>CWDM</b> and <b>DWDM</b> fiber networks and actually know how to splice fiberoptic cables and manage <b>outside plant</b> fiber networks.
+        Wireless (microwave) networking technologies have also become something I am very familiar with, using <b>Ubiquiti networks</b> antennaes, I've achieved links of great distance to provide <b>high availability</b> solutions to customers.
+      - Having worked with highly available and scalable network infrastructures, I became quite familiar with their server counteparts using <b>micro services architectures</b> and <b>distributed computing</b> technologies.
+      - <b>Python (3.5+)</b> is my language of choice to code pretty much everything backend but I am also versed in <b>Javascript, Ruby, Perl, PHP, HTML</b> and others.
   skills:
-    - name: Facilitation
-      pct: 70
-      period: Too many years
-      text: The other virtues practice in succession by Franklin were silence, order, resolution, frugality, industry, sincerity, Justice, moderation, cleanliness, tranquility, chastity and humility. For the summary order he followed a little scheme of employing his time each day. From five to seven each morning he spent in bodily personal attention, saying a short prayer, thinking over the day’s business and resolutions, studying and eating breakfast. From eight till twelve he worked at his trade. From twelve to one he read or overlooked his accounts and dined. From two to five he worked at his trade. The rest of the evening until 10 he spent in music, or diversion of some sort.
-    - name: Expertise
-      pct: 50
-      period: Some time
-      text: The other virtues practice in succession by Franklin were silence, order, resolution, frugality, industry, sincerity, Justice, moderation, cleanliness, tranquility, chastity and humility. For the summary order he followed a little scheme of employing his time each day. From five to seven each morning he spent in bodily personal attention, saying a short prayer, thinking over the day’s business and resolutions, studying and eating breakfast. From eight till twelve he worked at his trade. From twelve to one he read or overlooked his accounts and dined. From two to five he worked at his trade. The rest of the evening until 10 he spent in music, or diversion of some sort.
-    - name: Presentation Skills
-      pct: 80
-      period: 25 years
-      text: The other virtues practice in succession by Franklin were silence, order, resolution, frugality, industry, sincerity, Justice, moderation, cleanliness, tranquility, chastity and humility. For the summary order he followed a little scheme of employing his time each day. From five to seven each morning he spent in bodily personal attention, saying a short prayer, thinking over the day’s business and resolutions, studying and eating breakfast. From eight till twelve he worked at his trade. From twelve to one he read or overlooked his accounts and dined. From two to five he worked at his trade. The rest of the evening until 10 he spent in music, or diversion of some sort.
-    - name: Communication Skills
-      pct: 65
-      period: Rookie, 1 year
-      text: The other virtues practice in succession by Franklin were silence, order, resolution, frugality, industry, sincerity, Justice, moderation, cleanliness, tranquility, chastity and humility. For the summary order he followed a little scheme of employing his time each day. From five to seven each morning he spent in bodily personal attention, saying a short prayer, thinking over the day’s business and resolutions, studying and eating breakfast. From eight till twelve he worked at his trade. From twelve to one he read or overlooked his accounts and dined. From two to five he worked at his trade. The rest of the evening until 10 he spent in music, or diversion of some sort.
 
-- type: points
-  title: Knowledge
-  text: Auis nostrud exercitation ullamco laboris nisi ut aliquip exea. commodo consequat.
-        Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-        Commodo consequat.
-  skills:
-   - name: Skills in training techniques.
-     icon_class: ti-hand-point-right
-   - name: Social Perceptiveness
-     icon_class: ti-hand-point-right
-   - name: Judgment and Decision Making
-     icon_class: ti-hand-point-right
-   - name: Active Listening
-     icon_class: ti-hand-point-right
-   - name: Personnel and Human Resources
-     icon_class: ti-hand-point-right
-   - name: Attention to Detail
-     icon_class: ti-hand-point-right
-   - name: Personal Service
-     icon_class: ti-hand-point-right
-   - name: Reading Comprehension
-     icon_class: ti-hand-point-right
-   - name: Time Management
-     icon_class: ti-hand-point-right
-   - name: Learning Strategies
-     icon_class: ti-hand-point-right
-   - name: Service Orientation
-     icon_class: ti-hand-point-right
-   - name: Active Learning
-     icon_class: ti-hand-point-right
+    - name: Metro Ethernet and MPLS Technologies
+      pct: 90
+      rating: Expert, 8 years
+      text: My prefered networking toolkit consists of Juniper JunOS routers running BGP and OSPF protocols and use technologies such as MPLS based L2 and L3 VPNs. Traffic engineering and QoS have no secrets for me.<br>
+    - name: Wireless networks
+      pct: 83
+      rating: Advanced, 5 Years
+      text: Wireless (microwave) networking technologies have also become something I am very familiar with, using Ubiquiti networks antennaes, I've achieved links of great distance to provide high availability solutions to customers.
+    - name: Fiber optics
+      pct: 76
+      rating: Advanced, 5 Years
+      text: I have very extensive knowledge of CWDM and DWDM fiber networks and actually know how to splice fiberoptic cables and manage outside plant fiber networks.
+    - name: Server infrastructures
+      pct: 80
+      rating: Expert, 10 years
+      text: Having worked with highly available and scalable network infrastructures, I became quite familiar with their server counteparts using micro services architectures and distributed computing technologies.
+    - name: Software Development
+      pct: 65
+      rating: Advanced, 3 Years
+      text: Python (3.5+) is my language of choice to code pretty much everything backend but I am also versed in Javascript, Ruby, Perl, PHP, HTML and others.
