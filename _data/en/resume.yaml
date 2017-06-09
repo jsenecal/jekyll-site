@@ -6,13 +6,13 @@
     date_to: May 2017
     title: Director, Networking, Systems and Infrastructure
     text:
-      - While I was at EBOX I was responsible of the restructuration and scalability of everything IT -
+      - While I was at EBOX I was responsible for the restructuration and scalability of everything IT -
         EBOX was undergoing tremendous growth and I had to ensure the systems and network would survive it.
-      - A new datacenter was under construction and I was part of the small team responsible of it's realization through the different vendors and contractors.
-        Many aspects were under my supervision such as power requirements (Generators, UPSes, etc), HVAC, Acces control, etc. I had to make sure everything was built to wisthand future usage of the datacenter by EBOX and its current and future customers.
-      - I also managed the developpement and designed an authentication and access control system for a client-facing service.
+      - A new datacenter was under construction and I lead the team responsible for its realization with the different vendors and contractors.
+        My mission: ensure it would withstand future growth, for years to come.
+      - I also managed the developpement team and designed an authentication and access control system for a client-facing service.
         The system restricts content depending on a client's subscription and limits the number of devices a client can use to access the service.
-        Due to the kind of content it protected, the system, written in Python, was designed to allow for super scalability.
+        Due to the kind of content it protected, the system, written in Python, was designed to allow for extreme scalability.
       - My previous experience in building networks was put to good use to help EBOX upgrade their infrastructure to offer value added services based on MPLS technologies
     points:
       - Managed and improved a business critical infrastructure providing services to 100k+ clients
