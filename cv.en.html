@@ -38,12 +38,11 @@ permalink: /cv
                     </a>
                 </div>
 
-                <p class="last">
-                    <span class="hidden-tablet">Email: </span><a
-                        href="mailto:{{site.data.profile.email}}">{{site.data.profile.email}}</a>
+                <div class="last">
+                    <span class="hidden-tablet">Email: </span><a href="mailto:{{site.data.profile.email}}">{{site.data.profile.email}}</a>
                     <br><span class="hidden-tablet">Phone: </span>{{site.data.profile.phone}}
                     <br><span class="hidden-tablet">Web: </span><a href="https://{{site.data.profile.web}}/">{{site.data.profile.web}}</a>
-                </p>
+                </div>
 
             </div><!-- end .cv-item -->
 
@@ -106,7 +105,7 @@ permalink: /cv
 
 
     {%for section in site.data.resume%}
-    <div class="row cv-section">
+    <div class="row cv-section" style="break-before: page">
         <div class="span3">
             <div class="cv-section-title">
                 <h2>{{section.section_header}}</h2>

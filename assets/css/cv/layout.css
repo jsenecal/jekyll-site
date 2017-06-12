@@ -135,7 +135,7 @@
 }
 
 .cv-item li {
-		padding-bottom: 3px;
+    padding-bottom: 3px;
 }
 
 /* Copyright */
@@ -346,13 +346,62 @@ select.validation-error {
 }
 
 /* ==========================================================================
-   #Responsive
+   #Responsive & Print
    ========================================================================== */
 
-/* #Smaller then 1400px width
-   ========================================================================== */
+/*Print*/
+@media print {
+    ul {
+        margin-bottom: 0;
+    }
 
-@media (max-width: 1399px) {
+    #pdf, #print, #back-to-top, .social-media {
+        display: none
+    }
+
+    #wrap {
+        margin: 50px 0;
+    }
+
+    .cv-section {
+        padding: 14px 20px
+        /*page-break-inside: avoid;*/
+    }
+
+    .cv-item {
+        padding: 20px;
+        page-break-inside: avoid;
+        margin-bottom: 0;
+    }
+
+    .cv-item:last-child{
+        padding-bottom: 20px;
+    }
+
+    .cv-section-title {
+        break-after: avoid;
+    }
+
+    .cv-section-title h1 {
+        padding-top: 2px;
+    }
+
+    .cv-section-title h2 {
+        color: black;
+        margin-left: -10px;
+        margin-bottom: 10px;
+    }
+
+    .period {
+        background: #abc502;
+        -webkit-print-color-adjust: exact
+    }
+
+
+}
+
+/*Smaller then 1400px width*/
+@media only screen and (max-width: 1399px) {
 
     #wrap {
         margin: 50px auto;
@@ -371,7 +420,7 @@ select.validation-error {
 
 }
 
-@media (max-width: 1024px) {
+@media only screen and (max-width: 1024px) {
 
     #wrap {
         margin: 0;
@@ -379,10 +428,8 @@ select.validation-error {
 
 }
 
-/* #Tablet (Portrait)
-   ========================================================================== */
-
-@media (min-width: 768px) and (max-width: 979px) {
+/*#Tablet (Portrait)*/
+@media only screen and (min-width: 768px) and (max-width: 979px) {
 
     #wrap {
     }
@@ -406,10 +453,8 @@ select.validation-error {
 
 }
 
-/* #Mobile (Portrait and Landscape )
-   ========================================================================== */
-
-@media (max-width: 767px) {
+/*#Mobile (Portrait and Landscape )*/
+@media only screen and (max-width: 767px) {
 
     body {
         background: none;
@@ -514,9 +559,7 @@ select.validation-error {
 
 }
 
-/* #Mobile ( Landscape )
-  ========================================================================== */
-
+/*#Mobile ( Landscape )*/
 @media only screen and (min-width: 480px) and (max-width: 767px) {
 
     .row {
