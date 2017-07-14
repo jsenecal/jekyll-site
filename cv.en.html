@@ -4,168 +4,552 @@ ref: cv
 lang: en
 permalink: /cv
 ---
-<!--header-->
-<div id="header">
-    <div class="row cv-section">
-        <div class="span9">
-            <div class="cv-section-title">
-                <img src="/assets/images/me.jpg " alt="">
-                <h1>
-                    {{site.data.profile.name}}
-                    <small>{{site.data.profile.title}}</small>
-                </h1>
-            </div><!-- end .cv-section-title -->
-        </div><!-- end .span9 -->
-        <div class="span3">
-            <div class="cv-item">
-                <div class="social-media fixed">
-                    <a href="https://facebook.com/infinityzxx" title="Facebook" class="facebook-icon social-icon"><i
-                            class="fa fa-facebook"></i>
-                    </a>
-                    <a href="https://plus.google.com/+JonathanSenecal" title="Google+"
-                       class="googleplus-icon social-icon">
-                        <i class="fa fa-google-plus"></i>
-                    </a>
-                    <a href="https://twitter.com/infinityzxx" title="Twitter" class="twitter-icon social-icon">
-                        <i class="fa fa-twitter"></i>
-                    </a>
-                    <a href="https://www.linkedin.com/in/jonathan-senecal-9058a620/" title="LinkedIn"
-                       class="linkedin-icon social-icon">
-                        <i class="fa fa-linkedin"></i>
-                    </a>
-                    <a href="https://github.com/jsenecal" class="github-icon social-icon">
-                        <i class="fa fa-github" title="GitHub"></i>
-                    </a>
+
+<!--About section-->
+<section id="about" class="about">
+    <div class="block-content clearfix">
+        <div class="block-about grey darken-3 pt-20 ">
+            <div class="block-title">
+                <h1 class="title">Jonathan Senecal</h1>
+            </div>
+            <blockquote>
+                <h5 class="white-text">
+                    Talented technological solution architect and project manager located
+                    in Montreal
+                </h5>
+            </blockquote>
+            <p class="mt-20">
+                My personal mission is to make things, fix stuff and help others... I just happened to
+                love working with high tech stuff so it became my area of expertise.<br>
+
+                I am a detail oriented and challenge driven person with <strong class="grey-text text-lighten-4"> 10
+                years of experience in telecommunications, server infrastructures and carrier-grade network
+                design & build</strong> so let's talk about how I could help you achieve what you dream of.
+            </p>
+        </div>
+        <div class="block-about grey darken-4 ">
+            <div class="block-title">
+                <h2 class="title">Personal Info</h2></div>
+            <ul class="block-info">
+                <li><span>Age</span> : 31</li>
+                <li><span>Phone</span> : +1 514-710-0100</li>
+                <li><span>Email</span> : <a
+                    href="mailto:contact@jonathansenecal.com">contact@jonathansenecal.com</a></li>
+                <li><span>Web Site</span> : <a href="https://www.jonathansenecal.com/">www.jonathansenecal.com</a>
+                </li>
+                <li class="hidden-print"><span>Freelance</span> : Available</li>
+                <li><span>Address</span> : 7787 rue de Bordeaux, Montreal QC</li>
+            </ul>
+        </div>
+        <div class="block-about grey darken-3">
+            <div class="block-title">
+                <h2 class="title">Expertise</h2>
+            </div>
+            <div class="block-expertise">
+                <div class="expertise mb-20 clearfix">
+                    <div class="exp-ico">
+									<span class="ico">
+									<i class="ic-layers"></i>
+									</span>
+                    </div>
+                    <div class="exp-det">
+                        <h6>Infrastructure Design</h6>
+                        <p>
+                            Telecommunications, server infrastructures and carrier-grade network design & build have
+                            no secrets for me.
+                        </p>
+                    </div>
                 </div>
-
-                <div class="last">
-                    <span class="hidden-tablet">Email: </span><a href="mailto:{{site.data.profile.email}}">{{site.data.profile.email}}</a>
-                    <br><span class="hidden-tablet">Phone: </span>{{site.data.profile.phone}}
-                    <br><span class="hidden-tablet">Web: </span><a href="https://{{site.data.profile.web}}/">{{site.data.profile.web}}</a>
+                <div class="expertise clearfix">
+                    <div class="exp-ico">
+									<span class="ico">
+									<i class="ic-laptop"></i>
+									</span>
+                    </div>
+                    <div class="exp-det">
+                        <h6>Agile Software Development</h6>
+                        <p>
+                            Bleeding edge software technologies have also become parts of my toolset to create
+                            powerful and unique infrastructures.
+                        </p>
+                    </div>
                 </div>
-
-            </div><!-- end .cv-item -->
-
-        </div><!-- end .span3 -->
-    </div><!-- end .cv-section -->
-
-    <!-- //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// -->
-
-</div>
-<!--/header-->
-
-<!--content-->
-<div id="content">
-    <div class="row cv-section">
-        <div class="span3">
-            <div class="cv-section-title">
-                <h2>Professional Profile</h2>
-            </div><!-- end .cv-section-title -->
-        </div><!-- end .span3 -->
-        <div class="span9">
-            <div class="cv-item">
-                {%for paragraph in site.data.profile.text%}
-                {%if forloop.last%}<p class="last">{%else%}
-                <p>{%endif%}{{paragraph}}</p>
-                {%endfor%}
-            </div><!-- end .cv-item -->
-        </div><!-- end .span9 -->
-    </div><!-- end .cv-section -->
-    <a name="sections-04-skills"></a>
-    {%assign skillsets = site.data.skills|where:"type","detailed"%}
-    {%for skillset in skillsets%}
-    <div class="row cv-section{%unless forloop.first%} no-border{%endunless%}">
-        <div class="span3">
-
-            <div class="cv-section-title">
-
-                <h2>{{skillset.title}}</h2>
-
-            </div><!-- end .cv-section-title -->
-
-        </div><!-- end .span3 -->
-        <div class="span9">
-            {%for skill in skillset.skills%}
-            <div class="cv-item">
-
-                <p class="period">{{skill.rating}}</p>
-
-                <h3 class="text-uppercase"><strong>{{skill.name}}</strong></h3>
-
-                <br class="clear">
-
-                <p class="last">{{skill.text}}</p>
-
-            </div><!-- end .cv-item -->
-            {%endfor%}
-
-        </div><!-- end .span9 -->
-    </div><!-- end .cv-section -->
-    {%endfor%}
-
-
-    {%for section in site.data.resume%}
-    <div class="row cv-section" style="break-before: page">
-        <div class="span3">
-            <div class="cv-section-title">
-                <h2>{{section.section_header}}</h2>
-            </div><!-- end .cv-section-title -->
-        </div><!-- end .span3 -->
-        <div class="span9">
-            {% for item in section.items %}
-            <div class="cv-item">
-                <p class="period">{% if item.suspended%}Suspended{%else%}{{item.date_from}} to
-                    {{item.date_to}}{%endif%}</p>
-
-                <h3><strong>{{item.title}}</strong></h3>
-                <h4>{{item.location}}</h4>
-
-                <br>
-
-                {%for text in item.text%}
-                <p>{{text}}</p>
-                {%endfor%}
-                <div class="row">
-                    {%if item.points%}<h4>Key Achievements</h4>{%endif%}
-                    <ul class="fill-circle">
-                        {%for point in item.points%}
-                        <li>{{point}}</li>
-                        {%endfor%}
-
-                    </ul>
-                </div>
-            </div><!-- end .cv-item -->
-            {%endfor%}
-        </div><!-- end .span9 -->
-    </div><!-- end .cv-section -->
-    {%endfor%}
-
-    <!--/content-->
-    <!--footer-->
-    <div id="footer">
-
-        <!-- /// FOOTER     ///////////////////////////////////////////////////////////////////////////////////////////////////////// -->
-
-        <div class="row">
-            <div class="span12">
-                <h4 class="copyright">&copy; 2017 {{site.data.profile.name}} All rights reserved.</h4>
-            </div><!-- end .span12 -->
-        </div><!-- end .row -->
-
-        <!-- //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// -->
-
+            </div>
+        </div>
     </div>
-    <!--/footer-->
+</section>
+<!--End about section-->
+<!--Resume section-->
+<section id="resume" class="resume pt-70">
+    <!--Container-->
+    <div class="container-fluid ">
+        <!--Title-->
+        <div class="row mb-0">
+            <div class="col-sm-12">
+                <div class="block-title pb-50">
+                    <h2 class="title">My Resume</h2>
+                </div>
+            </div>
+        </div>
+        <!--Title End-->
+        <div class="row masonry">
+            <div class="col-sm-8">
+                <div class="resume-boxe masonry">
+                    <div class="inner-resume-boxe">
+                        <div class="block-icon"><i class="ic-toolbox"></i></div>
+                        <div class="block-title">
+                            <h3 class="title medium">Experience</h3>
+                        </div>
+                        <div class="timeline">
+                            <div class="exp">
+                                <div class="hgroup mb-5">
+                                    <h4>Director, Networking, Systems and Infrastructure &ndash; EBOX inc.</h4>
+                                    <h6>Dec 2016 &ndash; May 2017</h6>
+                                </div>
+                                <p>
+                                    While I was at EBOX I was responsible for the restructuration and scalability of
+                                    everything IT.<br>EBOX was undergoing tremendous growth and I had to ensure the
+                                    systems and network would survive it.
+                                </p>
+                                <br>
+                                <h6>Key achievements:</h6>
+                                <ul>
+                                    <li><strong>Lead the team</strong> responsible for the construction of a new
+                                        data center;
+                                    </li>
+                                    <li><strong>Managed the development team and designed an authentication and
+                                        access control system</strong> for a client's subscription and access
+                                        management service designed to allow for extreme scalability;
+                                    </li>
+                                    <li><strong>Redesigned the core network infrastructure</strong> to offer value
+                                        added services based on MPLS technologies running on Juniper MX and ACX
+                                        series routers;
+                                    </li>
+                                    <li><strong>Managed and improved business critical infrastructure</strong>
+                                        providing services to 100k+ clients;
+                                    </li>
+                                    <li>Introduced the key concepts of the <strong>DevOps</strong> toolchain to the
+                                        software development team to allow for more reliable development
+                                        of applications.
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="exp">
+                                <div class="hgroup mb-5">
+                                    <h4>Director, Research and Developpement &ndash; Pre2Post Inc. / ZEROFAIL</h4>
+                                    <h6>Mar 2015 &ndash; Dec 2017</h6>
+                                </div>
+                                <p>
+                                    Thorough my time as Director of R&D at ZEROFAIL I designed a complex Network
+                                    Operations and Business Support System and led initiatives to improve solutions
+                                    and services.
+                                </p>
+                                <br>
+                                <h6>Key achievements:</h6>
+                                <ul>
+                                    <li><strong>Initiated and managed Research and development projects</strong>
+                                        that provided new methods, solutions and improvements on existing services;
+                                    </li>
+                                    <li><strong>Managed and improved business critical systems</strong> to allow
+                                        ZEROFAIL to reach higher levels of efficiency and
+                                        enabled new sources of revenue;
+                                    </li>
+                                    <li><strong>Designed and led the development</strong> of a complex Network
+                                        Operations and Business Support System leveraging technologies such as Graph
+                                        Databases and Python's 3.5 asyncio;
+                                    </li>
+                                    <li><strong>Designed and built</strong> domain specific electronic and
+                                        mechanical systems to help field technicians with their duties.
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="exp">
+                                <div class="hgroup mb-5">
+                                    <h4>Director, Network Management Group &ndash; Pre2Post Inc. / ZEROFAIL</h4>
+                                    <h6>Jul 2010 &ndash; Mar 2015</h6>
+                                </div>
+                                <p>
+                                    As the Director of the Network Management Group at ZEROFAIL I designed and built
+                                    a very extensive MPLS network accross Canada and the north of USA along with the
+                                    most extensive private wireless network in the metropolitain area of Montreal.
+                                </p>
+                                <br>
+                                <h6>Key achievements:</h6>
+                                <ul>
+                                    <li><strong>Initiated and managed Research and development projects</strong>
+                                        that provided new services and technologies that helped grow the business;
+                                    </li>
+                                    <li><strong>Managed and planned the deployment</strong> of a very complex MPLS
+                                        network leveraging a wide range of hardware from Juniper;
+                                    </li>
+                                    <li><strong>Implemented and managed</strong> business processes to allow for
+                                        greater operations efficiency;
+                                    </li>
+                                    <li><strong>Lead teams</strong> consisting of many ad-hoc technicians working in
+                                        many departments.
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="exp">
+                                <div class="hgroup mb-5">
+                                    <h4>Network and systems administrator / Tech. Support &ndash; Pre2Post Inc. /
+                                        ZEROFAIL</h4>
+                                    <h6>May 2008 &ndash; Jul 2010</h6>
+                                </div>
+                                <p>
+                                    I started at ZEROFAIL in the Technical support department where I quickly learnt
+                                    my ways through the different systems of the company.
+                                    I became someone people would rely uppon to help fix issues, the simple and the
+                                    complex ones.
+                                </p>
+                                <br>
+                                <h6>Key achievements:</h6>
+                                <ul>
+                                    <li><strong>Operated and managed</strong> a very large number of customer's
+                                        internal network infrastructures using Cisco, HP, DELL, Juniper and Arista
+                                        switches and firewalls;
+                                    </li>
+                                    <li><strong>Managed multiple companies IT infrastructures</strong> composed of
+                                        many workstations and physical/virtual server environments based on Windows
+                                        Server technologies as well as RedHat and Debian based Linux Distros;
+                                    </li>
+                                    <li><strong>Configured servers and network devices</strong> to grow the hosting
+                                        infrastructure;
+                                    </li>
+                                    <li>Offered an <strong>outstanding technical support</strong> to the customers.
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="resume-boxe masonry">
+                    <div class="inner-resume-boxe">
+                        <div class="block-icon"><i class="ic-pencil"></i></div>
+                        <div class="block-title">
+                            <h3 class="title medium">Education</h3>
+                        </div>
+                        <div class="timeline">
+                            <div class="edu">
+                                <div class="hgroup mb-5">
+                                    <h4>Bachelor, Electrical engineering &ndash; École de technologie
+                                        supérieure</h4>
+                                    <h6>2011 &ndash; <span class="current">Suspended</span></h6>
+                                </div>
+                                <p>Due to the responsabilities I had at the moment with ZEROFAIL, it became
+                                    impossible to attend properly to the courses and achieve results on par with my
+                                    personal
+                                    level of satisfaction.<br>
+                                    I may continue the program in the future, but only time will tell.</p>
+                            </div>
+                            <div class="edu">
+                                <div class="hgroup mb-5">
+                                    <h4>Computer Science Degree, Network specialization &ndash; College
+                                        Montmorency</h4>
+                                    <h6>2003 &ndash; April 2008</h6>
+                                </div>
+                                <p>I successfuly completed all the classes in the program without any issues or
+                                    fallouts.<br>
+                                    Furthermore, the domain specific classes were all completed with grades way
+                                    above the average. I was the best student of the cohort in that program.</p>
+                            </div>
 
-    <a id="back-to-top" href="#">
-        <i class="fa fa-angle-up"></i>
-    </a>
+                        </div>
+                    </div>
+                </div>
 
-    <a id="print" href="javascript:window.print()" title="Print the CV">
-        <i class="fa fa-print"></i>
-    </a>
+                <div class="resume-boxe masonry">
+                    <div class="inner-resume-boxe">
+                        <div class="block-icon"><i class="ic-telescope"></i></div>
+                        <div class="block-title">
+                            <h3 class="title medium">Interests</h3>
+                        </div>
+                        <div class="hb-list mt-40 ">
+                            <ul>
+                                <li>
+                                    <span><i class="ic-megaphone"></i></span>
+                                    <h6>Music</h6>
+                                </li>
 
-    <a id="pdf" href="/assets/Jonathan%20Senecal%20-%20Resume.pdf" title="Download as a PDF">
-        <i class="fa fa-download"></i>
-    </a>
-</div>
+                                <li>
+                                    <span><i class="ic-strategy"></i></span>
+                                    <h6>Gaming</h6>
+                                </li>
+                                <li>
+                                    <span><i class="ic-hotairballoon"></i></span>
+                                    <h6>Travel</h6>
+                                </li>
+                                <li>
+                                    <span><i class="ic-tools-2"></i></span>
+                                    <h6>Electronics</h6>
+                                </li>
+                                <li>
+                                    <span><i class="ic-gears"></i></span>
+                                    <h6>Mechanics</h6>
+                                </li>
+                                <li>
+                                    <span><i class="ic-bike"></i></span>
+                                    <h6>Biking</h6>
+                                </li>
+                                <li>
+                                    <span><i class="ic-speedometer"></i></span>
+                                    <h6>Motorcycle</h6>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-4">
+                <div class="resume-boxe masonry side-box">
+                    <div class="inner-resume-boxe">
+                        <div class="block-icon"><i class="ic-tools-2"></i></div>
+                        <div class="block-title">
+                            <h3 class="title medium">Technical Skills</h3>
+                        </div>
+                        <div class="skills ">
+                            <ul class="skill-list clearfix">
+                                <li>
+                                    <h4>Networking Protocols (BGP, OSPF, RSVP-TE...)</h4>
+                                    <div class="rating">
+                                        <span></span>
+                                        <span></span>
+                                        <span></span>
+                                        <span></span>
+                                        <span></span>
+                                    </div>
+                                </li>
+                                <li>
+                                    <h4>Metro Ethernet and MPLS Technologies</h4>
+                                    <div class="rating">
+                                        <span></span>
+                                        <span></span>
+                                        <span></span>
+                                        <span></span>
+                                        <span></span>
+                                    </div>
+                                </li>
+                                <li>
+                                    <h4>Fiber Optics</h4>
+                                    <div class="rating">
+                                        <span></span>
+                                        <span></span>
+                                        <span></span>
+                                        <span></span>
+                                        <span class="blank"></span>
+                                    </div>
+                                </li>
+                                <li>
+                                    <h4>Server Infrastructures and virtualization</h4>
+                                    <div class="rating">
+                                        <span></span>
+                                        <span></span>
+                                        <span></span>
+                                        <span></span>
+                                        <span class="blank"></span>
+                                    </div>
+                                </li>
+                                <li>
+                                    <h4>Software Development</h4>
+                                    <div class="rating">
+                                        <span></span>
+                                        <span></span>
+                                        <span></span>
+                                        <span class="blank"></span>
+                                        <span class="blank"></span>
+                                    </div>
+                                </li>
+                                <li>
+                                    <h4>Analytical thinking & Research</h4>
+                                    <div class="rating">
+                                        <span></span>
+                                        <span></span>
+                                        <span></span>
+                                        <span></span>
+                                        <span class="blank"></span>
+                                    </div>
+                                </li>
+                                <li>
+                                    <h4>Project Management</h4>
+                                    <div class="rating">
+                                        <span></span>
+                                        <span></span>
+                                        <span></span>
+                                        <span></span>
+                                        <span class="blank"></span>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="resume-boxe masonry side-box">
+                    <div class="inner-resume-boxe">
+                        <div class="block-icon"><i class="ic-tools-2"></i></div>
+                        <div class="block-title">
+                            <h3 class="title medium">Professional Skills</h3>
+                        </div>
+                        <div class="skills ">
+                            <ul class="skill-list clearfix">
+                                <li>
+                                    <h4>Interpersonal Skills</h4>
+                                    <div class="rating">
+                                        <span></span>
+                                        <span></span>
+                                        <span></span>
+                                        <span></span>
+                                        <span class="blank"></span>
+                                    </div>
+                                </li>
+                                <li>
+                                    <h4>Leadership & Teamwork</h4>
+                                    <div class="rating">
+                                        <span></span>
+                                        <span></span>
+                                        <span></span>
+                                        <span></span>
+                                        <span></span>
+                                    </div>
+                                </li>
+                                <li>
+                                    <h4>Adaptability</h4>
+                                    <div class="rating">
+                                        <span></span>
+                                        <span></span>
+                                        <span></span>
+                                        <span></span>
+                                        <span class="blank"></span>
+                                    </div>
+                                </li>
+                                <li>
+                                    <h4>Ability to Work Under Pressure</h4>
+                                    <div class="rating">
+                                        <span></span>
+                                        <span></span>
+                                        <span></span>
+                                        <span></span>
+                                        <span class="blank"></span>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="resume-boxe masonry side-box">
+                    <div class="inner-resume-boxe">
+                        <div class="block-icon"><i class="ic-toolbox"></i></div>
+                        <div class="block-title">
+                            <h3 class="title medium">Skill set</h3>
+                        </div>
+                        <div class="ast-list">
+                            <ul>
+                                <li class="grey lighten-4">
+                                    <span>Responsible</span>
+                                    <span>Diligent</span>
+                                    <span>Rigor</span>
+                                    <span>Loyal</span>
+                                    <span>Efficient</span>
+                                    <span>Communication</span>
+                                    <span>Flexible</span>
+                                    <span>Quick Learner</span>
+                                </li>
+                                <li class="grey lighten-3">
+                                    <span>Data analysis</span>
+                                    <span>Conflict resolution</span>
+                                    <span>Planning</span>
+                                    <span>Creativity</span>
+                                    <span>Adaptability</span>
+                                    <span>Leadership</span>
+                                    <span>Team work</span>
+                                </li>
+                                <li class="grey lighten-2">
+                                    <span>CAD</span>
+                                    <span>Electronics</span>
+                                    <span>SolidWorks</span>
+                                </li>
+                                <li class="grey lighten-1">
+                                    <span>Python</span>
+                                    <span>Ruby</span>
+                                    <span>Perl</span>
+                                    <span>Javascript</span>
+                                    <span>Shell scripting</span>
+                                    <span>Git</span>
+                                    <span>Machine learning</span>
+                                    <span>Graph Databases</span>
+                                    <span>PostgreSQL</span>
+                                    <span>GIS</span>
+                                    <span>Linux</span>
+                                    <span>VMware ESX</span>
+                                    <span>Virtualization</span>
+                                    <span>Docker</span>
+                                    <span>Ansible</span>
+                                    <span>Distributed computing</span>
+                                </li>
+                                <li class="grey">
+                                    <span>MPLS</span>
+                                    <span>Juniper</span>
+                                    <span>Cisco</span>
+                                    <span>Mikrotik</span>
+                                    <span>Ubiquiti</span>
+                                    <span>OSPF</span>
+                                    <span>BGP</span>
+                                    <span>Traffic Engineering</span>
+                                    <span>QoS</span>
+                                    <span>VoIP</span>
+                                    <span>Vlan</span>
+                                    <span>VPN</span>
+                                    <span>Security</span>
+                                    <span>Firewall</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="resume-boxe masonry side-box">
+                    <div class="inner-resume-boxe">
+                        <div class="block-icon"><i class="ic-mic"></i></div>
+                        <div class="block-title">
+                            <h3 class="title medium">Languages</h3>
+                        </div>
+                        <div class="skills ">
+                            <ul class="skill-list clearfix">
+                                <li>
+                                    <h4>English</h4>
+                                    <div class="rating">
+                                        <span></span>
+                                        <span></span>
+                                        <span></span>
+                                        <span></span>
+                                        <span class="blank"></span>
+                                    </div>
+                                </li>
+                                <li>
+                                    <h4>French</h4>
+                                    <div class="rating">
+                                        <span></span>
+                                        <span></span>
+                                        <span></span>
+                                        <span></span>
+                                        <span class="blank"></span>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--/Container -->
+</section>
+<a id="back-to-top" href="#">
+    <i class="fa fa-angle-up"></i>
+</a>
+
+<a id="print" href="javascript:window.print()" title="Print the CV">
+    <i class="fa fa-print"></i>
+</a>
+
+<a id="pdf" href="/assets/files/{{site.active_lang}}/Jonathan%20Senecal%20-%20Resume.pdf" title="Download as a PDF">
+    <i class="fa fa-download"></i>
+</a>

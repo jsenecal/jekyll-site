@@ -1,16 +1,21 @@
-<!--jQuery-->
-<script type="text/javascript" src="https://cdn.jsdelivr.net/jquery/2.2.4/jquery.min.js"></script>
-<!--jQuery easy-pie-chart-->
-<script type="text/javascript"
-        src="https://cdn.jsdelivr.net/jquery.easy-pie-chart/2.1.6/jquery.easypiechart.min.js"></script>
-<!--jQuery placeholder-->
-<script src="https://cdn.jsdelivr.net/jquery.placeholder/2.3.1/jquery.placeholder.min.js"></script>
-<!--jQuery Nice Scroll-->
-<script type="text/javascript" src="https://cdn.jsdelivr.net/jquery.nicescroll/3.5.4/jquery.nicescroll.min.js"></script>
 
-<!-- /// Custom JS ////////  -->
-<script src="/assets/js/cv/plugins.js"></script>
-<script src="/assets/js/cv/scripts.js"></script>
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+<script>
+    (function (g, o, og, l, e, r) {
+        g.GoogleAnalyticsObject = l;
+        g[l] || (g[l] =
+            function () {
+                (g[l].q = g[l].q || []).push(arguments)
+            });
+        g[l].l = +new Date;
+        e = o.createElement(og);
+        r = o.getElementsByTagName(og)[0];
+        e.src = '//www.google-analytics.com/analytics.js';
+        r.parentNode.insertBefore(e, r)
+    }(window, document, 'script', 'ga'));
+    ga('create', 'UA-102441718-1', 'auto');
+    ga('send', 'pageview');
+</script>
 
 <!--Redirect to https-->
 <script>
@@ -18,3 +23,5 @@
     if (!(window.location.host.startsWith("localhost")) && (window.location.protocol !== "https:"))
         window.location.protocol = "https";
 </script>
+
+<script src="/assets/js/cv/scripts.js"></script>
