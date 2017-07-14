@@ -674,15 +674,18 @@ body {
     #wrapper {
         margin: 0;
     }
+    .container-fluid{
+        margin: 0 10px;
+    }
 
     h2.title {
         font-size: 28px;
     }
 
     .block-about {
-        display: inline;
+        display: inline-block;
         width: 100%;
-        padding: 95px 15px 46px;
+        padding: 65px 15px 46px!important;
     }
 
     .block-expertise .expertise {
