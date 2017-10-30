@@ -1,5 +1,18 @@
 - section_header: Work Experience
   items:
+  - icon_class: ti-rss-alt
+    location: ZAP Cooperative de solidarité
+    date_from: August 2017
+    date_to: Now
+    title: Director of technology
+    text:
+      - I am currently responsible for the restructuration and scalability of everything related to technology in order to bring ZAP to their next level.
+      - I am also currently working on a new software platform project to cut down costs and provide a better user experience.
+    points:
+      - Managing and improving a business critical infrastructure providing services to 100k+ end users
+      - Restructuring the business processes to enable ZAP to be more agile in its deliveries
+      - Performed a migration to the cloud for some business critical systems
+      
   - icon_class: ti-harddrives
     location: EBOX inc.
     date_from: December 2016
