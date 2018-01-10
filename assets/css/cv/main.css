@@ -161,7 +161,7 @@ body {
 .inner-resume-boxe {
     border: 1px solid #eaeaea;
     position: relative;
-    padding: 70px 30px 40px;
+    padding: 60px 30px 40px;
 }
 
 .timeline ul li:before {
@@ -203,7 +203,7 @@ body {
 .exp, .edu {
     margin-bottom: 10px;
     padding-left: 30px;
-    padding-top: 30px;
+    padding-top: 20px;
     position: relative;
     page-break-inside: avoid;
 }
@@ -216,7 +216,7 @@ body {
     left: -5px;
     position: absolute;
     text-align: center;
-    top: 33px;
+    top: 24px;
     width: 14px;
 }
 
