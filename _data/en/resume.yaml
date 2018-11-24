@@ -1,16 +1,32 @@
 - section_header: Work Experience
   items:
+  - icon_class: ti-vector
+    location: Connect it Networks
+    date_from: February 2018
+    date_to: Now
+    title: Solution Architect
+    text:
+      - Connect it Networks had an opportunity to expand their portfolio into Cloud and Connectivity services which I designed.
+        Doing so, I drive new business growth and customer success by providing business expertise.
+      - I am currently working at improving business critical processes and related infrastructure to enable the company to withstand future growth and to solve complex problems; taking technology, people, process, culture and desired results into account.
+      - I am also working on automating various business processes to enable a leaner and more efficient approach to provisionning and support.
+    points:
+      - Ensured that applications meet business requirements and systems goals and that they fulfilled business and customer requirements
+      - Reviewed and analyzed existing applications effectiveness and efficiency, and then developed strategies for improving or leveraging these systems
+      - Researched and made recommendations on software products and services in support of procurement and development efforts
+      - Provided technical direction and best practices to be followed by the team
+
   - icon_class: ti-rss-alt
     location: ZAP Cooperative de solidarité
     date_from: August 2017
-    date_to: Now
+    date_to: September 2018
     title: Director of technology
     text:
-      - I am currently responsible for the restructuration and scalability of everything related to technology in order to bring ZAP to their next level.
-      - I am also currently working on a new software platform project to cut down costs and provide a better user experience.
+      - I was responsible for the restructuration and scalability of everything related to technology in order to bring ZAP to their next level.
+      - I designed and worked on a new software platform project to cut down costs and provide a better user experience.
     points:
-      - Managing and improving a business critical infrastructure providing services to 100k+ end users
-      - Restructuring the business processes to enable ZAP to be more agile in its deliveries
+      - Managed and improved a business critical infrastructure providing services to 100k+ end users
+      - Restructured the business processes to enable ZAP to be more agile in its deliveries
       - Performed a migration to the cloud for some business critical systems
       
   - icon_class: ti-harddrives
