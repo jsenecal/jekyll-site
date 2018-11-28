@@ -5,7 +5,7 @@ lang: en
 permalink: /cv
 ---
 
-{% assign sections = site.cv_sections  %}
+{% assign sections = site.cvsections  %}
 {% for section in sections %}
 <!--{{section.name}}-->
 <section id="{{ section.id | slugify }}" class="{{section.class | join:' '}}">
