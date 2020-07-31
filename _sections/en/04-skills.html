@@ -6,30 +6,29 @@ heading: What I'm good at
 lang: en
 show: true
 ---
-
 {% for section in site.data.skills %}
-{%case section.type %}
-{%when "detailed" %}
+{% case section.type %}
+{% when "detailed" %}
 <div class="detailed-skills row">
-    <h2>{{section.title}}</h2>
+    <h2>{{ section.title }}</h2>
     <div class="col-lg-6 col-md-6 col-sm-6">
         <div class="skill-content">
-            <span>“{{section.quote}}"{%if section.quote_author%} <i>- {{section.quote_author}}{%endif%}</i></span>
-            <p>{{section.text|join:"<br/><br/>"}}</p>
+            <span>“{{ section.quote }}"{% if section.quote_author %} <i>- {{ section.quote_author }}{% endif %}</i></span>
+            <p>{{ section.text|join:"<br/><br/>" }}</p>
         </div>
     </div>
     <div class="col-lg-6 col-md-6 col-sm-6">
         <div class="skill">
             <ul>
-                {%for skill in section.skills%}
-                <li>{{skill.name}}
+                {% for skill in section.skills %}
+                <li>{{ skill.name }}
                     <div class="bar_container">
-                    <span class="bar" data-bar='{ "color": "#07cb79", "delay": "{{forloop.index|minus:1|times:600}}" }'>
-                        <span class="pct">{{skill.pct}}%</span>
+                    <span class="bar" data-bar='{ "color": "#07cb79", "delay": "{{ forloop.index|minus:1|times:600 }}" }'>
+                        <span class="pct">{{ skill.pct }}%</span>
                     </span>
                     </div>
                 </li>
-                {%endfor%}
+                {% endfor %}
             </ul>
             <div class="skill-chart">
                 <div class="skill-chart-expand clearfix">
@@ -50,56 +49,49 @@ show: true
         </div>
     </div>
 </div>
-{%when "piechart" %}
+{% when "piechart" %}
 <div class="pie-skills row">
     <div class="col-lg-12 col-md-12">
-        <h2>{{section.title}}</h2>
-        <p>{{section.text|join:"<br/><br/>"}}</p>
+        <h2>{{ section.title }}</h2>
+        <p>{{ section.text|join:"<br/><br/>" }}</p>
     </div>
 </div>
 <div class="row">
-    {%for skill in section.skills%}
+    {% for skill in section.skills %}
     <div class="col-lg-3 col-md-3 col-sm-3">
         <div class="chart-bar">
-            <div class="chart" id="chart1" data-percent="{{skill.pct}}">
+            <div class="chart" id="chart1" data-percent="{{ skill.pct }}">
                 <span class="percent"></span>
             </div>
-            <h3>{{skill.name|split:" "|join:"<br/>"}}</h3>
+            <h3>{{ skill.name|split:" "|join:"<br/>" }}</h3>
         </div>
     </div>
-    {%endfor%}
+    {% endfor %}
 </div>
-{%when "points" %}
+{% when "points" %}
 <div class="knowledge">
     <div class="row">
         <div class="col-lg-12 col-md-12">
-            <h2>{{section.title}}</h2>
-            <p>{{section.text|join:"<br/><br/>"}}</p>
+            <h2>{{ section.title }}</h2>
+            <p>{{ section.text|join:"<br/><br/>" }}</p>
         </div>
     </div>
     <div class="row">
-        {%assign col_qty = 3%}
-
-        {%assign qty_per_col = section.skills | size | divided_by:col_qty%}
-        {%assign col_class_size = 12|divided_by:col_qty%}
-        {%assign position = 0%}
-
+        {% assign col_qty = 3 %}
+        {% assign qty_per_col = section.skills | size | divided_by:col_qty %}
+        {% assign col_class_size = 12|divided_by:col_qty %}
+        {% assign position = 0 %}
         {% for i in (1..col_qty) %}
-        <div class="col-lg-{{col_class_size}} col-md-{{col_class_size}} col-sm-{{col_class_size}}">
+        <div class="col-lg-{{ col_class_size }} col-md-{{ col_class_size }} col-sm-{{ col_class_size }}">
             <ul>
-                {%for skill in section.skills limit:qty_per_col offset:position%}
-                <li><span class="{{skill.icon_class}}"></span> {{skill.name}}</li>
-                {%endfor%}
-                {%assign position = position|plus:qty_per_col%}
-
+                {% for skill in section.skills limit:qty_per_col offset:position %}
+                <li><span class="{{ skill.icon_class }}"></span> {{ skill.name }}</li>
+                {% endfor %}
+                {% assign position = position|plus:qty_per_col %}
             </ul>
         </div>
-        {%endfor%}
+        {% endfor %}
     </div>
 </div>
-{%endcase%}
-{%endfor%}
-
-
-
-
+{% endcase %}
+{% endfor %}

@@ -1,15 +1,28 @@
 - section_header: Work Experience
   items:
+  - icon_class: ti-light-bulb
+    location: Mindgeek
+    date_from: April 2020
+    date_to: Now
+    title: Network engineer
+    text:
+      - Working with a team of network gurus, I manage and scale Mindgeek's network footprint to allow for continued growth and performance.
+      - I am responsible for building and maintaining the day-to-day operation of computer networks that our organization rely on. These networks typically include an intranet, extranet, local area network (LAN), and wide area network (WAN) and spans over multiple countries and continents.
+      - I also initiated and manage the automation of everything networking to enable faster turnarounds and more efficient topologies.
+    points:
+      - Maintaining and administering networks and related environments including automation software, hardware, and configurations.
+      - Troubleshooting, diagnosing and resolving hardware, software, and other network related problems.
+  
   - icon_class: ti-vector
     location: Connect it Networks
     date_from: February 2018
-    date_to: Now
+    date_to: April 2020
     title: Head of Research and Developpement
     text:
       - Connect it Networks had an opportunity to expand their portfolio into Cloud and Connectivity services which I designed.
-        Doing so, I drive new business growth and customer success by providing business expertise.
-      - I am currently working at improving business critical processes and related infrastructure to enable the company to withstand future growth and to solve complex problems; taking technology, people, process, culture and desired results into account.
-      - I am also working on automating various business processes to enable a leaner and more efficient approach to provisionning and support.
+      - Doing so, I drove new business growth and customer success by providing business expertise.
+      - I worked at improving business critical processes and related infrastructure to enable the company to withstand future growth and to solve complex problems; taking technology, people, process, culture and desired results into account.
+      - I also automated various business processes that enabled a leaner and more efficient approach to provisionning and support.
     points:
       - Ensured that applications met business requirements and systems goals and that they fulfilled business and customer requirements
       - Reviewed and analyzed existing applications effectiveness and efficiency, and then developed strategies for improving or leveraging these systems

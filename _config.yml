@@ -27,7 +27,7 @@ gems:
   - jekyll-polyglot
 
 # i18n specific config
-languages: ["en", "fr"]
+languages: ["en",]
 default_lang: "en"
 exclude_from_localization: ["images", "css"]
 parallel_localization: true
