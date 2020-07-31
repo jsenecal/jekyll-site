@@ -32,4 +32,4 @@ default_lang: "en"
 exclude_from_localization: ["images", "css"]
 parallel_localization: true
 
-exclude: [.idea,]
+exclude: [.vscode, .gitignore]
