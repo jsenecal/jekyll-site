@@ -1,14 +1,21 @@
 - section_header: Work Experience
   items:
+  - icon_class: ti-vector
+    location: Metro Optic
+    date_from: April 2022
+    date_to: Now
+    title: NOC Architecture and Operations Specialist
+    text:
+      - Going back to my roots, I help to manage and scale the network environment at Metro Optic to allow for continued growth and performance.
   - icon_class: ti-light-bulb
     location: 9219-1568 Quebec Inc.
     date_from: April 2020
-    date_to: Now
+    date_to: April 2022
     title: Manager, Network Infrastructure and Infrastructure automation
     text:
-      - Working with a team of network gurus, I manage and scale the network footprint to allow for continued growth and performance.
-      - I am responsible for building and maintaining the day-to-day operation of computer networks that our organization rely on. These networks typically include an intranet, extranet, local area network (LAN), and wide area network (WAN) and spans over multiple countries and continents.
-      - I also initiated and manage the automation of everything networking to enable faster turnarounds and more efficient topologies.
+      - Working with a team of network gurus, I managed and scaled the network footprint to allow for continued growth and performance.
+      - I was responsible for building and maintaining the day-to-day operation of computer networks that the organization relied on.
+      - I also initiated and managed the automation of everything networking to enable faster turnarounds and more efficient topologies.
     points:
       - Maintaining and administering networks and related environments including automation software, hardware, and configurations.
       - Troubleshooting, diagnosing and resolving hardware, software, and other network related problems.
