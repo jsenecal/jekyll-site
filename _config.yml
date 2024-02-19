@@ -8,7 +8,7 @@ description:
 keywords: ["cv", "resume", "networking", "réseau", "project manager", "gestion de projets", "curriculum vitae", "work", "travail",
           "experience", "guru", "network engineer", "network engineering"]
 cv_enabled: true
-google_api_key: AIzaSyAEDPnmrPaqwXxmOFC7k6LzJH4xvuv8My8
+google_api_key: AIzaSyBM1jUTzFVH-J6bhCwkPFIcrl5HVNwRpRI
 index:
   en: index.en.html
   fr: index.fr.html
