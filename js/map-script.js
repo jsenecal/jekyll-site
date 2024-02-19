@@ -1,7 +1,7 @@
 (function ($) {
     "use strict";
     function initialize_map() {
-        var myLatLng = new google.maps.LatLng(45.553198, -73.612906);
+        var myLatLng = new google.maps.LatLng(45.5377353,-73.7131489);
 
         var mapOptions = {
             zoom: 12,
