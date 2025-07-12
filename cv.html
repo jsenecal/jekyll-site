@@ -1,0 +1,32 @@
+---
+layout: cv
+ref: cv
+lang: en
+permalink: /cv
+---
+
+{% if site.active_lang %}
+  {% assign current_lang = site.active_lang %}
+{% else %}
+  {% assign current_lang = page.lang | default: site.default_lang %}
+{% endif %}
+{% assign sections = site.cvsections | where:"lang",current_lang %}
+{% for section in sections %}
+<!--{{section.name}}-->
+<section id="{{ section.id | slugify }}" class="{{section.class | join:' '}}">
+    {{section.content}}
+</section>
+<!--/{{section.name}}-->
+{% endfor %}
+
+<a id="back-to-top" href="#">
+    <i class="fa fa-angle-up"></i>
+</a>
+
+<a id="print" href="javascript:window.print()" title="Imprimer le CV">
+    <i class="fa fa-print"></i>
+</a>
+
+<a id="pdf" href="/assets/files/en/Jonathan%20Senecal%20-%20Resume.pdf" title="Télécharger en PDF">
+    <i class="fa fa-download"></i>
+</a>

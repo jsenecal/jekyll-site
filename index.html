@@ -5,21 +5,30 @@ lang: en
 permalink: /
 ---
 
-{% assign sections = site.sections | where:"show","true" %}
+{% if site.active_lang %}
+  {% assign current_lang = site.active_lang %}
+{% else %}
+  {% assign current_lang = page.lang | default: site.default_lang %}
+{% endif %}
+{% assign sections = site.sections | where:"show","true" | where:"lang",current_lang %}
 
 <section class="content-scroller">
-    <div id="home" class="intro-bg gradient-02" style="background: url('images/bg.jpg');">
+    <div id="home" class="intro-bg gradient-02" style="background: url('{{ "/images/bg.jpg" | relative_url }}');">
         <div id="scroll-down" class="intro">
             <div class="intro-content">
                 <div class="container-fluid">
                     <div class="row">
                         <div class="col-md-12 text-left content-left">
-                            <h1><span> Hello, my name is </span> Jonathan Senecal </h1>
-                            {% assign intro_strings = site.data.intro | map: 'type' %}
+                            <h1><span>{% if current_lang == 'fr' %} Bonjour, je m'appelle {% else %} Hello, my name is {% endif %}</span> Jonathan Senecal </h1>
+                            {% if current_lang == 'fr' %}
+                                {% assign intro_strings = site.data.fr.intro | map: 'type' %}
+                            {% else %}
+                                {% assign intro_strings = site.data.en.intro | map: 'type' %}
+                            {% endif %}
                             <div id="intro-strings">{{intro_strings|join:"<br/>"}}</div>
                             <div class="type-it"></div>
                             {%if site.cv_enabled%}
-                            <div class="button-large"><a href="/cv">Download/Print my CV</a></div>
+                            <div class="button-large"><a href="{% if current_lang == 'fr' %}/fr/cv{% else %}/cv{% endif %}">{% if current_lang == 'fr' %}Télécharger/Imprimer mon CV{% else %}Download/Print my CV{% endif %}</a></div>
                             {%endif%}
                         </div>
                     </div>
