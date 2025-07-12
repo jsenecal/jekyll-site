@@ -1,0 +1,23 @@
+- name: Oleg Sapanyuk
+  title: Spécialiste NOC
+  comment:
+    - Jonathan est définitivement l'une des personnes les plus intelligentes avec qui j'ai eu la chance de travailler. Il excelle dans plusieurs domaines, allant de la construction d'un centre de données à la conception d'un système ERP très complexe et tout ce qui se trouve entre les deux.
+    - Il n'est pas du genre à fuir un défi; au contraire, il se pousse constamment à apprendre de nouvelles choses, ou à améliorer ce qu'il sait déjà. Pour couronner le tout, il est toujours prêt à aider, et c'est toujours un gars amusant avec qui travailler.
+    - Jonathan était l'une des raisons pour lesquelles j'avais hâte d'aller travailler le matin, et j'espère pouvoir travailler avec lui à nouveau.
+  picture_path: assets/images/faces/osapanyuk.jpg
+- name: Eric Dugas
+  title: Opérations réseau senior
+  comment:
+    - J'ai eu le plaisir de connaître Jonathan pendant un peu plus de 7 ans et j'ai travaillé directement avec lui au cours des 4 dernières années.
+    - Je peux dire que Jonathan est une personne très aidante et facile à vivre, pleine d'expérience et possède de profondes connaissances dans de nombreux domaines, notamment l'ingénierie des réseaux de fibre optique, l'ingénierie électrique, NetOps, DevOps et SysOps. C'est un excellent enseignant, un joueur d'équipe et certainement un atout énorme à avoir dans votre entreprise!
+  picture_path: assets/images/faces/edugas.jpg
+- name: Philippe Blanchard
+  title: Gestionnaire de projet senior
+  comment: Jo est l'une des personnes les plus brillantes que je connaisse. Pour tout ce qui concerne Linux, les réseaux ou la gestion de projets ERP complexes, je ne demanderais à personne d'autre.
+  picture_path: assets/images/faces/pblanchard.jpg
+- name: Leifur Halldor Asgeirsson
+  title: DevOps / Développeur logiciel
+  comment:
+    - J'ai travaillé sous la direction de Jonathan sur des projets de logiciels et de devops. Il s'efforce de produire des résultats de qualité et de dépasser les attentes, et à cette fin, il trouve habilement des moyens de jouer sur les forces de son équipe. Il a un talent pour transmettre son expertise et fait bon usage de l'expertise des autres en écoutant et en gardant l'esprit ouvert aux solutions proposées.
+    - Un vrai joueur d'équipe, Jonathan est généralement le premier à prêter main-forte lorsque le besoin s'en fait sentir.
+  picture_path: assets/images/faces/lasgeirsson.jpg

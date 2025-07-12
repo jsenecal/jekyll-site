@@ -1,0 +1,186 @@
+---
+id: resume
+class: ["resume", "pt-60"]
+lang: fr
+---
+{% assign resume = site.data.resume %}
+{% assign cv = site.data.cv_data %}
+
+<!--Container-->
+<div class="container-fluid ">
+    <!--Title-->
+    <div class="row mb-0">
+        <div class="col-sm-12">
+            <div class="block-title pb-40">
+                <h2 class="title">Mon CV</h2>
+            </div>
+        </div>
+    </div>
+    <!--Title End-->
+    <div class="row masonry">
+        <div class="col-sm-8">
+            {% for section in resume %}
+            {% if section.section_header == 'Expérience Professionnelle' %}
+            <div class="resume-boxe masonry">
+                <div class="inner-resume-boxe">
+                    <div class="block-icon"><i class="{{ cv.resume_sections.experience.icon }}"></i></div>
+                    <div class="block-title">
+                        <h3 class="title medium">{{ cv.resume_sections.experience.title }}</h3>
+                    </div>
+                    <div class="timeline">
+                        {% for item in section.items %}
+                        <div class="exp">
+                            <div class="hgroup mb-5">
+                                <h4>{{ item.title }} &ndash; {{ item.location }}</h4>
+                                <h6>{{ item.date_from }} &ndash; 
+                                    {% if item.date_to == 'Maintenant' %}
+                                        <span class="current">{{ item.date_to }}</span>
+                                    {% else %}
+                                        <span>{{ item.date_to }}</span>
+                                    {% endif %}
+                                </h6>
+                            </div>
+                            {% for text in item.text %}
+                            <p>{{ text }}</p>
+                            {% endfor %}
+                            {% if item.points %}
+                            <br>
+                            <h6>Réalisations clés:</h6>
+                            <ul>
+                                {% for point in item.points %}
+                                <li>{{ point }}</li>
+                                {% endfor %}
+                            </ul>
+                            {% endif %}
+                        </div>
+                        {% endfor %}
+                    </div>
+                </div>
+            </div>
+            {% elsif section.section_header == 'Formation' %}
+            <div class="resume-boxe masonry">
+                <div class="inner-resume-boxe">
+                    <div class="block-icon"><i class="{{ cv.resume_sections.education.icon }}"></i></div>
+                    <div class="block-title">
+                        <h3 class="title medium">{{ cv.resume_sections.education.title }}</h3>
+                    </div>
+                    <div class="timeline">
+                        {% for item in section.items %}
+                        <div class="edu">
+                            <div class="hgroup mb-5">
+                                <h4>{{ item.title }} &ndash; {{ item.location }}</h4>
+                                {% unless item.suspended %}
+                                <h6>{{ item.date_from }} &ndash; {{ item.date_to }}</h6>
+                                {% endunless %}
+                            </div>
+                            <p>{{ item.text }}</p>
+                        </div>
+                        {% endfor %}
+                    </div>
+                </div>
+            </div>
+            {% endif %}
+            {% endfor %}
+        </div>
+        <div class="col-sm-4">
+            <div class="resume-boxe masonry side-box">
+                <div class="inner-resume-boxe">
+                    <div class="block-icon"><i class="ic-tools-2"></i></div>
+                    <div class="block-title">
+                        <h3 class="title medium">{{ cv.technical_skills.title }}</h3>
+                    </div>
+                    <div class="skills ">
+                        <ul class="skill-list clearfix">
+                            {% for skill in cv.technical_skills.items %}
+                            <li>
+                                <h4>{{ skill.name }}</h4>
+                                <div class="rating">
+                                    {% for i in (1..5) %}
+                                        {% if i <= skill.rating %}
+                                            <span></span>
+                                        {% else %}
+                                            <span class="blank"></span>
+                                        {% endif %}
+                                    {% endfor %}
+                                </div>
+                            </li>
+                            {% endfor %}
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="resume-boxe masonry side-box">
+                <div class="inner-resume-boxe">
+                    <div class="block-icon"><i class="ic-tools-2"></i></div>
+                    <div class="block-title">
+                        <h3 class="title medium">{{ cv.professional_skills.title }}</h3>
+                    </div>
+                    <div class="skills ">
+                        <ul class="skill-list clearfix">
+                            {% for skill in cv.professional_skills.items %}
+                            <li>
+                                <h4>{{ skill.name }}</h4>
+                                <div class="rating">
+                                    {% for i in (1..5) %}
+                                        {% if i <= skill.rating %}
+                                            <span></span>
+                                        {% else %}
+                                            <span class="blank"></span>
+                                        {% endif %}
+                                    {% endfor %}
+                                </div>
+                            </li>
+                            {% endfor %}
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="resume-boxe masonry side-box">
+                <div class="inner-resume-boxe">
+                    <div class="block-icon"><i class="ic-toolbox"></i></div>
+                    <div class="block-title">
+                        <h3 class="title medium">{{ cv.skill_set.title }}</h3>
+                    </div>
+                    <div class="ast-list">
+                        <ul>
+                            {% for category in cv.skill_set.categories %}
+                            <li class="{{ category.color }}">
+                                {% for skill in category.skills %}
+                                <span>{{ skill }}</span>
+                                {% endfor %}
+                            </li>
+                            {% endfor %}
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="resume-boxe masonry side-box">
+                <div class="inner-resume-boxe">
+                    <div class="block-icon"><i class="ic-mic"></i></div>
+                    <div class="block-title">
+                        <h3 class="title medium">{{ cv.languages.title }}</h3>
+                    </div>
+                    <div class="skills ">
+                        <ul class="skill-list clearfix">
+                            {% for language in cv.languages.items %}
+                            <li>
+                                <h4>{{ language.name }}</h4>
+                                <div class="rating">
+                                    {% for i in (1..5) %}
+                                        {% if i <= language.rating %}
+                                            <span></span>
+                                        {% else %}
+                                            <span class="blank"></span>
+                                        {% endif %}
+                                    {% endfor %}
+                                </div>
+                            </li>
+                            {% endfor %}
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--/Container -->

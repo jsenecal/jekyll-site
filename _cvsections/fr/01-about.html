@@ -1,0 +1,58 @@
+---
+id: about
+class: ["about"]
+lang: fr
+---
+{% assign profile = site.data.profile %}
+{% assign cv = site.data.cv_data %}
+
+<div class="block-content clearfix">
+    <div class="block-about grey darken-3 pt-20 ">
+        <div class="block-title">
+            <h1 class="title">{{ profile.name }}</h1>
+        </div>
+        <blockquote>
+            <h5 class="white-text">
+                {{ cv.tagline }}
+            </h5>
+        </blockquote>
+        <p class="mt-20">
+            {{ cv.mission }}<br>
+
+            Je suis une personne soucieuse du détail et motivée par les défis avec <strong class="grey-text text-lighten-4">{{ cv.experience_summary }}</strong> alors parlons de comment je pourrais vous aider à réaliser ce dont vous rêvez.
+        </p>
+    </div>
+    <div class="block-about grey darken-4 ">
+        <div class="block-title">
+            <h2 class="title">{{ cv.personal_info.title }}</h2></div>
+        <ul class="block-info">
+            <li><span>Téléphone</span> : {{ profile.phone }}</li>
+            <li><span>Courriel</span> : <a
+                href="mailto:{{ profile.email }}">{{ profile.email }}</a></li>
+            <li><span>Site Web</span> : <a href="https://{{ profile.web }}/">{{ profile.web }}</a>
+            </li>
+            <li class="hidden-print"><span>Freelance</span> : {{ cv.personal_info.freelance }}</li>
+            <li><span>Adresse</span> : {{ profile.address | remove: '<br/>' }}</li>
+        </ul>
+    </div>
+    <div class="block-about grey darken-3">
+        <div class="block-title">
+            <h2 class="title">{{ cv.expertise.title }}</h2>
+        </div>
+        <div class="block-expertise">
+            {% for item in cv.expertise.items %}
+            <div class="expertise {% unless forloop.last %}mb-10{% endunless %} clearfix">
+                <div class="exp-ico">
+                    <span class="ico">
+                        <i class="{{ item.icon }}"></i>
+                    </span>
+                </div>
+                <div class="exp-det">
+                    <h6>{{ item.title }}</h6>
+                    <p>{{ item.description }}</p>
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+</div>

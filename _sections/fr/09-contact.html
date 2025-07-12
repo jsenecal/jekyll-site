@@ -1,0 +1,35 @@
+---
+id: contact
+class: ["google-map", "white-bg", "page-section"]
+title: Contact
+heading: Dites bonjour !
+lang: fr
+show: true
+includes_heading: true
+---
+<div id="google-map">
+            <div id="map-canvas"></div>
+        </div>
+        <div class="contact">
+            <h2>Dites bonjour, c'est gratuit !</h2>
+            <div class="address">
+                <ul>
+                    <li><span class="ti-location-pin"></span>
+                        <p>{{site.data.profile.address}}</p></li>
+                    <li><span class="ti-marker-alt"></span>
+                        <p><a href="mailto:{{site.data.profile.email}}">{{site.data.profile.email}}</a></p></li>
+                    <li><span class="ti-mobile"></span>
+                        <p>{{site.data.profile.phone}}</p></li>
+                </ul>
+            </div>
+            <div class="social">
+                <h4>Je suis aussi sur d'autres plateformes !</h4>
+                <p>Vous pouvez me suivre sur les réseaux sociaux ou m'ajouter en favori sur GitHub pour avoir les dernières nouvelles de moi et bien plus encore.</p>
+                {%include social_buttons.html%}
+            </div>
+            {%if site.cv_enabled%}<div class="button-large"><a href="/fr/cv">Télécharger/Imprimer mon CV</a></div>{%endif%}
+        </div>
+
+<!-- map -->
+<script src="https://maps.googleapis.com/maps/api/js?key={{site.google_api_key}}" type="text/javascript" defer='defer'></script>
+<script type="text/javascript" src="/js/map-script.js" defer='defer'></script>

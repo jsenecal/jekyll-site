@@ -1,0 +1,97 @@
+# CV-specific data
+tagline: Architecte de solutions technologiques talentueux et gestionnaire de projets situé à Montréal
+mission: Ma mission personnelle est de créer des choses, réparer des trucs et aider les autres... Il se trouve que j'adore travailler avec des technologies de pointe, alors c'est devenu mon domaine d'expertise.
+experience_summary: plus de 10 ans d'expérience en télécommunications, infrastructures de serveurs et conception et construction de réseaux de qualité opérateur
+
+# Personal info section
+personal_info:
+  title: Informations personnelles
+  freelance: Disponible
+  
+# Expertise section
+expertise:
+  title: Expertise
+  items:
+    - icon: ic-layers
+      title: Conception d'infrastructure
+      description: Les télécommunications, les infrastructures de serveurs et la conception et construction de réseaux de qualité opérateur n'ont aucun secret pour moi.
+    - icon: ic-laptop
+      title: Développement logiciel agile
+      description: Les technologies logicielles de pointe font également partie de ma boîte à outils pour créer des infrastructures puissantes et uniques.
+    - icon: ic-genius
+      title: Technologies Cloud et IA modernes
+      description: Expérimenté avec l'orchestration Kubernetes, GitOps avec FluxCD, et l'intégration de modèles de langage pour l'automatisation et les systèmes intelligents.
+
+# Technical Skills for CV
+technical_skills:
+  title: Compétences techniques
+  items:
+    - name: Protocoles réseau (BGP, OSPF, RSVP-TE...)
+      rating: 5
+    - name: Technologies Metro Ethernet et MPLS
+      rating: 5
+    - name: Kubernetes et orchestration de conteneurs
+      rating: 4
+    - name: Réseau optique (CWDM/DWDM)
+      rating: 4
+    - name: Infrastructures de serveurs et virtualisation
+      rating: 4
+    - name: LLMs et intégration IA
+      rating: 4
+    - name: Développement logiciel agile
+      rating: 3
+    - name: Pensée analytique et recherche
+      rating: 4
+    - name: Gestion de projet
+      rating: 4
+
+# Professional Skills for CV
+professional_skills:
+  title: Compétences professionnelles
+  items:
+    - name: Compétences interpersonnelles
+      rating: 4
+    - name: Leadership et travail d'équipe
+      rating: 5
+    - name: Adaptabilité
+      rating: 4
+    - name: Capacité à travailler sous pression
+      rating: 4
+
+# Skill Set categories
+skill_set:
+  title: Compétences
+  categories:
+    - level: 1
+      color: grey lighten-4
+      skills: [Responsable, Diligent, Rigueur, Loyal, Efficace, Communication, Flexible, Apprenant rapide]
+    - level: 2
+      color: grey lighten-3
+      skills: [Analyse de données, Résolution de conflits, Planification, Créativité, Adaptabilité, Leadership, Travail d'équipe]
+    - level: 3
+      color: grey lighten-2
+      skills: [CAO, Électronique, SolidWorks]
+    - level: 4
+      color: grey lighten-1
+      skills: [Python, Ruby, Perl, Javascript, Scripts shell, Git, Apprentissage automatique, Bases de données graphiques, PostgreSQL, SIG, Linux, VMware ESX, Virtualisation, Docker, Ansible, Calcul distribué, Kubernetes, FluxCD, LLMs, Intégration IA]
+    - level: 5
+      color: grey
+      skills: [MPLS, Réseau optique, Juniper, Cisco, Mikrotik, Ubiquiti, OSPF, BGP, Ingénierie du trafic, Automatisation réseau, QoS, VoIP, Vlan, VPN, Sécurité, Pare-feu]
+
+# Languages
+languages:
+  title: Langues
+  items:
+    - name: Anglais
+      rating: 5
+    - name: Français
+      rating: 5
+
+# Resume sections
+resume_sections:
+  experience:
+    title: Expérience
+    icon: ic-briefcase
+  education:
+    title: Formation
+    icon: ic-pencil

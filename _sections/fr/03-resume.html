@@ -1,0 +1,46 @@
+---
+id: resume
+class: ["resume", "white-bg", "page-section"]
+title: CV
+heading: Ce que j'ai fait
+lang: fr
+show: true
+---
+
+
+{% for data in site.data.resume%}
+<div class="row">
+    <div class="col-lg-12 col-md-12">
+        <h2>{{data.section_header}}:</h2>
+    </div>
+</div>
+{% for item in data.items %}
+<div class="resume-block">
+    <div class="row">
+        <div class="col-lg-4 col-md-4 col-sm-4">
+            <div class="resume-icon">
+                <span class="{{item.icon_class}}"></span>
+            </div>
+            <div class="resume-name">
+                <h3>{{item.location}}</h3>
+                <span>{% if item.suspended%}Suspendu{%else%}{{item.date_from}} à {{item.date_to}}{%endif%}</span>
+            </div>
+        </div>
+        <div class="col-lg-8 col-md-8 col-sm-8">
+            <div class="resume-info">
+                <h3>{{item.title}}</h3>
+                {%for text in item.text%}
+                <p>{{text}}</p>
+                {%endfor%}
+                {%if item.points%}<h4>Réalisations clés</h4>{%endif%}
+                <ul>
+                    {%for point in item.points%}
+                    <li>{{point}}</li>
+                    {%endfor%}
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+{% endfor %}
+{% endfor %}

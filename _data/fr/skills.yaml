@@ -1,0 +1,67 @@
+- type: detailed
+  title: Compétences Professionnelles
+  quote: Pour obtenir quelque chose que vous n'avez jamais eu, vous devez faire quelque chose que vous n'avez jamais fait.
+  quote_author: Thomas Jefferson
+  text:
+      - Mes <b>compétences interpersonnelles et de création de relations</b> ont aidé mes collègues à réaliser que j'étais disponible pour eux et que je pouvais les aider à accomplir beaucoup plus en équipe qu'ils ne le feraient individuellement.<br/>
+        Toujours prêt à aider, mes <b>excellentes compétences en leadership</b> se sont avérées utiles à maintes reprises lorsqu'ils comptaient sur moi pour les aider à atteindre leur potentiel.
+        Au fil du temps, j'ai également développé de <b>solides compétences en communication</b> afin d'écouter efficacement mes gestionnaires, collègues ou clients, de communiquer et de faciliter efficacement les discussions avec mes coéquipiers, de préparer et de livrer des présentations, d'écrire de la documentation, etc.
+      - Étant le penseur critique que je suis, mes <b>compétences de recherche très efficaces</b> et ma capacité à comprendre les choses rapidement me placent parfois dans une position de mentor envers mon équipe car je peux facilement analyser des situations sous plusieurs angles et rechercher des questions pour définir les problèmes clés et les expliquer.
+      - Dans l'ensemble, je suis un <b>joueur d'équipe flexible</b> qui prospère dans un environnement de travail d'équipe rapide mais organisé.
+
+  skills:
+    - name: Compétences interpersonnelles
+      pct: 72
+      rating: Avancé
+      text: Mes <b>compétences interpersonnelles et de création de relations</b> ont aidé mes collègues à réaliser que j'étais disponible pour eux et que je pouvais les aider à accomplir beaucoup plus en équipe qu'ils ne le feraient individuellement.<br/>
+    - name: Leadership
+      pct: 85
+      rating: Excellent
+      text: Toujours prêt à aider, mes <b>excellentes compétences en leadership</b> se sont avérées utiles à maintes reprises lorsqu'ils comptaient sur moi pour les aider à atteindre leur potentiel.
+    - name: Communication
+      pct: 78
+      rating: Solide
+      text: Au fil du temps, j'ai également développé de <b>solides compétences en communication</b> afin d'écouter efficacement mes gestionnaires, collègues ou clients, de communiquer et de faciliter efficacement les discussions avec mes coéquipiers, de préparer et de livrer des présentations, d'écrire de la documentation, etc.
+    - name: Compétences de recherche
+      pct: 98
+      rating: Très efficace
+      text: Étant le penseur critique que je suis, mes <b>compétences de recherche très efficaces</b> et ma capacité à comprendre les choses rapidement me placent parfois dans une position de mentor envers mon équipe car je peux facilement analyser des situations sous plusieurs angles et rechercher des questions pour définir les problèmes clés et les expliquer.
+    - name: Adaptabilité
+      pct: 65
+      rating: Excellente
+      text: Je suis un <b>joueur d'équipe flexible</b> qui prospère dans un environnement de travail d'équipe rapide mais organisé.
+
+- type: detailed
+  title: Compétences Techniques
+  quote: La seule source de connaissance est l'expérience.
+  quote_author: Albert Einstein
+  text:
+      - Mon expertise technique est très large en raison des multiples aspects de l'expérience de travail que j'ai acquise au fil du temps.<br>
+        Bien que j'aie une connaissance très approfondie des <b>télécommunications, des infrastructures de serveurs et de la conception et construction de réseaux de qualité opérateur</b>, j'ai également acquis de nombreuses autres compétences dans d'autres domaines tels que le <b>développement de logiciels</b> et l'<b>électronique</b>.
+      - Ma boîte à outils réseau préférée se compose de routeurs <b>Juniper JunOS</b> exécutant les protocoles <b>BGP</b> et <b>OSPF</b> et utilisant des technologies telles que les <b>VPN</b> L2 et L3 basés sur <b>MPLS</b>. L'<b>ingénierie du trafic</b> et la <b>QoS</b> n'ont aucun secret pour moi.<br>
+        J'ai une connaissance très approfondie des réseaux de fibres <b>CWDM</b> et <b>DWDM</b> et je sais vraiment comment épisser des câbles à fibre optique et gérer des réseaux de fibres <b>extérieurs</b>.
+        Les technologies de réseau sans fil (micro-ondes) sont également devenues quelque chose avec lequel je suis très familier, en utilisant des antennes <b>Ubiquiti networks</b>, j'ai réalisé des liaisons de grande distance pour fournir des solutions de <b>haute disponibilité</b> aux clients.
+      - Ayant travaillé avec des infrastructures réseau hautement disponibles et évolutives, je suis devenu assez familier avec leurs homologues serveurs utilisant des <b>architectures de micro-services</b> et des technologies de <b>calcul distribué</b>.
+      - <b>Python (3.5+)</b> est mon langage de choix pour coder pratiquement tout ce qui est backend, mais je maîtrise également <b>Javascript, Ruby, Perl, PHP, HTML</b> et autres.
+  skills:
+
+    - name: Technologies Metro Ethernet et MPLS
+      pct: 90
+      rating: Expert, 8 ans
+      text: Ma boîte à outils réseau préférée se compose de routeurs Juniper JunOS exécutant les protocoles BGP et OSPF et utilisant des technologies telles que les VPN L2 et L3 basés sur MPLS. L'ingénierie du trafic et la QoS n'ont aucun secret pour moi.<br>
+    - name: Réseaux sans fil
+      pct: 83
+      rating: Avancé, 5 ans
+      text: Les technologies de réseau sans fil (micro-ondes) sont également devenues quelque chose avec lequel je suis très familier, en utilisant des antennes Ubiquiti networks, j'ai réalisé des liaisons de grande distance pour fournir des solutions de haute disponibilité aux clients.
+    - name: Fibre optique
+      pct: 76
+      rating: Avancé, 5 ans
+      text: J'ai une connaissance très approfondie des réseaux de fibres CWDM et DWDM et je sais vraiment comment épisser des câbles à fibre optique et gérer des réseaux de fibres extérieurs.
+    - name: Infrastructures de serveurs
+      pct: 80
+      rating: Expert, 10 ans
+      text: Ayant travaillé avec des infrastructures réseau hautement disponibles et évolutives, je suis devenu assez familier avec leurs homologues serveurs utilisant des architectures de micro-services et des technologies de calcul distribué.
+    - name: Développement de logiciels
+      pct: 65
+      rating: Avancé, 3 ans
+      text: Python (3.5+) est mon langage de choix pour coder pratiquement tout ce qui est backend, mais je maîtrise également Javascript, Ruby, Perl, PHP, HTML et autres.

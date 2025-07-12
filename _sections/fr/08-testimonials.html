@@ -1,0 +1,30 @@
+---
+id: testimonials  
+class: ["testimonials", "white-bg", "page-section"]
+title: Témoignages
+heading: "Voyez pourquoi les gens m'apprécient"
+show: true
+lang: fr
+includes_heading: false
+---
+
+<div class="row testimonials">
+    {% for testimonial in site.data.fr.testimonials %}
+    <div class="col-lg-4 col-md-6 col-sm-6">
+        <div class="testimonials-block">
+            <div class="testimonials-content">
+                <div class="testimonials-avatar">
+                    <img class="imgresponsive" src="{{testimonial.photo}}" alt="">
+                </div>
+                <div class="testimonials-comment">
+                    <p>{{testimonial.text}}</p>
+                </div>
+            </div>
+            <div class="testimonials-name">
+                <h4>{{testimonial.name}}</h4>
+                <span>{{testimonial.title}}</span>
+            </div>
+        </div>
+    </div>
+    {% endfor %}
+</div>

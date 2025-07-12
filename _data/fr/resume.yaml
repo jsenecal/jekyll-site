@@ -1,0 +1,137 @@
+- section_header: Expérience Professionnelle
+  items:
+  - icon_class: ti-vector
+    location: Metro Optic
+    date_from: Avril 2022
+    date_to: Maintenant
+    title: Spécialiste en architecture et opérations NOC
+    text:
+      - Retournant à mes racines, j'aide à gérer et à faire évoluer l'environnement réseau de Metro Optic pour permettre une croissance et des performances continues.
+      - J'ai initié et dirige maintenant les efforts d'automatisation de l'infrastructure et des processus réseau, améliorant la vitesse d'exécution et optimisant l'efficacité de la topologie.
+      
+  - icon_class: ti-light-bulb
+    location: 9219-1568 Quebec Inc.
+    date_from: Avril 2020
+    date_to: Avril 2022
+    title: Gestionnaire, Infrastructure réseau et automatisation d'infrastructure
+    text:
+      - Travaillant avec une équipe de gourous du réseau, j'ai géré et fait évoluer l'empreinte réseau pour permettre une croissance et des performances continues.
+      - J'étais responsable de la construction et de la maintenance du fonctionnement quotidien des réseaux informatiques sur lesquels l'organisation s'appuyait.
+      - J'ai également initié et géré l'automatisation de tout ce qui concerne le réseau pour permettre des délais d'exécution plus rapides et des topologies plus efficaces.
+    points:
+      - Maintenir et administrer les réseaux et les environnements connexes, y compris les logiciels d'automatisation, le matériel et les configurations.
+      - Dépanner, diagnostiquer et résoudre les problèmes liés au matériel, aux logiciels et autres problèmes liés au réseau.
+  
+  - icon_class: ti-vector
+    location: Connect it Networks
+    date_from: Février 2018
+    date_to: Avril 2020
+    title: Directeur de la Recherche et Développement
+    text:
+      - Connect it Networks avait une opportunité d'étendre son portefeuille aux services Cloud et Connectivité que j'ai conçus.
+      - Ce faisant, j'ai stimulé la croissance de nouvelles affaires et le succès des clients en fournissant une expertise commerciale.
+      - J'ai travaillé à l'amélioration des processus d'affaires critiques et de l'infrastructure connexe pour permettre à l'entreprise de résister à la croissance future et de résoudre des problèmes complexes; en tenant compte de la technologie, des personnes, des processus, de la culture et des résultats souhaités.
+      - J'ai également automatisé divers processus d'affaires qui ont permis une approche plus allégée et plus efficace du provisionnement et du support.
+    points:
+      - S'assurer que les applications répondent aux exigences commerciales et aux objectifs du système et qu'elles répondent aux exigences commerciales et des clients
+      - Examiner et analyser l'efficacité et l'efficience des applications existantes, puis développer des stratégies pour améliorer ou exploiter ces systèmes
+      - Rechercher et faire des recommandations sur les produits et services matériels et logiciels à l'appui des efforts d'approvisionnement et de développement
+      - Fournir une direction technique et les meilleures pratiques à suivre par l'équipe
+
+  - icon_class: ti-rss-alt
+    location: ZAP Coopérative de solidarité
+    date_from: Août 2017
+    date_to: Septembre 2018
+    title: Directeur de la technologie
+    text:
+      - J'étais responsable de la restructuration et de l'évolutivité de tout ce qui concerne la technologie afin d'amener ZAP à leur prochain niveau.
+      - J'ai conçu et travaillé sur un nouveau projet de plateforme logicielle pour réduire les coûts et offrir une meilleure expérience utilisateur.
+    points:
+      - Géré et amélioré une infrastructure critique pour l'entreprise fournissant des services à plus de 100 000 utilisateurs finaux
+      - Restructuré les processus d'affaires pour permettre à ZAP d'être plus agile dans ses livraisons
+      - Effectué une migration vers le cloud pour certains systèmes critiques pour l'entreprise
+      
+  - icon_class: ti-harddrives
+    location: EBOX inc.
+    date_from: Décembre 2016
+    date_to: Mai 2017
+    title: Directeur, Réseau, Systèmes et Infrastructure
+    text:
+      - Pendant que j'étais chez EBOX, j'étais responsable de la restructuration et de l'évolutivité de tout ce qui concerne l'informatique -
+        EBOX connaissait une croissance énorme et je devais m'assurer que les systèmes et le réseau survivraient.
+      - "Un nouveau centre de données était en construction et j'ai dirigé l'équipe responsable de sa réalisation avec les différents fournisseurs et entrepreneurs.
+        Ma mission: m'assurer qu'il résisterait à la croissance future, pour les années à venir."
+      - J'ai également géré l'équipe de développement et conçu un système d'authentification et de contrôle d'accès pour un service orienté client.
+        Le système restreint le contenu en fonction de l'abonnement d'un client et limite le nombre d'appareils qu'un client peut utiliser pour accéder au service.
+        En raison du type de contenu qu'il protégeait, le système, écrit en Python, a été conçu pour permettre une évolutivité extrême.
+      - Mon expérience précédente dans la construction de réseaux a été mise à profit pour aider EBOX à améliorer son infrastructure afin d'offrir des services à valeur ajoutée basés sur les technologies MPLS
+    points:
+      - Géré et amélioré une infrastructure critique pour l'entreprise fournissant des services à plus de 100 000 clients
+      - Conçu et géré la construction d'un centre de données utilisant des équipements et des technologies de pointe
+      - Initié et géré un projet de développement de logiciels qui a fourni des moyens de livrer de nouveaux services pour faire croître l'entreprise
+      - Introduit les concepts clés de la chaîne d'outils DevOps à l'équipe de développement de logiciels pour permettre un développement d'applications plus fiable
+
+  - icon_class: ti-clipboard
+    location: Pre2Post Inc. / ZEROFAIL
+    date_from: Mars 2015
+    date_to: Décembre 2016
+    title: Directeur, Recherche et Développement
+    text:
+      - Le projet le plus important tout au long de mon mandat en tant que directeur de la R&D chez ZEROFAIL était la conception d'un système complexe d'exploitation du réseau et de support commercial.
+      - Avec l'aide de mon équipe dévouée, un système RPC évolutif et asynchrone a été construit sur la bibliothèque de messagerie ZeroMQ afin que les travailleurs puissent être ajoutés dynamiquement pour s'adapter à la charge sans nécessiter de modifications aux configurations des clients.<br>
+        L'implémentation Python exploite les nouveaux outils de programmation asynchrone disponibles avec les versions récentes de Python, y compris la nouvelle syntaxe async/await et le protocole d'itérateur asynchrone.<br>
+      - Le système a également exploité un système de base de données graphique pour permettre des requêtes très puissantes qui ont été utilisées pour faciliter les opérations. La base de données DataStax Enterprise a été choisie à cette fin, en particulier le nouveau DataStax Enterprise Graph (DSE).<br>
+        Pour s'interfacer avec DSE, le projet <a href="https://github.com/davebshow/goblin">"Goblin"</a> a été contribué (le développeur principal faisant partie de mon équipe).
+      - Ce projet OSS/BOSS et bien d'autres que j'ai conçus et construits avec l'équipe de développement ont aidé ZEROFAIL à atteindre des niveaux d'efficacité plus élevés et ont permis de nouvelles sources de revenus.
+    points:
+      - Initié et géré des projets de recherche et développement qui ont fourni de nouvelles méthodes, solutions et améliorations des services existants
+      - Conçu et dirigé le développement d'un système complexe d'exploitation du réseau et de support commercial
+
+  - icon_class: ti-vector
+    location: Pre2Post Inc. / ZEROFAIL
+    date_from: Juillet 2010
+    date_to: Mars 2015
+    title: Directeur, Groupe de gestion du réseau
+    text:
+      - En raison de la croissance rapide du marché des télécommunications dans la région de Montréal lorsque j'étais directeur du groupe réseau chez ZEROFAIL, j'ai eu l'opportunité de construire un réseau MPLS très étendu à travers le Canada et le nord des États-Unis en utilisant des routeurs Juniper de pointe.<br>
+        Très rapidement, ZEROFAIL est devenu une source de confiance pour les services de connectivité.
+      - J'ai conçu le réseau pour fournir un avantage sur la concurrence en m'assurant que toute l'infrastructure aurait des plans d'urgence en place en cas de problème - je voulais construire quelque chose qui répondrait au nom "ZEROFAIL".
+      - Pour améliorer encore l'offre de services de connectivité hautement disponibles, avec l'aide du CTO de ZEROFAIL, j'ai également conçu et construit le réseau sans fil privé le plus étendu de la région métropolitaine de Montréal.<br>
+      - Plus tard, ZEROFAIL a ajouté un portefeuille de services de connectivité fibre en exploitant les concepts et technologies que j'avais mis en place.
+    points:
+      - Initié et géré des projets de recherche et développement qui ont fourni de nouveaux services et technologies qui ont aidé à faire croître l'entreprise
+      - Fait la gestion et la planification d'un réseau MPLS très complexe
+      - Mis en œuvre et géré des processus d'affaires pour permettre une plus grande efficacité
+      - Dirigé des équipes composées de nombreux techniciens ad-hoc travaillant dans de nombreux départements
+
+  - icon_class: ti-headphone-alt
+    location: Pre2Post Inc. / ZEROFAIL
+    date_from: Mai 2008
+    date_to: Juillet 2010
+    title: Administrateur réseau et systèmes / Support technique
+    text:
+      - J'ai commencé chez ZEROFAIL au département du support technique où j'ai rapidement appris à naviguer dans les différents systèmes de l'entreprise.<br>
+        Je suis devenu quelqu'un sur qui les gens pouvaient compter pour aider à résoudre les problèmes, les simples et les complexes.
+      - En raison des connaissances approfondies que j'ai rapidement acquises, je suis devenu un atout essentiel pour l'entreprise et j'ai commencé à exploiter et éventuellement, gérer, l'infrastructure.
+    points:
+      - Exploité un réseau multi-sites
+      - Géré les infrastructures de plusieurs entreprises composées de nombreux postes de travail et environnements de serveurs (SLA)
+      - Configuré des serveurs et des dispositifs réseau pour faire croître l'infrastructure
+      - Offert un support technique exceptionnel aux clients
+
+- section_header: Formation
+  items:
+    - icon_class: ti-ruler-pencil
+      location: École de technologie supérieure
+      suspended: true
+      title: Diplôme en génie électrique (incomplet)
+      text: En raison des responsabilités que j'avais à ce moment avec ZEROFAIL, il est devenu impossible d'assister aux cours et d'obtenir des résultats à la hauteur de mon niveau de satisfaction personnel.<br>
+            Je pourrais continuer le programme à l'avenir, mais seul le temps le dira.
+
+    - icon_class: ti-star
+      location: Collège Montmorency
+      date_from: 2003
+      date_to: 2008
+      title: Diplôme en informatique - Spécialisation réseau
+      text: J'ai complété avec succès toutes les classes du programme sans aucun problème ou échec.<br>
+            De plus, les classes spécifiques au domaine ont toutes été complétées avec des notes bien au-dessus de la moyenne. J'étais le meilleur étudiant de la cohorte dans ce programme.

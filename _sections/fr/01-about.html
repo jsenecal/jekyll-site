@@ -1,0 +1,21 @@
+---
+id: about
+class: ["about", "white-bg", "page-section"]
+title: "À propos"
+heading: "Qui je suis"
+show: true
+lang: fr
+includes_heading: false
+---
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-12">
+            <h2>{{ site.data.profile.name }}</h2>
+            <h3>{{ site.data.profile.title }}</h3>
+            {% for text in site.data.profile.text %}
+            <p>{{ text }}</p>
+            {% endfor %}
+        </div>
+    </div>
+</div>
