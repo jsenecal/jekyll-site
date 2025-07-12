@@ -1,3 +1,11 @@
 _site
 .sass-cache
 .jekyll-cache
+
+# Mise
+.mise.local.toml
+.mise/
+
+# Bundler
+.bundle/
+vendor/bundle/

@@ -16,5 +16,8 @@
             <li><a href="#{{ section.id | slugify }}" class="page-scroll">{{section.title}}</a></li>
             {% endfor %}
         </ul>
+        <ul class="nav navbar-nav navbar-right">
+            <li>{% include language_switcher.html %}</li>
+        </ul>
     </div>
 </nav>

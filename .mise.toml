@@ -1,0 +1,41 @@
+# Mise configuration for Jekyll site
+# https://mise.jdx.dev/
+
+[tools]
+# Ruby version - using system Ruby which is 3.4.4
+ruby = "system"
+
+# Node.js for any JavaScript tooling (optional but useful for Jekyll assets)
+node = "20"
+
+[env]
+# Set bundler path to keep gems project-local
+BUNDLE_PATH = ".bundle"
+BUNDLE_BIN = ".bundle/bin"
+
+# Ruby gem paths - include both user and project gems
+GEM_HOME = "{{env.HOME}}/.local/share/gem/ruby/3.4.0"
+GEM_PATH = "{{env.HOME}}/.local/share/gem/ruby/3.4.0:.bundle"
+
+# Add .bundle/bin and Ruby gem bin to PATH
+_.path = [".bundle/bin", "{{env.HOME}}/.local/share/gem/ruby/3.4.0/bin"]
+
+[tasks.setup]
+description = "Install all dependencies"
+run = """
+gem install bundler
+bundle install
+echo "✓ Dependencies installed!"
+"""
+
+[tasks.dev]
+description = "Start Jekyll development server"
+run = "bundle exec jekyll serve --livereload"
+
+[tasks.build]
+description = "Build site for production"
+run = "JEKYLL_ENV=production bundle exec jekyll build"
+
+[tasks.clean]
+description = "Clean Jekyll build artifacts"
+run = "bundle exec jekyll clean"

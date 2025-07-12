@@ -3,73 +3,56 @@ id: about
 class: ["about"]
 lang: en
 ---
+{% assign profile = site.data.profile %}
+{% assign cv = site.data.cv_data %}
 
 <div class="block-content clearfix">
     <div class="block-about grey darken-3 pt-20 ">
         <div class="block-title">
-            <h1 class="title">Jonathan Senecal</h1>
+            <h1 class="title">{{ profile.name }}</h1>
         </div>
         <blockquote>
             <h5 class="white-text">
-                Talented technological solution architect and project manager located
-                in Montreal
+                {{ cv.tagline }}
             </h5>
         </blockquote>
         <p class="mt-20">
-            My personal mission is to make things, fix stuff and help others... I just happened to
-            love working with high tech stuff so it became my area of expertise.<br>
+            {{ cv.mission }}<br>
 
-            I am a detail oriented and challenge driven person with <strong class="grey-text text-lighten-4">over 10
-            years of experience in telecommunications, server infrastructures and carrier-grade network
-            design & build</strong> so let's talk about how I could help you achieve what you dream of.
+            I am a detail oriented and challenge driven person with <strong class="grey-text text-lighten-4">{{ cv.experience_summary }}</strong> so let's talk about how I could help you achieve what you dream of.
         </p>
     </div>
     <div class="block-about grey darken-4 ">
         <div class="block-title">
-            <h2 class="title">Personal Info</h2></div>
+            <h2 class="title">{{ cv.personal_info.title }}</h2></div>
         <ul class="block-info">
-            <li><span>Phone</span> : +1 514-710-0100</li>
+            <li><span>Phone</span> : {{ profile.phone }}</li>
             <li><span>Email</span> : <a
-                href="mailto:contact@jonathansenecal.com">contact@jonathansenecal.com</a></li>
-            <li><span>Web Site</span> : <a href="https://www.jonathansenecal.com/">www.jonathansenecal.com</a>
+                href="mailto:{{ profile.email }}">{{ profile.email }}</a></li>
+            <li><span>Web Site</span> : <a href="https://{{ profile.web }}/">{{ profile.web }}</a>
             </li>
-            <li class="hidden-print"><span>Freelance</span> : Available</li>
-            <li><span>Address</span> : 12297 rue Guertin, Montreal QC</li>
+            <li class="hidden-print"><span>Freelance</span> : {{ cv.personal_info.freelance }}</li>
+            <li><span>Address</span> : {{ profile.address | remove: '<br/>' }}</li>
         </ul>
     </div>
     <div class="block-about grey darken-3">
         <div class="block-title">
-            <h2 class="title">Expertise</h2>
+            <h2 class="title">{{ cv.expertise.title }}</h2>
         </div>
         <div class="block-expertise">
-            <div class="expertise mb-10 clearfix">
+            {% for item in cv.expertise.items %}
+            <div class="expertise {% unless forloop.last %}mb-10{% endunless %} clearfix">
                 <div class="exp-ico">
-                                <span class="ico">
-                                <i class="ic-layers"></i>
-                                </span>
+                    <span class="ico">
+                        <i class="{{ item.icon }}"></i>
+                    </span>
                 </div>
                 <div class="exp-det">
-                    <h6>Infrastructure Design</h6>
-                    <p>
-                        Telecommunications, server infrastructures and carrier-grade network design & build have
-                        no secrets for me.
-                    </p>
+                    <h6>{{ item.title }}</h6>
+                    <p>{{ item.description }}</p>
                 </div>
             </div>
-            <div class="expertise clearfix">
-                <div class="exp-ico">
-                                <span class="ico">
-                                <i class="ic-laptop"></i>
-                                </span>
-                </div>
-                <div class="exp-det">
-                    <h6>Agile Software Development</h6>
-                    <p>
-                        Bleeding edge software technologies have also become parts of my toolset to create
-                        powerful and unique infrastructures.
-                    </p>
-                </div>
-            </div>
+            {% endfor %}
         </div>
     </div>
 </div>

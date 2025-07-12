@@ -22,12 +22,14 @@ url: "https://www.jonathansenecal.com"
 # Build settings
 markdown: kramdown
 
-# Gems
-gems:
+# Plugins
+plugins:
   - jekyll-polyglot
+  - jekyll-seo-tag
+  - jekyll-sitemap
 
 # i18n specific config
-languages: ["en",]
+languages: ["en", "fr"]
 default_lang: "en"
 exclude_from_localization: ["images", "css"]
 parallel_localization: true
