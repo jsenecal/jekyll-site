@@ -1,0 +1,97 @@
+# CV-specific data
+tagline: Talented technological solution architect and project manager located in Montreal
+mission: My personal mission is to make things, fix stuff and help others... I just happened to love working with high tech stuff so it became my area of expertise.
+experience_summary: over 10 years of experience in telecommunications, server infrastructures and carrier-grade network design & build
+
+# Personal info section
+personal_info:
+  title: Personal Info
+  freelance: Available
+  
+# Expertise section
+expertise:
+  title: Expertise
+  items:
+    - icon: ic-layers
+      title: Infrastructure Design
+      description: Telecommunications, server infrastructures and carrier-grade network design & build have no secrets for me.
+    - icon: ic-laptop
+      title: Agile Software Development  
+      description: Bleeding edge software technologies have also become parts of my toolset to create powerful and unique infrastructures.
+    - icon: ic-genius
+      title: Modern Cloud & AI Technologies
+      description: Experienced with Kubernetes orchestration, GitOps with FluxCD, and Large Language Model integration for automation and intelligent systems.
+
+# Technical Skills for CV
+technical_skills:
+  title: Technical Skills
+  items:
+    - name: Networking Protocols (BGP, OSPF, RSVP-TE...)
+      rating: 5
+    - name: Metro Ethernet and MPLS Technologies
+      rating: 5
+    - name: Kubernetes & Container Orchestration
+      rating: 4
+    - name: Optical Networking (CWDM/DWDM)
+      rating: 4
+    - name: Server Infrastructures and virtualization
+      rating: 4
+    - name: LLMs & AI Integration
+      rating: 4
+    - name: Agile Software Development
+      rating: 3
+    - name: Analytical thinking & Research
+      rating: 4
+    - name: Project Management
+      rating: 4
+
+# Professional Skills for CV
+professional_skills:
+  title: Professional Skills
+  items:
+    - name: Interpersonal Skills
+      rating: 4
+    - name: Leadership & Teamwork
+      rating: 5
+    - name: Adaptability
+      rating: 4
+    - name: Ability to Work Under Pressure
+      rating: 4
+
+# Skill Set categories
+skill_set:
+  title: Skill set
+  categories:
+    - level: 1
+      color: grey lighten-4
+      skills: [Responsible, Diligent, Rigor, Loyal, Efficient, Communication, Flexible, Quick Learner]
+    - level: 2
+      color: grey lighten-3
+      skills: [Data analysis, Conflict resolution, Planning, Creativity, Adaptability, Leadership, Team work]
+    - level: 3
+      color: grey lighten-2
+      skills: [CAD, Electronics, SolidWorks]
+    - level: 4
+      color: grey lighten-1
+      skills: [Python, Ruby, Perl, Javascript, Shell scripting, Git, Machine learning, Graph Databases, PostgreSQL, GIS, Linux, VMware ESX, Virtualization, Docker, Ansible, Distributed computing, Kubernetes, FluxCD, LLMs, AI Integration]
+    - level: 5
+      color: grey
+      skills: [MPLS, Optical networking, Juniper, Cisco, Mikrotik, Ubiquiti, OSPF, BGP, Traffic Engineering, Network Automation, QoS, VoIP, Vlan, VPN, Security, Firewall]
+
+# Languages
+languages:
+  title: Languages
+  items:
+    - name: English
+      rating: 5
+    - name: French  
+      rating: 5
+
+# Resume sections
+resume_sections:
+  experience:
+    title: Experience
+    icon: ic-briefcase
+  education:
+    title: Education
+    icon: ic-pencil
