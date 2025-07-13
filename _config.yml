@@ -9,11 +9,11 @@ keywords: ["cv", "resume", "networking", "réseau", "project manager", "gestion 
           "experience", "guru", "network engineer", "network engineering"]
 cv_enabled: true
 google_api_key: AIzaSyBM1jUTzFVH-J6bhCwkPFIcrl5HVNwRpRI
-index:
-  en: index.en.html
-  fr: index.fr.html
+# index:
+#   en: index.en.html
+#   fr: index.fr.html
 feed: /feed.xml
-baseurl: "/"
+baseurl: ""
 collections:
   - sections
   - cvsections
