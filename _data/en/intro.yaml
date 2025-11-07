@@ -1,23 +1,27 @@
 #  I am a problem solver...
-- type: I am a problem solver...
-  delete: 22
+- type: I am a problem solver.
+  delete: 20
 #  I design and build networks.
 - type: design and build networks.
   delete: 9
-#  I design and build infrastructures too!
-- type: infrastructures too...
-  delete: 39
-#  I can write code.
-- type: can write code.
+#  I design and build infrastructures.
+- type: infrastructures.
+  delete: 33
+#  I write code.
+- type: write code.
   delete: 1
   pause: 1000
-#  I can write code, all sorts of code.
+#  I write code, all sorts of code.
 - type: ", all sorts of code."
+  delete: 30
+#  I manage projects and teams.
+- type: manage projects and teams.
+  delete: 11
+# I manage projects, teams and more.
+- type: ", teams and more."
   delete: 34
-#  I also manage projects and teams!
-- type: also manage projects and teams!
-#  I am a:
-- type: "I am a..."
+- type: "-"
+  delete: 1
   pause: 2000
 #  Technological problem solver
 - type: Technological problem solver

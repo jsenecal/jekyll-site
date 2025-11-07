@@ -13,7 +13,7 @@ permalink: /
 {% assign sections = site.sections | where:"show","true" | where:"lang",current_lang %}
 
 <section class="content-scroller">
-    <div id="home" class="intro-bg gradient-02" style="background: url('{{ "/images/bg.jpg" | relative_url }}');">
+    <div id="home" class="intro-bg gradient-02" style="background: url('{{ "/assets/images/theme/bg.jpg" | relative_url }}');">
         <div id="scroll-down" class="intro">
             <div class="intro-content">
                 <div class="container-fluid">
@@ -63,3 +63,20 @@ permalink: /
     <!--/{{section.name}}-->
     {% endfor %}
 </section>
+
+<script type="text/javascript">
+window.addEventListener('load', function() {
+    if (typeof jQuery !== 'undefined' && jQuery('.type-it').length > 0) {
+        jQuery('.type-it').typeIt({lifeLike:true,autoStart:false,startDelay: 2000})
+        {% if current_lang == 'fr' %}
+        {%for line in site.data.fr.intro%}
+            .tiType('{{line.type | replace: "'", "\\'" }}').tiPause({%if line.pause%}{{line.pause}}{%else%}3000{%endif%}){%if forloop.last%};{%else%}.tiDelete({{line.delete}}){%endif%}
+        {%endfor%}
+        {% else %}
+        {%for line in site.data.en.intro%}
+            .tiType('{{line.type}}').tiPause({%if line.pause%}{{line.pause}}{%else%}3000{%endif%}){%if forloop.last%};{%else%}.tiDelete({{line.delete}}){%endif%}
+        {%endfor%}
+        {% endif %}
+    }
+});
+</script>

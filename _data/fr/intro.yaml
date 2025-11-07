@@ -1,23 +1,26 @@
-#  Je suis un solutionneur de problèmes...
-- type: Je suis un solutionneur de problèmes...
+#  Je suis un solutionneur de problèmes.
+- type: Je suis un solutionneur de problèmes.
   delete: 34
 #  Je conçois et construis des réseaux.
-- type: Je conçois et construis des réseaux.
-  delete: 36
-#  Je conçois et construis des infrastructures aussi!
-- type: des infrastructures aussi!
-  delete: 51
-#  Je peux écrire du code.
-- type: Je peux écrire du code.
-  delete: 23
-  pause: 1000
-#  Je peux écrire du code, toutes sortes de code.
-- type: " Toutes sortes de code."
-  delete: 47
-#  Je gère aussi des projets et des équipes!
-- type: Je gère aussi des projets et des équipes!
-#  Je suis un:
-- type: "Je suis un..."
+- type: conçois et construis des réseaux.
+  delete: 8
+#  Je conçois et construis des infrastructures.
+- type: infrastructures.
+  delete: 43
+#  J'écris du code.
+- type: "'écris du code."
+  delete: 1
+  pause: 1500
+#  J'écris du code, toutes sortes de code.
+- type: ", toutes sortes de code."
+  delete: 38
+#  Je gère des projets et des équipes.
+- type: e gère des projets et des équipes.
+  delete: 16
+  pause: 1500
+# Je gère des projets, des équipes et plus encore.
+- type: ", des équipes et plus encore."
+- type: "-"
   pause: 2000
 #  Solutionneur de problèmes technologiques
 - type: Solutionneur de problèmes technologiques
