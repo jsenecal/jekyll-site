@@ -14,10 +14,16 @@ includes_heading: false
         <div class="testimonials-block">
             <div class="testimonials-content">
                 <div class="testimonials-avatar">
-                    <img class="imgresponsive" src="{{testimonial.photo}}" alt="">
+                    <img class="imgresponsive" src="{{testimonial.picture_path}}" alt="">
                 </div>
                 <div class="testimonials-comment">
-                    <p>{{testimonial.text}}</p>
+                    {% if testimonial.comment.first %}
+                        {% for paragraph in testimonial.comment %}
+                        <p>{{paragraph}}</p>
+                        {% endfor %}
+                    {% else %}
+                        <p>{{testimonial.comment}}</p>
+                    {% endif %}
                 </div>
             </div>
             <div class="testimonials-name">
