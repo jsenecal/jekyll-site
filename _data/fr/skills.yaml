@@ -36,32 +36,28 @@
   quote: La seule source de connaissance est l'expérience.
   quote_author: Albert Einstein
   text:
-      - Mon expertise technique est très large en raison des multiples aspects de l'expérience de travail que j'ai acquise au fil du temps.<br>
-        Bien que j'aie une connaissance très approfondie des <b>télécommunications, des infrastructures de serveurs et de la conception et construction de réseaux de qualité opérateur</b>, j'ai également acquis de nombreuses autres compétences dans d'autres domaines tels que le <b>développement de logiciels</b> et l'<b>électronique</b>.
-      - Ma boîte à outils réseau préférée se compose de routeurs <b>Juniper JunOS</b> exécutant les protocoles <b>BGP</b> et <b>OSPF</b> et utilisant des technologies telles que les <b>VPN</b> L2 et L3 basés sur <b>MPLS</b>. L'<b>ingénierie du trafic</b> et la <b>QoS</b> n'ont aucun secret pour moi.<br>
-        J'ai une connaissance très approfondie des réseaux de fibres <b>CWDM</b> et <b>DWDM</b> et je sais vraiment comment épisser des câbles à fibre optique et gérer des réseaux de fibres <b>extérieurs</b>.
-        Les technologies de réseau sans fil (micro-ondes) sont également devenues quelque chose avec lequel je suis très familier, en utilisant des antennes <b>Ubiquiti networks</b>, j'ai réalisé des liaisons de grande distance pour fournir des solutions de <b>haute disponibilité</b> aux clients.
-      - Ayant travaillé avec des infrastructures réseau hautement disponibles et évolutives, je suis devenu assez familier avec leurs homologues serveurs utilisant des <b>architectures de micro-services</b> et des technologies de <b>calcul distribué</b>.
-      - <b>Python (3.5+)</b> est mon langage de choix pour coder pratiquement tout ce qui est backend, mais je maîtrise également <b>Javascript, Ruby, Perl, PHP, HTML</b> et autres.
+      - Mon expertise couvre la <b>conception de réseaux de qualité opérateur</b>, les <b>infrastructures de serveurs</b> et le <b>développement de logiciels</b>. Je me spécialise dans les <b>plateformes Juniper</b> (MX, QFX, ACX, SRX) avec une expertise approfondie en <b>EVPN-MPLS/VXLAN</b>, <b>MPLS Transport</b>, VPLS, L2Circuits et déploiements <b>multi-AS BGP</b>.<br>
+      - Expert en <b>réseaux optiques</b> (CWDM/DWDM), épissage de fibres et <b>liaisons micro-ondes sans fil</b>. Solide expérience en <b>architectures de microservices</b> et <b>calcul distribué</b>.
+      - <b>Python</b> est mon langage principal, complété par Javascript, Ruby et autres. J'utilise <b>Ansible</b> extensivement pour l'automatisation d'infrastructures.
   skills:
 
-    - name: Technologies Metro Ethernet et MPLS
+    - name: Réseaux Juniper et technologies MPLS
       pct: 90
       rating: Expert, 8 ans
-      text: Ma boîte à outils réseau préférée se compose de routeurs Juniper JunOS exécutant les protocoles BGP et OSPF et utilisant des technologies telles que les VPN L2 et L3 basés sur MPLS. L'ingénierie du trafic et la QoS n'ont aucun secret pour moi.<br>
+      text: Expert en plateformes Juniper avec EVPN-MPLS/VXLAN, multi-AS BGP, MPLS Transport, VPLS et L2Circuits sur des réseaux de qualité opérateur.<br>
     - name: Réseaux sans fil
       pct: 83
       rating: Avancé, 5 ans
-      text: Les technologies de réseau sans fil (micro-ondes) sont également devenues quelque chose avec lequel je suis très familier, en utilisant des antennes Ubiquiti networks, j'ai réalisé des liaisons de grande distance pour fournir des solutions de haute disponibilité aux clients.
+      text: Compétent en réseaux micro-ondes utilisant des plateformes Ubiquiti pour des solutions haute disponibilité.
     - name: Fibre optique
       pct: 76
       rating: Avancé, 5 ans
-      text: J'ai une connaissance très approfondie des réseaux de fibres CWDM et DWDM et je sais vraiment comment épisser des câbles à fibre optique et gérer des réseaux de fibres extérieurs.
+      text: Expert en réseaux fibre CWDM/DWDM, épissage et gestion d'infrastructures extérieures.
     - name: Infrastructures de serveurs
       pct: 80
       rating: Expert, 10 ans
-      text: Ayant travaillé avec des infrastructures réseau hautement disponibles et évolutives, je suis devenu assez familier avec leurs homologues serveurs utilisant des architectures de micro-services et des technologies de calcul distribué.
+      text: Vaste expérience avec des infrastructures serveurs hautement disponibles, microservices et calcul distribué.
     - name: Développement de logiciels
       pct: 65
       rating: Avancé, 3 ans
-      text: Python (3.5+) est mon langage de choix pour coder pratiquement tout ce qui est backend, mais je maîtrise également Javascript, Ruby, Perl, PHP, HTML et autres.
+      text: Compétent en Python, Javascript, Ruby, Perl et automatisation d'infrastructures avec Ansible.

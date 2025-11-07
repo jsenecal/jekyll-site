@@ -7,20 +7,20 @@ experience_summary: plus de 10 ans d'expérience en télécommunications, infras
 personal_info:
   title: Informations personnelles
   freelance: Disponible
-  
+
 # Expertise section
 expertise:
   title: Expertise
   items:
     - icon: ic-layers
       title: Conception d'infrastructure
-      description: Les télécommunications, les infrastructures de serveurs et la conception et construction de réseaux de qualité opérateur n'ont aucun secret pour moi.
+      description: Expert en télécommunications, infrastructures serveurs et réseaux de qualité opérateur.
     - icon: ic-laptop
       title: Développement logiciel agile
-      description: Les technologies logicielles de pointe font également partie de ma boîte à outils pour créer des infrastructures puissantes et uniques.
+      description: Technologies logicielles de pointe pour créer des infrastructures puissantes et uniques.
     - icon: ic-genius
       title: Technologies Cloud et IA modernes
-      description: Expérimenté avec l'orchestration Kubernetes, GitOps avec FluxCD, et l'intégration de modèles de langage pour l'automatisation et les systèmes intelligents.
+      description: Kubernetes, GitOps avec FluxCD, et intégration LLM pour l'automatisation intelligente.
 
 # Technical Skills for CV
 technical_skills:
@@ -28,7 +28,7 @@ technical_skills:
   items:
     - name: Protocoles réseau (BGP, OSPF, RSVP-TE...)
       rating: 5
-    - name: Technologies Metro Ethernet et MPLS
+    - name: Technologies Metro Ethernet, MPLS et EVPN-MPLS/VXLANI 
       rating: 5
     - name: Kubernetes et orchestration de conteneurs
       rating: 4
@@ -76,7 +76,7 @@ skill_set:
       skills: [Python, Ruby, Perl, Javascript, Scripts shell, Git, Apprentissage automatique, Bases de données graphiques, PostgreSQL, SIG, Linux, VMware ESX, Virtualisation, Docker, Ansible, Calcul distribué, Kubernetes, FluxCD, LLMs, Intégration IA]
     - level: 5
       color: grey
-      skills: [MPLS, Réseau optique, Juniper, Cisco, Mikrotik, Ubiquiti, OSPF, BGP, Ingénierie du trafic, Automatisation réseau, QoS, VoIP, Vlan, VPN, Sécurité, Pare-feu]
+      skills: [MPLS, Réseau optique, Juniper MX/QFX/ACX/SRX, EVPN-MPLS, EVPN-VXLAN, VPLS, L2Circuits, Multi-AS BGP, Cisco, Mikrotik, Ubiquiti, OSPF, BGP, Ingénierie du trafic, Automatisation réseau, QoS, VoIP, Vlan, VPN, Sécurité, Pare-feu, IPv4/IPv6]
 
 # Languages
 languages:

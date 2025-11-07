@@ -7,7 +7,7 @@ experience_summary: over 10 years of experience in telecommunications, server in
 personal_info:
   title: Personal Info
   freelance: Available
-  
+
 # Expertise section
 expertise:
   title: Expertise
@@ -16,7 +16,7 @@ expertise:
       title: Infrastructure Design
       description: Telecommunications, server infrastructures and carrier-grade network design & build have no secrets for me.
     - icon: ic-laptop
-      title: Agile Software Development  
+      title: Software Development
       description: Bleeding edge software technologies have also become parts of my toolset to create powerful and unique infrastructures.
     - icon: ic-genius
       title: Modern Cloud & AI Technologies
@@ -26,9 +26,9 @@ expertise:
 technical_skills:
   title: Technical Skills
   items:
-    - name: Networking Protocols (BGP, OSPF, RSVP-TE...)
+    - name: Multi-AS BGP & Advanced Routing (IPv4/IPv6)
       rating: 5
-    - name: Metro Ethernet and MPLS Technologies
+    - name: Juniper EVPN-MPLS/VXLAN & MPLS Services
       rating: 5
     - name: Kubernetes & Container Orchestration
       rating: 4
@@ -38,8 +38,8 @@ technical_skills:
       rating: 4
     - name: LLMs & AI Integration
       rating: 4
-    - name: Agile Software Development
-      rating: 3
+    - name: DevOps & Infrastructure as Code
+      rating: 5
     - name: Analytical thinking & Research
       rating: 4
     - name: Project Management
@@ -64,19 +64,19 @@ skill_set:
   categories:
     - level: 1
       color: grey lighten-4
-      skills: [Responsible, Diligent, Rigor, Loyal, Efficient, Communication, Flexible, Quick Learner]
+      skills: [Responsible, Diligent, Loyal, Efficient, Team player, Flexible, Quick Learner]
     - level: 2
       color: grey lighten-3
       skills: [Data analysis, Conflict resolution, Planning, Creativity, Adaptability, Leadership, Team work]
     - level: 3
       color: grey lighten-2
-      skills: [CAD, Electronics, SolidWorks]
+      skills: [CAD, Electronics, SolidWorks, OnShape, 3D printing]
     - level: 4
       color: grey lighten-1
-      skills: [Python, Ruby, Perl, Javascript, Shell scripting, Git, Machine learning, Graph Databases, PostgreSQL, GIS, Linux, VMware ESX, Virtualization, Docker, Ansible, Distributed computing, Kubernetes, FluxCD, LLMs, AI Integration]
+      skills: [Python, Shell scripting, Git, Machine learning, Graph Databases, PostgreSQL, GIS, Linux, VMware, Virtualization, Docker, Ansible, Infrastructure as Code, Distributed computing, Kubernetes, FluxCD, LLMs, AI Integration]
     - level: 5
       color: grey
-      skills: [MPLS, Optical networking, Juniper, Cisco, Mikrotik, Ubiquiti, OSPF, BGP, Traffic Engineering, Network Automation, QoS, VoIP, Vlan, VPN, Security, Firewall]
+      skills: [Juniper MX/QFX/ACX/SRX, EVPN-MPLS, EVPN-VXLAN, MPLS Transport, VPLS, L2Circuits, BGP, IPv4/IPv6, OSPF, Traffic Engineering, Network Automation, QoS, Optical networking, VPN, Security]
 
 # Languages
 languages:
@@ -84,7 +84,7 @@ languages:
   items:
     - name: English
       rating: 5
-    - name: French  
+    - name: French
       rating: 5
 
 # Resume sections

@@ -36,32 +36,28 @@
   quote: The only source of knowledge is experience.
   quote_author: Albert Einstein
   text:
-      - My technical expertize is very wide due to the multiple aspects of the work experience I have acquired over time.<br>
-        While I do have a very extensive knowledge of <b>telecommunications, server infrastructures and carrier-grade network design & build</b>, I also gathered many other skills in other domains such as <b>software developpement</b> and <b>electronics</b>.
-      - My prefered networking toolkit consists of <b>Juniper JunOS</b> routers running <b>BGP</b> and <b>OSPF</b> protocols and use technologies such as <b>MPLS</b> based L2 and L3 <b>VPN</b>s. <b>Traffic engineering</b> and <b>QoS</b> have no secrets for me.<br>
-        I have very extensive knowledge of <b>CWDM</b> and <b>DWDM</b> fiber networks and actually know how to splice fiberoptic cables and manage <b>outside plant</b> fiber networks.
-        Wireless (microwave) networking technologies have also become something I am very familiar with, using <b>Ubiquiti networks</b> antennaes, I've achieved links of great distance to provide <b>high availability</b> solutions to customers.
-      - Having worked with highly available and scalable network infrastructures, I became quite familiar with their server counteparts using <b>micro services architectures</b> and <b>distributed computing</b> technologies.
-      - <b>Python (3.5+)</b> is my language of choice to code pretty much everything backend but I am also versed in <b>Javascript, Ruby, Perl, PHP, HTML</b> and others.
+      - My expertise spans <b>carrier-grade network design</b>, <b>server infrastructures</b>, and <b>software development</b>. I specialize in <b>Juniper platforms</b> (MX, QFX, ACX, SRX) with deep expertise in <b>EVPN-MPLS/VXLAN</b>, <b>MPLS Transport</b>, VPLS, L2Circuits, and <b>multi-AS BGP</b> deployments.<br>
+      - Expert in <b>optical networking</b> (CWDM/DWDM), fiber splicing, and <b>wireless microwave links</b>. Strong background in <b>microservices architectures</b> and <b>distributed computing</b>.
+      - <b>Python</b> is my primary language, complemented by Javascript, Ruby, and others. I leverage <b>Ansible</b> extensively for infrastructure automation.
   skills:
 
-    - name: Metro Ethernet and MPLS Technologies
+    - name: Juniper Networks & MPLS Technologies
       pct: 90
       rating: Expert, 8 years
-      text: My prefered networking toolkit consists of Juniper JunOS routers running BGP and OSPF protocols and use technologies such as MPLS based L2 and L3 VPNs. Traffic engineering and QoS have no secrets for me.<br>
+      text: Expert in Juniper platforms with EVPN-MPLS/VXLAN, multi-AS BGP, MPLS Transport, VPLS, and L2Circuits across carrier-grade networks.<br>
     - name: Wireless networks
       pct: 83
       rating: Advanced, 5 Years
-      text: Wireless (microwave) networking technologies have also become something I am very familiar with, using Ubiquiti networks antennaes, I've achieved links of great distance to provide high availability solutions to customers.
+      text: Proficient in microwave networking using Ubiquiti platforms for high-availability solutions.
     - name: Fiber optics
       pct: 76
       rating: Advanced, 5 Years
-      text: I have very extensive knowledge of CWDM and DWDM fiber networks and actually know how to splice fiberoptic cables and manage outside plant fiber networks.
+      text: Expert in CWDM/DWDM fiber networks, splicing, and outside plant management.
     - name: Server infrastructures
       pct: 80
       rating: Expert, 10 years
-      text: Having worked with highly available and scalable network infrastructures, I became quite familiar with their server counteparts using micro services architectures and distributed computing technologies.
+      text: Extensive experience with highly available server infrastructures, microservices, and distributed computing.
     - name: Software Development
       pct: 65
       rating: Advanced, 3 Years
-      text: Python (3.5+) is my language of choice to code pretty much everything backend but I am also versed in Javascript, Ruby, Perl, PHP, HTML and others.
+      text: Proficient in Python, Javascript, Ruby, Perl, and infrastructure automation with Ansible.

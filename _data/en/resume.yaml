@@ -1,27 +1,28 @@
+---
 - section_header: Work Experience
   items:
   - icon_class: ti-vector
     location: Metro Optic
     date_from: April 2022
     date_to: Now
-    title: NOC Architecture and Operations Specialist
+    title: Manager, NOC Architecture and Operations
     text:
-      - Going back to my roots, I help to manage and scale the network environment at Metro Optic to allow for continued growth and performance.
+      - Going back to my roots, I manage and scale the network environment at Metro Optic, leveraging Juniper MX, ACX and QFX platforms with mixed MPLS and EVPN architectures for continued growth and performance.
       - Initiated and now lead efforts to automate infrastructure and network processes, enhancing turnaround speed and optimizing topology efficiency.
-      
+
   - icon_class: ti-light-bulb
     location: 9219-1568 Quebec Inc.
     date_from: April 2020
     date_to: April 2022
     title: Manager, Network Infrastructure and Infrastructure automation
     text:
-      - Working with a team of network gurus, I managed and scaled the network footprint to allow for continued growth and performance.
-      - I was responsible for building and maintaining the day-to-day operation of computer networks that the organization relied on.
-      - I also initiated and managed the automation of everything networking to enable faster turnarounds and more efficient topologies.
+      - Working with a team of network gurus, I managed and scaled the network footprint using Juniper MX/QFX platforms with advanced EVPN-VXLAN and MPLS Transport configurations.
+      - I was responsible for building and maintaining carrier-grade networks with dual-stack IPv4/IPv6, VPLS services, and L2Circuits across multiple autonomous systems (multi-AS BGP).
+      - I also initiated and managed the automation of everything networking to enable faster turnarounds and more efficient topologies, particularly for complex MPLS service provisioning.
     points:
       - Maintaining and administering networks and related environments including automation software, hardware, and configurations.
       - Troubleshooting, diagnosing and resolving hardware, software, and other network related problems.
-  
+
   - icon_class: ti-vector
     location: Connect it Networks
     date_from: February 2018
@@ -44,32 +45,28 @@
     date_to: September 2018
     title: Director of technology
     text:
-      - I was responsible for the restructuration and scalability of everything related to technology in order to bring ZAP to their next level.
-      - I designed and worked on a new software platform project to cut down costs and provide a better user experience.
+      - Responsible for complete restructuring and scalability of all technology infrastructure to enable ZAP's next growth phase.
+      - Designed new software platform to reduce operational costs while improving user experience.
     points:
       - Managed and improved a business critical infrastructure providing services to 100k+ end users
       - Restructured the business processes to enable ZAP to be more agile in its deliveries
       - Performed a migration to the cloud for some business critical systems
-      
+
   - icon_class: ti-harddrives
     location: EBOX inc.
     date_from: December 2016
     date_to: May 2017
     title: Director, Networking, Systems and Infrastructure
     text:
-      - While I was at EBOX I was responsible for the restructuration and scalability of everything IT -
-        EBOX was undergoing tremendous growth and I had to ensure the systems and network would survive it.
-      - "A new datacenter was under construction and I lead the team responsible for its realization with the different vendors and contractors.
-        My mission: ensure it would withstand future growth, for years to come."
-      - I also managed the developpement team and designed an authentication and access control system for a client-facing service.
-        The system restricts content depending on a client's subscription and limits the number of devices a client can use to access the service.
-        Due to the kind of content it protected, the system, written in Python, was designed to allow for extreme scalability.
-      - My previous experience in building networks was put to good use to help EBOX upgrade their infrastructure to offer value added services based on MPLS technologies
+      - Responsible for restructuring and scaling all IT infrastructure during EBOX's tremendous growth phase, ensuring systems and networks could handle the increased demand.
+      - Led the team responsible for new datacenter construction, working with vendors and contractors to ensure it would withstand future growth for years to come.
+      - Managed the development team and designed a Python-based authentication and access control system for client-facing services, with subscription-based content restrictions and device limiting capabilities designed for extreme scalability.
+      - Upgraded infrastructure for value-added services using Juniper platforms with EVPN-MPLS, VPLS, and L2/L3 VPN technologies.
     points:
-      - Managed and improved a business critical infrastructure providing services to 100k+ clients
-      - Designed and managed the construction of a datacenter using state of the art equipment and technologies
-      - Initiated and managed a software development project that provided ways to deliver new services to grow the business
-      - Introduced the key concepts of the DevOps toolchain to the software development team to allow for more reliable development of applications
+      - Managed and improved business critical infrastructure providing services to 100k+ clients
+      - Designed and managed the construction of a datacenter using state-of-the-art equipment and technologies
+      - Initiated software development projects that enabled new service delivery and business growth
+      - Introduced DevOps toolchain concepts to the development team for more reliable application development
 
   - icon_class: ti-clipboard
     location: Pre2Post Inc. / ZEROFAIL
@@ -77,12 +74,10 @@
     date_to: December 2016
     title: Director, Research and Developpement
     text:
-      - The most significant project thorough my time as Director of R&D at ZEROFAIL was the design of a complex Network Operations and Business Support System.
-      - With the help of my devoted team, a scalable, asynchonous RPC system was built on the ZeroMQ messaging library so that workers can be added dynamically to scale to load without necessitating any changes to client configurations. <br>
-        The python implementation leverages the new asynchronous programming tools available with recent versions of Python, including the new async/await syntax and the asynchronous iterator protocol.<br>
-      - The system also leveraged a Graph Database system to enable very powerful queries that were used to facilitate operations. DataStax Enterprise database was chosen for that purpose, especially the new DataStax Enterprise Graph (DSE).<br>
-        To interface with DSE the <a href="https://github.com/davebshow/goblin">"Goblin"</a> project was contributed to (the lead developper being part of my team).
-      - This OSS/BOSS project and many others I designed and built with the development team helped ZEROFAIL reach higher levels of efficiency and enabled new sources of revenue.
+      - Primary achievement: Designed and built a complex Network Operations and Business Support System (OSS/BSS) that transformed operations.
+      - Developed a scalable, asynchronous RPC system using ZeroMQ messaging library allowing dynamic worker scaling without client reconfiguration. Implementation leveraged Python's async/await syntax and asynchronous iterator protocol.
+      - Integrated DataStax Enterprise Graph database system for powerful operational queries, with team contributing to the open-source Goblin project for DSE interface.
+      - These R&D projects enabled ZEROFAIL to reach new efficiency levels and unlock revenue sources.
     points:
       - Initiated and managed Research and development projects that provided new methods, solutions and improvement on existing services
       - Designed and led the developement of a complex Network Operations and Business Support System
@@ -93,11 +88,10 @@
     date_to: March 2015
     title: Director, Network Management Group
     text:
-      - Due to the rapid growth of the telecommunication market in the Montreal area while I was Director of the Networking Group at ZEROFAIL, I had the opportunity to build a very extensive MPLS network accross Canada and the north of USA using cutting edge Juniper routers. <br>
-        Very quickly, ZEROFAIL became a trusted source for connectivity services.
-      - I designed the network to provide an edge over competition by making sure the whole infrastructure would have contingency plans in place in case of a problem - I wanted to build something that would stand by the name "ZEROFAIL".
-      - To further improve the offering for highly available connectivity services, with the help of ZEROFAIL's CTO, I also designed and built the most extensive private wireless network in the metropolitain area of Montreal.<br>
-      - Later on, ZEROFAIL added a portfolio of fiber connectivity services leveraging the concepts and technologies I had put in place.
+      - During Montreal's telecom market boom, built an extensive MPLS network across Canada and northern USA using cutting-edge Cisco and Juniper routers, establishing ZEROFAIL as a trusted connectivity provider.
+      - Designed the network with comprehensive contingency planning and redundancy to ensure zero failures - living up to the company name.
+      - With the CTO, designed and built Montreal's most extensive private wireless network for highly available connectivity services.
+      - Later expanded the portfolio with fiber connectivity services leveraging the network architecture I had established.
     points:
       - Initiated and managed Research and development projects that provided new services and technologies that helped grow the business
       - Did the management and planning of a very complex MPLS network
@@ -110,14 +104,12 @@
     date_to: July 2010
     title: Network and systems administrator / Tech. Support
     text:
-      - I started at ZEROFAIL in the Technical support department where I quickly learnt my ways through the different systems of the company.<br>
-        I became someone people would rely uppon to help fix issues, the simple and the complex ones.
-      - Due to the extensive knowledge I promptly acquired, I became an essential asset to the company and started to operate and eventually, manage, the infrastructure.
+      - Started in technical support where I quickly became the go-to person for complex problem resolution.
+      - Progressed to infrastructure management after demonstrating extensive knowledge of company systems.
     points:
-      - Operated a multisite network
-      - Managed multiple companies infrastructures composed of many workstations and server environments (SLAs)
-      - Configured servers and network devices to grow the infrastructure
-      - Offered an outstanding technical support to the customers
+      - Operated multisite networks and managed infrastructure for multiple client companies under SLAs
+      - Configured servers and network devices to support infrastructure growth
+      - Provided outstanding technical support to customers
 
 - section_header: Education
   items:
@@ -125,13 +117,11 @@
       location: École de technologie supérieure
       suspended: true
       title: Electrical engineering degree (incomplete)
-      text: Due to the responsabilities I had at the moment with ZEROFAIL, it became impossible to attend to the courses and achieve results on par with my personal level of satisfaction. <br>
-            I may continue the program in the future, but only time will tell.
+      text: Due to increasing responsibilities at ZEROFAIL, it became impossible to attend courses and achieve results meeting my personal standards. May resume the program in the future.
 
     - icon_class: ti-star
       location: Collège Montmorency
       date_from: 2003
       date_to: 2008
       title: Computer Science Degree - Networking specialization
-      text: I successfuly completed all the classes in the program without any issues or fallouts.<br>
-            Furthermore, the domain specific classes were all completed with grades way above the average. I was the best student of the cohort in that program.
+      text: Successfully completed program. Achieved top grades in networking specialization - ranked first in cohort.
