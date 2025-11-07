@@ -164,6 +164,10 @@ body {
     padding: 60px 30px 40px;
 }
 
+.inner-resume-boxe h3.title {
+    width: 290px;
+}
+
 .timeline ul li:before {
     content: '\ea8f';
     display: inline-block;
@@ -247,7 +251,7 @@ body {
 
 .skill-list h4 {
     display: block;
-    width: 144px;
+    width: 200px;
     font-size: 13px;
 }
 
@@ -430,6 +434,11 @@ body {
 
     .resume{
         padding-bottom: 0 !important;
+    }
+
+
+    .inner-resume-boxe h3.title {
+        width: 240px;
     }
 
     /*!*Bootstrap overrides*!*/
@@ -720,3 +729,10 @@ body {
 }
 
 /* -------------------- End media queries -------------------- */
+
+/* Print styles */
+@media print {
+    .lang-link {
+        display: none !important;
+    }
+}

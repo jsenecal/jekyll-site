@@ -9,3 +9,7 @@ _site
 # Bundler
 .bundle/
 vendor/bundle/
+
+# Claude
+.claude/
+CLAUDE.md
