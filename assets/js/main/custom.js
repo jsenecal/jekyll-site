@@ -86,22 +86,6 @@
     });
 
     /*************************
-     NiceScroll
-     *************************/
-    $("html").niceScroll({
-        scrollspeed: 150,
-        mousescrollstep: 38,
-        cursorwidth: 7,
-        cursorborder: 0,
-        cursorcolor: '#abc502',
-        autohidemode: true,
-        zindex: 999999999,
-        horizrailenabled: false,
-        cursorborderradius: 0
-    });
-
-
-    /*************************
      Contact form
      *************************/
     var contactForm = $("#contactform");

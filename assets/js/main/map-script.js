@@ -43,7 +43,7 @@
         };
         var mapElement = document.getElementById('map-canvas');
         var icon = {
-            url: 'images/map-marker.png', // url
+            url: '/assets/images/theme/map-marker.png', // url
             scaledSize: new google.maps.Size(64, 64) // scaled size
         };
         var marker = new google.maps.Marker({

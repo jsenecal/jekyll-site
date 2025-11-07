@@ -752,6 +752,10 @@ button.button-small:hover {
     margin-bottom: 20px;
 }
 
+.about-image img {
+        width: -webkit-fill-available;
+    }
+
 .about-social {
     background: #abc502;
     padding: 15px 10px;
@@ -2792,4 +2796,31 @@ textarea:focus {
 
 .error .button a:hover {
     color: #282828;
+}
+
+
+/* Print styles */
+@media print {
+    .lang-link {
+        display: none !important;
+    }
+
+    /* Add margin before page breaks */
+    [style*="page-break-before: always"],
+    .page-break-before {
+        margin-top: 2em !important;
+    }
+
+    /* Add margin after page breaks */
+    [style*="page-break-after: always"],
+    .page-break-after,
+    .always-page-break-after {
+        margin-bottom: 2em !important;
+    }
+
+    /* Ensure content after breaks has proper spacing */
+    [style*="page-break-before: always"] + *,
+    .page-break-before + * {
+        padding-top: 2em !important;
+    }
 }
