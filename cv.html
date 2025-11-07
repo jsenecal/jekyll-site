@@ -23,10 +23,10 @@ permalink: /cv
     <i class="fa fa-angle-up"></i>
 </a>
 
-<a id="print" href="javascript:window.print()" title="Imprimer le CV">
+<a id="print" href="javascript:window.print()" title="{% if current_lang == 'fr' %}Imprimer le CV{% else %}Print Resume{% endif %}">
     <i class="fa fa-print"></i>
 </a>
 
-<a id="pdf" href="/assets/files/en/Jonathan%20Senecal%20-%20Resume.pdf" title="Télécharger en PDF">
+<a id="pdf" href="/assets/files/{{ current_lang }}/Jonathan%20Senecal%20-%20{% if current_lang == 'fr' %}CV{% else %}Resume{% endif %}.pdf" title="{% if current_lang == 'fr' %}Télécharger en PDF{% else %}Download PDF{% endif %}">
     <i class="fa fa-download"></i>
 </a>
